@@ -51,21 +51,22 @@ public class CharacterController2D : MonoBehaviour
                 rb2D.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
         }
 
+        if (!dead)
+            move = Vector2.right * Input.GetAxisRaw("Horizontal") * speed;
+
         //playerAnimator.SetBool("Grounded", grounded);
     }
 
     private void FixedUpdate()
     {
         Debug.DrawRay(transform.position, rb2D.velocity, Color.green);
-
-        if (!dead)
-            move = Vector2.right * Input.GetAxis("Horizontal") * speed;
+        
         move.y = rb2D.velocity.y;
 
         if (jumpRegistered)
         {
             jumpRegistered = false;
-            move.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb2D.gravityScale * (jumpHeight + 0.5f));
+            move.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb2D.gravityScale * (jumpHeight + 0.25f));
             //playerAnimator.SetTrigger("Jump");
         }
 

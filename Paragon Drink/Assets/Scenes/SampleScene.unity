@@ -603,7 +603,6 @@ GameObject:
   - component: {fileID: 1748740159}
   - component: {fileID: 1748740161}
   - component: {fileID: 1748740160}
-  - component: {fileID: 1748740162}
   - component: {fileID: 1748740163}
   m_Layer: 0
   m_Name: Player
@@ -674,19 +673,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &1748740162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748740158}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6477cf3fbf43f7246947444fada0384b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 250
 --- !u!114 &1748740163
 MonoBehaviour:
   m_ObjectHideFlags: 0
