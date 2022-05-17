@@ -65,6 +65,7 @@ public class CharacterController2D : MonoBehaviour
 
         if (jumpRegistered)
         {
+            grounded = false;
             jumpRegistered = false;
             move.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb2D.gravityScale * (jumpHeight + 0.25f));
             //playerAnimator.SetTrigger("Jump");
@@ -114,7 +115,6 @@ public class CharacterController2D : MonoBehaviour
     {
         if (collision.transform == currentGround)
         {
-            grounded = false;
             currentGround = null;
         }
     }
