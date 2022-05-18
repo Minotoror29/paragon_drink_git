@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
     #endregion
 
-    [SerializeField] private float jumpHeight;
+    [HideInInspector] public float jumpHeight;
     private bool jumpRegistered;
     private bool grounded = true;
     private bool canJump = true;
@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private Transform currentGround;
     [SerializeField] private float lowJumpMultiplier;
     [SerializeField] private float fallMultiplier;
+    [HideInInspector] public bool canCoyoteJump;
 
     private void Start()
     {
@@ -51,9 +52,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (jumpRegistered)
         {
-            jumpRegistered = false;
-            direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
-            canJump = false;
+            if (grounded || canCoyoteJump)
+            {
+                jumpRegistered = false;
+                direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
+                canJump = false;
+            }
         }
 
         rb.velocity = direction;
