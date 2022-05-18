@@ -15,10 +15,18 @@ public class FormChanger : MonoBehaviour
     [SerializeField] private float hydratedJumpHeight;
 
     [SerializeField] private GameObject bubblePrefab;
+    [SerializeField] private Transform shootPoint;
+
+    private bool dashing = false;
+    [SerializeField] private float dashingSpeed;
+    [SerializeField] private float dashingTime;
+    private float t;
+    private float originalGravityScale;
 
     private void Start()
     {
         controller = GetComponent<PlayerMovement>();
+        originalGravityScale = controller.rb.gravityScale;
 
         controller.jumpHeight = dehydratedJumpHeight;
         controller.canCoyoteJump = true;
@@ -35,6 +43,32 @@ public class FormChanger : MonoBehaviour
             {
                 ChangeForm(Form.Dehydrated);
                 ShootBubble();
+                Dash();
+            }
+        }
+
+        if (dashing)
+        {
+            if (t > 0)
+            {
+                t -= Time.deltaTime;
+                
+            } else
+            {
+                dashing = false;
+                controller.canControl = true;
+                controller.rb.gravityScale = originalGravityScale;
+            }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (dashing)
+        {
+            if (t > 0)
+            {
+                controller.rb.velocity = -transform.right * dashingSpeed;
             }
         }
     }
@@ -58,7 +92,15 @@ public class FormChanger : MonoBehaviour
 
     private void ShootBubble()
     {
-        Instantiate(bubblePrefab, transform.position, Quaternion.identity);
+        Instantiate(bubblePrefab, shootPoint.position, transform.rotation);
+    }
+    private void Dash()
+    {
+        controller.canControl = false;
+        controller.rb.gravityScale = 0;
+
+        dashing = true;
+        t = dashingTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     #region Movement
     [Header("Movement")]
     private Vector2 direction;
     [SerializeField] private float speed;
+    [HideInInspector] public bool canControl = true;
     #endregion
 
     [HideInInspector] public float jumpHeight;
@@ -24,43 +25,61 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        canControl = true;
     }
 
     private void Update()
     {
-        direction.x = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetButtonDown("Jump") && canJump)
+        if (canControl)
         {
-            jumpRegistered = true;
-        }
+            direction.x = Input.GetAxisRaw("Horizontal");
 
-        if (!grounded)
-        {
-            if (rb.velocity.y < 0f)
-                rb.velocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
-            else if (!Input.GetButton("Jump"))
-                rb.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
+            if (direction.x != 0)
+            {
+                if (direction.x < 0)
+                {
+                    transform.rotation = Quaternion.Euler(0, 180, 0);
+                }
+                else if (direction.x > 0)
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+            }
+
+            if (Input.GetButtonDown("Jump") && canJump)
+            {
+                jumpRegistered = true;
+            }
+
+            if (!grounded)
+            {
+                if (rb.velocity.y < 0f)
+                    rb.velocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
+                else if (!Input.GetButton("Jump"))
+                    rb.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        direction.x *= speed;
-        direction.y = rb.velocity.y;
-
-        if (jumpRegistered)
+        if (canControl)
         {
-            if (grounded || canCoyoteJump)
-            {
-                jumpRegistered = false;
-                direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
-                canJump = false;
-            }
-        }
+            direction.x *= speed;
+            direction.y = rb.velocity.y;
 
-        rb.velocity = direction;
+            if (jumpRegistered)
+            {
+                if (grounded || canCoyoteJump)
+                {
+                    jumpRegistered = false;
+                    direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
+                    canJump = false;
+                }
+            }
+
+            rb.velocity = direction;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
