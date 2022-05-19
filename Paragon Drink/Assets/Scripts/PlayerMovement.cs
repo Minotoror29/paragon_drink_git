@@ -118,8 +118,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.transform == currentGround)
         {
-            cjTimer = coyoteJumpTime;
+            if (!jumpRegistered)
+            {
+                cjTimer = coyoteJumpTime;
+            }
             grounded = false;
+            if (currentGround.gameObject.CompareTag("Breakable Platform"))
+            {
+                canCoyoteJump = false;
+            }
             currentGround = null;
         }
     }
