@@ -29,7 +29,7 @@ public class FormChanger : MonoBehaviour
         originalGravityScale = controller.rb.gravityScale;
 
         controller.jumpHeight = dehydratedJumpHeight;
-        controller.canCoyoteJump = true;
+        controller.canFallJump = true;
     }
 
     private void Update()
@@ -81,12 +81,12 @@ public class FormChanger : MonoBehaviour
         {
             transform.localScale *= 2;
             controller.jumpHeight = hydratedJumpHeight;
-            controller.canCoyoteJump = false;
+            controller.canFallJump = false;
         } else
         {
             transform.localScale /= 2;
             controller.jumpHeight = dehydratedJumpHeight;
-            controller.canCoyoteJump = true;
+            controller.canFallJump = true;
         }
     }
 

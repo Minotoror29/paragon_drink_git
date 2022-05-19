@@ -1402,7 +1402,8 @@ MonoBehaviour:
   groundNormalThreshold: 0.6
   lowJumpMultiplier: 10
   fallMultiplier: 2.5
-  canCoyoteJump: 0
+  canFallJump: 0
+  coyoteJumpTime: 0.1
 --- !u!114 &1748740164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,7 +1432,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1748740158}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c4eee49ab94937f459a2df7be7cc70cd, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

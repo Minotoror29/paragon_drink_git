@@ -21,7 +21,11 @@ public class PlayerMovement : MonoBehaviour
     private Transform currentGround;
     [SerializeField] private float lowJumpMultiplier;
     [SerializeField] private float fallMultiplier;
-    [HideInInspector] public bool canCoyoteJump;
+    [HideInInspector] public bool canFallJump;
+
+    private bool canCoyoteJump = true;
+    [SerializeField] private float coyoteJumpTime;
+    private float cjTimer = 0;
 
     private void Start()
     {
@@ -54,9 +58,25 @@ public class PlayerMovement : MonoBehaviour
             if (!grounded)
             {
                 if (rb.velocity.y < 0f)
+                {
                     rb.velocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
+                }
                 else if (!Input.GetButton("Jump"))
+                {
                     rb.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
+                }
+
+                if (canCoyoteJump)
+                {
+                    if (cjTimer > 0)
+                    {
+                        cjTimer -= Time.deltaTime;
+                    }
+                    else
+                    {
+                        canCoyoteJump = false;
+                    }
+                }
             }
         }
     }
@@ -70,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (jumpRegistered)
             {
-                if (grounded || canCoyoteJump)
+                if (grounded || canFallJump || canCoyoteJump)
                 {
                     jumpRegistered = false;
                     direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
@@ -88,6 +108,7 @@ public class PlayerMovement : MonoBehaviour
         if (normal.y > groundNormalThreshold)
         {
             canJump = true;
+            canCoyoteJump = true;
             grounded = true;
             currentGround = collision.transform;
         }
@@ -97,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.transform == currentGround)
         {
+            cjTimer = coyoteJumpTime;
             grounded = false;
             currentGround = null;
         }
