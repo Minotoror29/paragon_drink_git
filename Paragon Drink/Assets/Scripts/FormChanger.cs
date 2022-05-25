@@ -20,7 +20,7 @@ public class FormChanger : MonoBehaviour
     [SerializeField] private GameObject bubblePrefab;
     [SerializeField] private Transform shootPoint;
 
-    private bool dashing = false;
+    [HideInInspector] public bool dashing = false;
     [SerializeField] private float dashingSpeed;
     [SerializeField] private float dashingTime;
     private float t;

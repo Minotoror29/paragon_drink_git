@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class BreakablePlatform : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer sprite;
+    public SpriteRenderer sprite;
+    [SerializeField] private BoxCollider2D coll;
 
-    private bool broken = false;
-    [SerializeField] private bool canRespawn;
-    [SerializeField] private float respawnTime;
-    private float t = 0;
+    [HideInInspector] public bool broken = false;
+    public bool canRespawn;
+    public float respawnTime;
+    [HideInInspector] public float t = 0;
 
     private void Update()
     {
@@ -22,29 +23,20 @@ public class BreakablePlatform : MonoBehaviour
             else
             {
                 broken = false;
-                transform.parent.GetComponent<BoxCollider2D>().enabled = true;
+                coll.enabled = true;
                 sprite.enabled = true;
             }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void Break()
     {
-        if (!broken)
+        coll.enabled = false;
+        sprite.enabled = false;
+        if (canRespawn)
         {
-            if (collision.gameObject.GetComponent<FormChanger>())
-            {
-                if (collision.gameObject.GetComponent<FormChanger>().form == Form.Hydrated)
-                {
-                    transform.parent.GetComponent<BoxCollider2D>().enabled = false;
-                    sprite.enabled = false;
-                    if (canRespawn)
-                    {
-                        t = respawnTime;
-                        broken = true;
-                    }
-                }
-            }
+            t = respawnTime;
+            broken = true;
         }
     }
 }

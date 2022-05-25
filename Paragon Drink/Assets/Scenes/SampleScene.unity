@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 142925577}
   - component: {fileID: 142925578}
   - component: {fileID: 142925579}
+  - component: {fileID: 142925580}
   m_Layer: 7
   m_Name: Trigger
   m_TagString: Untagged
@@ -246,14 +247,35 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142925576}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 152e73dab8bbbeb439ac15a0e4f9fae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 452992951}
+  coll: {fileID: 0}
+  broken: 0
   canRespawn: 1
   respawnTime: 3
+  t: 0
+--- !u!114 &142925580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142925576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9f95927fcc9a1449bbf86470e9bf5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 452992951}
+  coll: {fileID: 2086286739}
+  broken: 0
+  canRespawn: 1
+  respawnTime: 3
+  t: 0
 --- !u!1 &165885112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,8 +1062,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1002194885}
+  - component: {fileID: 1002194886}
+  - component: {fileID: 1002194887}
   m_Layer: 0
-  m_Name: Grid Fence
+  m_Name: Breakable V Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1062,6 +1086,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1002194886
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002194884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1002194887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002194884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ba6095dec2328418ee9e3f70129f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 1837010230}
+  coll: {fileID: 1002194886}
+  broken: 0
+  canRespawn: 1
+  respawnTime: 3
+  t: 0
 --- !u!1 &1083038342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,6 +1828,7 @@ MonoBehaviour:
   hydratedSpeed: 2.5
   bubblePrefab: {fileID: 1013165450441381059, guid: 34d7ed78022d27d448dd66be9b65729c, type: 3}
   shootPoint: {fileID: 1536279109}
+  dashing: 0
   dashingSpeed: 25
   dashingTime: 0.25
 --- !u!58 &1748740165
@@ -2232,7 +2301,7 @@ GameObject:
   - component: {fileID: 2086286740}
   - component: {fileID: 2086286739}
   m_Layer: 7
-  m_Name: Breakable Platform
+  m_Name: Breakable H Platform
   m_TagString: Breakable Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
