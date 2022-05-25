@@ -14,6 +14,9 @@ public class FormChanger : MonoBehaviour
     [SerializeField] private float dehydratedJumpHeight;
     [SerializeField] private float hydratedJumpHeight;
 
+    [SerializeField] private float dehydratedSpeed;
+    [SerializeField] private float hydratedSpeed;
+
     [SerializeField] private GameObject bubblePrefab;
     [SerializeField] private Transform shootPoint;
 
@@ -29,6 +32,7 @@ public class FormChanger : MonoBehaviour
         originalGravityScale = controller.rb.gravityScale;
 
         controller.jumpHeight = dehydratedJumpHeight;
+        controller.speed = dehydratedSpeed;
         controller.canFallJump = true;
     }
 
@@ -81,11 +85,13 @@ public class FormChanger : MonoBehaviour
         {
             transform.localScale *= 2;
             controller.jumpHeight = hydratedJumpHeight;
+            controller.speed = hydratedSpeed;
             controller.canFallJump = false;
         } else
         {
             transform.localScale /= 2;
             controller.jumpHeight = dehydratedJumpHeight;
+            controller.speed = dehydratedSpeed;
             controller.canFallJump = true;
         }
     }

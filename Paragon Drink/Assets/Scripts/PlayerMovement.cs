@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     #region Movement
     [Header("Movement")]
     private Vector2 direction;
-    [SerializeField] private float speed;
+    [HideInInspector] public float speed;
     [HideInInspector] public bool canControl = true;
     #endregion
 
