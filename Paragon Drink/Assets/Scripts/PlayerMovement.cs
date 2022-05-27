@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private static PlayerMovement instance;
+    public static PlayerMovement Instance => instance;
+
     public Rigidbody2D rb;
 
     #region Movement
@@ -26,6 +29,18 @@ public class PlayerMovement : MonoBehaviour
     private bool canCoyoteJump = true;
     [SerializeField] private float coyoteJumpTime;
     private float cjTimer = 0;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {

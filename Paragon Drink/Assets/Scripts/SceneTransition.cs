@@ -11,7 +11,7 @@ public class SceneTransition : MonoBehaviour
 
     private void Start()
     {
-        player = FindObjectOfType<PlayerMovement>().transform;
+        player = PlayerMovement.Instance.transform;
 
         player.position = spawnPoints.GetChild(spawnPointIndex).transform.position;
     }
