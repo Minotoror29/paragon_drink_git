@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    [SerializeField] private string nextLevel;
+    [SerializeField] private int nextLevel;
     [SerializeField] private int index;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,7 +13,7 @@ public class ChangeScene : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerMovement>())
         {
             SceneTransition.spawnPointIndex = index;
-            SceneManager.LoadScene(nextLevel);
+            SceneManager.LoadScene("Level_" + nextLevel);
         }
     }
 }
