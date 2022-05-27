@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         canControl = true;
+
+        DontDestroyOnLoad(this);
     }
 
     private void Update()
