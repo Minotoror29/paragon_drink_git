@@ -4,15 +4,35 @@ using UnityEngine;
 
 public class HorizontalPlatform : BreakablePlatform
 {
+    private int feet = 0;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!broken)
         {
-            if (collision.gameObject.GetComponent<FormChanger>())
+            if (collision.gameObject.CompareTag("Feet"))
             {
-                if (collision.gameObject.GetComponent<FormChanger>().form == Form.Hydrated)
+                if (collision.transform.parent.GetComponent<FormChanger>().form == Form.Hydrated)
                 {
-                    Break();
+                    feet++;
+                    if (feet == 2)
+                    {
+                        Break();
+                    }
+                }
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (!broken)
+        {
+            if (collision.gameObject.CompareTag("Feet"))
+            {
+                if (collision.transform.parent.GetComponent<FormChanger>().form == Form.Hydrated)
+                {
+                    feet--;
                 }
             }
         }

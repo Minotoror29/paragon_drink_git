@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Water
   - Breakable Platform
+  - Feet
   layers:
   - Default
   - TransparentFX
