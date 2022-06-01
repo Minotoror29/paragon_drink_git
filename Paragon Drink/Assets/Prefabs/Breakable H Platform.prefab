@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3964159973690762213}
   - component: {fileID: 3964159973690762210}
   - component: {fileID: 3964159973690762212}
+  - component: {fileID: 6210087298715553252}
   m_Layer: 7
   m_Name: Breakable H Platform
   m_TagString: Breakable Platform
@@ -45,7 +46,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -78,6 +79,25 @@ MonoBehaviour:
   canRespawn: 1
   respawnTime: 3
   t: 0
+--- !u!251 &6210087298715553252
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964159973690762211}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &3964159974022973817
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +246,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 9875e52367d46254f9dea32a05b88f89, type: 3}
-  m_Color: {r: 0.8490566, g: 0.16420433, b: 0.16420433, a: 1}
+  m_Color: {r: 0.23529413, g: 0.67058825, b: 0.8196079, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
