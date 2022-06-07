@@ -142,6 +142,7 @@ public class PlayerMovement : MonoBehaviour
             canJump = true;
             canCoyoteJump = true;
             grounded = true;
+            anim.SetBool("isGrounded", true);
             currentGround = collision.transform;
             anim.SetBool("isFalling", false);
         }
@@ -156,6 +157,7 @@ public class PlayerMovement : MonoBehaviour
                 cjTimer = coyoteJumpTime;
             }
             grounded = false;
+            anim.SetBool("isGrounded", false);
             if (currentGround.gameObject.CompareTag("Breakable Platform"))
             {
                 canCoyoteJump = false;
