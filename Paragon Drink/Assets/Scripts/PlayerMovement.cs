@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float coyoteJumpTime;
     private float cjTimer = 0;
 
+    private Animator anim;
+
     private void Awake()
     {
         if (instance == null)
@@ -47,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
         canControl = true;
 
         DontDestroyOnLoad(this);
+
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -67,6 +71,15 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
 
+            if (direction.x == 0)
+            {
+                anim.SetBool("isRunning", false);
+            }
+            else
+            {
+                anim.SetBool("isRunning", true);
+            }
+
             if (Input.GetButtonDown("Jump") && canJump)
             {
                 jumpRegistered = true;
@@ -77,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
                 if (rb.velocity.y < 0f)
                 {
                     rb.velocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
+                    anim.SetBool("isFalling", true);
                 }
                 else if (!Input.GetButton("Jump"))
                 {
@@ -112,6 +126,7 @@ public class PlayerMovement : MonoBehaviour
                     jumpRegistered = false;
                     direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
                     canJump = false;
+                    anim.SetTrigger("Jump");
                 }
             }
 
@@ -128,6 +143,7 @@ public class PlayerMovement : MonoBehaviour
             canCoyoteJump = true;
             grounded = true;
             currentGround = collision.transform;
+            anim.SetBool("isFalling", false);
         }
     }
 
