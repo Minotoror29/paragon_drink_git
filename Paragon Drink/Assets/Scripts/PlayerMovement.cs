@@ -21,11 +21,11 @@ public class PlayerMovement : MonoBehaviour
     private bool grounded = true;
     private bool canJump = true;
     [SerializeField, Range(0, 1)] private float groundNormalThreshold;
-    private Transform currentGround;
     private List<Transform> grounds;
     [SerializeField] private float lowJumpMultiplier;
     [SerializeField] private float fallMultiplier;
     [HideInInspector] public bool canFallJump;
+    private float startGravity;
 
     private bool canCoyoteJump = true;
     [SerializeField] private float coyoteJumpTime;
@@ -54,10 +54,13 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
 
         grounds = new List<Transform>();
+        startGravity = rb.gravityScale;
     }
 
     private void Update()
     {
+        
+
         if (canControl)
         {
             direction.x = Input.GetAxisRaw("Horizontal");
@@ -81,35 +84,35 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 anim.SetBool("isRunning", true);
+            }   
+        }
+
+        if (Input.GetButtonDown("Jump") && canJump)
+        {
+            jumpRegistered = true;
+        }
+
+        if (!grounded)
+        {
+            if (rb.velocity.y < 0f)
+            {
+                rb.velocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
+                anim.SetBool("isFalling", true);
+            }
+            else if (!Input.GetButton("Jump"))
+            {
+                rb.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
             }
 
-            if (Input.GetButtonDown("Jump") && canJump)
+            if (canCoyoteJump)
             {
-                jumpRegistered = true;
-            }
-
-            if (!grounded)
-            {
-                if (rb.velocity.y < 0f)
+                if (cjTimer > 0)
                 {
-                    rb.velocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
-                    anim.SetBool("isFalling", true);
+                    cjTimer -= Time.deltaTime;
                 }
-                else if (!Input.GetButton("Jump"))
+                else
                 {
-                    rb.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
-                }
-
-                if (canCoyoteJump)
-                {
-                    if (cjTimer > 0)
-                    {
-                        cjTimer -= Time.deltaTime;
-                    }
-                    else
-                    {
-                        canCoyoteJump = false;
-                    }
+                    canCoyoteJump = false;
                 }
             }
         }
@@ -121,19 +124,26 @@ public class PlayerMovement : MonoBehaviour
         {
             direction.x *= speed;
             direction.y = rb.velocity.y;
+        }
 
-            if (jumpRegistered)
+        if (jumpRegistered)
+        {
+            if (grounded || canFallJump || canCoyoteJump)
             {
-                if (grounded || canFallJump || canCoyoteJump)
-                {
-                    jumpRegistered = false;
-                    direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
-                    canJump = false;
-                    anim.SetTrigger("Jump");
-                    anim.SetBool("isFalling", false);
-                }
-            }
+                GetComponent<FormChanger>().dashing = false;
+                canControl = true;
+                rb.gravityScale = startGravity;
 
+                jumpRegistered = false;
+                direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
+                canJump = false;
+                anim.SetTrigger("Jump");
+                anim.SetBool("isFalling", false);
+            }
+        }
+
+        if (canControl)
+        {
             rb.velocity = direction;
         }
     }
@@ -160,7 +170,6 @@ public class PlayerMovement : MonoBehaviour
             canCoyoteJump = true;
             grounded = true;
             anim.SetBool("isGrounded", true);
-            //currentGround = collision.transform;
             grounds.Add(collision.transform);
             anim.SetBool("isFalling", false);
         }
@@ -176,7 +185,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 canCoyoteJump = false;
             }
-            //currentGround = null;
             grounds.Remove(collision.transform);
 
             if (grounds.Count == 0)
