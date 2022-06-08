@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private bool canJump = true;
     [SerializeField, Range(0, 1)] private float groundNormalThreshold;
     private Transform currentGround;
+    private List<Transform> grounds;
     [SerializeField] private float lowJumpMultiplier;
     [SerializeField] private float fallMultiplier;
     [HideInInspector] public bool canFallJump;
@@ -51,6 +52,8 @@ public class PlayerMovement : MonoBehaviour
         DontDestroyOnLoad(this);
 
         anim = GetComponent<Animator>();
+
+        grounds = new List<Transform>();
     }
 
     private void Update()
@@ -144,26 +147,33 @@ public class PlayerMovement : MonoBehaviour
             canCoyoteJump = true;
             grounded = true;
             anim.SetBool("isGrounded", true);
-            currentGround = collision.transform;
+            //currentGround = collision.transform;
+            grounds.Add(collision.transform);
             anim.SetBool("isFalling", false);
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.transform == currentGround)
+        if (grounds.Contains(collision.transform))
         {
-            if (!jumpRegistered)
-            {
-                cjTimer = coyoteJumpTime;
-            }
-            grounded = false;
-            anim.SetBool("isGrounded", false);
-            if (currentGround.gameObject.CompareTag("Breakable Platform"))
+            if (grounds[0].gameObject.CompareTag("Breakable Platform"))
             {
                 canCoyoteJump = false;
             }
-            currentGround = null;
+            //currentGround = null;
+            grounds.Remove(collision.transform);
+
+            if (grounds.Count == 0)
+            {
+                if (!jumpRegistered)
+                {
+                    cjTimer = coyoteJumpTime;
+                }
+                grounded = false;
+                anim.SetBool("isGrounded", false);
+            }
+            
         }
     }
 }
