@@ -127,6 +127,7 @@ public class PlayerMovement : MonoBehaviour
                     direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
                     canJump = false;
                     anim.SetTrigger("Jump");
+                    anim.SetBool("isFalling", false);
                 }
             }
 
