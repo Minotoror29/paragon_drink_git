@@ -138,8 +138,21 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void CleanGrounds()
+    {
+        for (int i = 0; i < grounds.Count; i++)
+        {
+            if (grounds[i] == null)
+            {
+                grounds.Remove(grounds[i]);
+            }
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        CleanGrounds();
+
         Vector2 normal = collision.GetContact(0).normal;
         if (normal.y > groundNormalThreshold)
         {
@@ -155,6 +168,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        CleanGrounds();
+
         if (grounds.Contains(collision.transform))
         {
             if (grounds[0].gameObject.CompareTag("Breakable Platform"))
@@ -173,7 +188,6 @@ public class PlayerMovement : MonoBehaviour
                 grounded = false;
                 anim.SetBool("isGrounded", false);
             }
-            
         }
     }
 }
