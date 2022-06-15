@@ -163,15 +163,19 @@ public class PlayerMovement : MonoBehaviour
     {
         CleanGrounds();
 
-        Vector2 normal = collision.GetContact(0).normal;
-        if (normal.y > groundNormalThreshold)
+        if (collision.otherCollider.gameObject.CompareTag("Player"))
         {
-            canJump = true;
-            canCoyoteJump = true;
-            grounded = true;
-            anim.SetBool("isGrounded", true);
-            grounds.Add(collision.transform);
-            anim.SetBool("isFalling", false);
+
+            Vector2 normal = collision.GetContact(0).normal;
+            if (normal.y > groundNormalThreshold)
+            {
+                canJump = true;
+                canCoyoteJump = true;
+                grounded = true;
+                anim.SetBool("isGrounded", true);
+                grounds.Add(collision.transform);
+                anim.SetBool("isFalling", false);
+            }
         }
     }
 
@@ -179,22 +183,25 @@ public class PlayerMovement : MonoBehaviour
     {
         CleanGrounds();
 
-        if (grounds.Contains(collision.transform))
+        if (collision.otherCollider.gameObject.CompareTag("Player"))
         {
-            if (grounds[0].gameObject.CompareTag("Breakable Platform"))
+            if (grounds.Contains(collision.transform))
             {
-                canCoyoteJump = false;
-            }
-            grounds.Remove(collision.transform);
-
-            if (grounds.Count == 0)
-            {
-                if (!jumpRegistered)
+                if (grounds[0].gameObject.CompareTag("Breakable Platform"))
                 {
-                    cjTimer = coyoteJumpTime;
+                    canCoyoteJump = false;
                 }
-                grounded = false;
-                anim.SetBool("isGrounded", false);
+                grounds.Remove(collision.transform);
+
+                if (grounds.Count == 0)
+                {
+                    if (!jumpRegistered)
+                    {
+                        cjTimer = coyoteJumpTime;
+                    }
+                    grounded = false;
+                    anim.SetBool("isGrounded", false);
+                }
             }
         }
     }
