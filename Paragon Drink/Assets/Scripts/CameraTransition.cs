@@ -18,15 +18,29 @@ public class CameraTransition : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector3.SmoothDamp(transform.position,
+        /*transform.position = Vector3.SmoothDamp(transform.position,
             new Vector3(targetLevel.position.x, targetLevel.position.y, -10f),
             ref velocity,
+            smoothTime);*/
+
+        transform.position = Vector3.MoveTowards(transform.position,
+            new Vector3(targetLevel.position.x, targetLevel.position.y, -10f),
             smoothTime);
+
+        if (Time.timeScale < 1)
+        {
+            if (transform.position == new Vector3(targetLevel.position.x, targetLevel.position.y, -10f))
+            {
+                Time.timeScale = 1;
+            }
+        }
     }
 
     public void Transition(Transform target)
     {
         targetLevel = target;
         lm.LevelTransition(target);
+
+        Time.timeScale = 0;
     }
 }
