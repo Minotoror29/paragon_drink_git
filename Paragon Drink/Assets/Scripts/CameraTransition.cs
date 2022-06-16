@@ -18,11 +18,6 @@ public class CameraTransition : MonoBehaviour
 
     private void Update()
     {
-        /*transform.position = Vector3.SmoothDamp(transform.position,
-            new Vector3(targetLevel.position.x, targetLevel.position.y, -10f),
-            ref velocity,
-            smoothTime);*/
-
         transform.position = Vector3.MoveTowards(transform.position,
             new Vector3(targetLevel.position.x, targetLevel.position.y, -10f),
             smoothTime);
@@ -40,6 +35,7 @@ public class CameraTransition : MonoBehaviour
     {
         targetLevel = target;
         lm.LevelTransition(target);
+        GetComponent<Camera>().orthographicSize = targetLevel.GetComponent<Level>().size;
 
         Time.timeScale = 0;
     }
