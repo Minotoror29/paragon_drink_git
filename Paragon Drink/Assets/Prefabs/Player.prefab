@@ -41,6 +41,8 @@ GameObject:
   - component: {fileID: 918617604486469589}
   - component: {fileID: 918617604486469591}
   - component: {fileID: 918617604486469590}
+  - component: {fileID: 867715918}
+  - component: {fileID: 867715919}
   m_Layer: 8
   m_Name: Feet
   m_TagString: Feet
@@ -114,6 +116,48 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
+--- !u!61 &867715918
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918617604486469588}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: c4eee49ab94937f459a2df7be7cc70cd, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.85}
+  m_EdgeRadius: 0.01
+--- !u!70 &867715919
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918617604486469588}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: c4eee49ab94937f459a2df7be7cc70cd, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 0.75}
+  m_Direction: 1
 --- !u!1 &918617604528628858
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +174,7 @@ GameObject:
   - component: {fileID: 208028476}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,7 +188,7 @@ Transform:
   m_GameObject: {fileID: 918617604528628858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95, y: 0.95, z: 1}
   m_Children:
   - {fileID: 918617605084936445}
   - {fileID: 918617604253486593}
@@ -215,7 +259,7 @@ MonoBehaviour:
   speed: 5
   canControl: 1
   jumpHeight: 0
-  groundNormalThreshold: 0.6
+  groundNormalThreshold: 0.95
   lowJumpMultiplier: 10
   fallMultiplier: 2.5
   canFallJump: 0
@@ -234,7 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   form: 0
   dehydratedJumpHeight: 3
-  hydratedJumpHeight: 1
+  hydratedJumpHeight: 2
   dehydratedSpeed: 5
   hydratedSpeed: 2.5
   bubblePrefab: {fileID: 1013165450441381059, guid: 34d7ed78022d27d448dd66be9b65729c, type: 3}
