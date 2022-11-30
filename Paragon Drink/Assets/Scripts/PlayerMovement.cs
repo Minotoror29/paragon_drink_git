@@ -156,18 +156,39 @@ public class PlayerMovement : MonoBehaviour
 
         if (_jumpRegistered)
         {
-            if (_grounded || canFallJump || _canCoyoteJump)
+            if (!GetComponent<FormChanger>().dashing)
+            {
+                if (_grounded || canFallJump || _canCoyoteJump)
+                {
+                    GetComponent<FormChanger>().dashing = false;
+                    canControl = true;
+                    rb.gravityScale = _startGravity;
+
+                    _jumpRegistered = false;
+                    _direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
+                    _canJump = false;
+                    _anim.SetTrigger("Jump");
+                    _anim.SetBool("isFalling", false);
+                }
+            } else
             {
                 GetComponent<FormChanger>().dashing = false;
-                canControl = true;
+                //canControl = true;
                 rb.gravityScale = _startGravity;
 
                 _jumpRegistered = false;
                 _direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
+                _direction.x = rb.velocity.x;
+                rb.velocity = _direction;
                 _canJump = false;
                 _anim.SetTrigger("Jump");
                 _anim.SetBool("isFalling", false);
             }
+
+            //if (GetComponent<FormChanger>().dashing)
+            //{
+            //    _direction.x = rb.velocity.x;
+            //}
         }
 
         if (canControl)
@@ -189,6 +210,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        canControl = true;
+
         CleanGrounds();
 
         if (collision.otherCollider.gameObject.CompareTag("Player"))
