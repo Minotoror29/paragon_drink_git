@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,29 +10,30 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    #region Movement
     [Header("Movement")]
-    private Vector2 direction;
-    [HideInInspector] public float speed;
+    public float speed;
+    private Vector2 _direction;
     [HideInInspector] public bool canControl = true;
-    #endregion
 
-    [HideInInspector] public float jumpHeight;
-    private bool jumpRegistered;
-    private bool grounded = true;
-    private bool canJump = true;
+    [Header("Jump")]
+    public float jumpHeight;
+    private bool _jumpRegistered;
+    private bool _grounded = true;
+    private bool _canJump = true;
     [SerializeField, Range(0, 1)] private float groundNormalThreshold;
-    private List<Transform> grounds;
+    private List<Transform> _grounds;
     [SerializeField] private float lowJumpMultiplier;
     [SerializeField] private float fallMultiplier;
     [HideInInspector] public bool canFallJump;
-    private float startGravity;
+    private float _startGravity;
 
-    private bool canCoyoteJump = true;
+    private bool _canCoyoteJump = true;
     [SerializeField] private float coyoteJumpTime;
-    private float cjTimer = 0;
+    private float _cjTimer = 0;
 
-    private Animator anim;
+    private Animator _anim;
+
+    private PlayerControls _playerControls;
 
     private void Awake()
     {
@@ -47,114 +49,140 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        Initialize();
+    }
+
+    private void Initialize()
+    {
+        _playerControls = new PlayerControls();
+        _playerControls.Movement.Enable();
+        _playerControls.Movement.Jump.performed += ctx => Jump();
+        //_playerControls.Movement.Jump.canceled += ctx => Fall();
+
         canControl = true;
 
         DontDestroyOnLoad(this);
 
-        anim = GetComponent<Animator>();
+        _anim = GetComponent<Animator>();
 
-        grounds = new List<Transform>();
-        startGravity = rb.gravityScale;
+        _grounds = new List<Transform>();
+        _startGravity = rb.gravityScale;
     }
 
     private void Update()
     {
-        
-
         if (canControl)
         {
-            direction.x = Input.GetAxisRaw("Horizontal");
+            _direction.x = _playerControls.Movement.Movement.ReadValue<Vector2>().x;
 
-            if (direction.x != 0)
+            if (_direction.x != 0)
             {
-                if (direction.x < 0)
+                if (_direction.x < 0)
                 {
                     transform.rotation = Quaternion.Euler(0, 180, 0);
                 }
-                else if (direction.x > 0)
+                else if (_direction.x > 0)
                 {
                     transform.rotation = Quaternion.Euler(0, 0, 0);
                 }
             }
 
-            if (direction.x == 0)
+            if (_direction.x == 0)
             {
-                anim.SetBool("isRunning", false);
+                _anim.SetBool("isRunning", false);
             }
             else
             {
-                anim.SetBool("isRunning", true);
+                _anim.SetBool("isRunning", true);
             }   
         }
 
-        if (Input.GetButtonDown("Jump") && canJump)
-        {
-            jumpRegistered = true;
-        }
+        //if (_playerControls.Movement.Jump.ReadValue<float>() > 0 && _canJump)
+        //{
+        //    _jumpRegistered = true;
+        //}
 
-        if (!grounded)
+        if (!_grounded)
         {
             if (rb.velocity.y < 0f)
             {
                 rb.velocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
-                anim.SetBool("isFalling", true);
+                _anim.SetBool("isFalling", true);
             }
-            else if (!Input.GetButton("Jump"))
+            else if (_playerControls.Movement.Jump.ReadValue<float>() < 1)
             {
                 rb.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
             }
 
-            if (canCoyoteJump)
+            if (_canCoyoteJump)
             {
-                if (cjTimer > 0)
+                if (_cjTimer > 0)
                 {
-                    cjTimer -= Time.deltaTime;
+                    _cjTimer -= Time.deltaTime;
                 }
                 else
                 {
-                    canCoyoteJump = false;
+                    _canCoyoteJump = false;
                 }
             }
         }
     }
+
+    private void Jump()
+    {
+        if (!_canJump) { return; }
+
+        _jumpRegistered = true;
+    }
+
+    //private void Fall()
+    //{
+    //    if (!_grounded)
+    //    {
+    //        if (rb.velocity.y >= 0f)
+    //        {
+    //            rb.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
+    //        }
+    //    }
+    //}
 
     private void FixedUpdate()
     {
         if (canControl)
         {
-            direction.x *= speed;
-            direction.y = rb.velocity.y;
+            _direction.x *= speed;
+            _direction.y = rb.velocity.y;
         }
 
-        if (jumpRegistered)
+        if (_jumpRegistered)
         {
-            if (grounded || canFallJump || canCoyoteJump)
+            if (_grounded || canFallJump || _canCoyoteJump)
             {
                 GetComponent<FormChanger>().dashing = false;
                 canControl = true;
-                rb.gravityScale = startGravity;
+                rb.gravityScale = _startGravity;
 
-                jumpRegistered = false;
-                direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
-                canJump = false;
-                anim.SetTrigger("Jump");
-                anim.SetBool("isFalling", false);
+                _jumpRegistered = false;
+                _direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
+                _canJump = false;
+                _anim.SetTrigger("Jump");
+                _anim.SetBool("isFalling", false);
             }
         }
 
         if (canControl)
         {
-            rb.velocity = direction;
+            rb.velocity = _direction;
         }
     }
 
     private void CleanGrounds()
     {
-        for (int i = 0; i < grounds.Count; i++)
+        for (int i = 0; i < _grounds.Count; i++)
         {
-            if (grounds[i] == null)
+            if (_grounds[i] == null)
             {
-                grounds.Remove(grounds[i]);
+                _grounds.Remove(_grounds[i]);
             }
         }
     }
@@ -169,12 +197,12 @@ public class PlayerMovement : MonoBehaviour
             Vector2 normal = collision.GetContact(0).normal;
             if (normal.y > groundNormalThreshold)
             {
-                canJump = true;
-                canCoyoteJump = true;
-                grounded = true;
-                anim.SetBool("isGrounded", true);
-                grounds.Add(collision.transform);
-                anim.SetBool("isFalling", false);
+                _canJump = true;
+                _canCoyoteJump = true;
+                _grounded = true;
+                _anim.SetBool("isGrounded", true);
+                _grounds.Add(collision.transform);
+                _anim.SetBool("isFalling", false);
             }
         }
     }
@@ -185,22 +213,22 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.otherCollider.gameObject.CompareTag("Player"))
         {
-            if (grounds.Contains(collision.transform))
+            if (_grounds.Contains(collision.transform))
             {
-                if (grounds[0].gameObject.CompareTag("Breakable Platform"))
+                if (_grounds[0].gameObject.CompareTag("Breakable Platform"))
                 {
-                    canCoyoteJump = false;
+                    _canCoyoteJump = false;
                 }
-                grounds.Remove(collision.transform);
+                _grounds.Remove(collision.transform);
 
-                if (grounds.Count == 0)
+                if (_grounds.Count == 0)
                 {
-                    if (!jumpRegistered)
+                    if (!_jumpRegistered)
                     {
-                        cjTimer = coyoteJumpTime;
+                        _cjTimer = coyoteJumpTime;
                     }
-                    grounded = false;
-                    anim.SetBool("isGrounded", false);
+                    _grounded = false;
+                    _anim.SetBool("isGrounded", false);
                 }
             }
         }

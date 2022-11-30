@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public enum Form { Dehydrated, Hydrated }
 
@@ -26,8 +27,19 @@ public class FormChanger : MonoBehaviour
     private float t;
     private float originalGravityScale;
 
+    private PlayerControls _playerControls;
+
     private void Start()
     {
+        Initialize();
+    }
+
+    private void Initialize()
+    {
+        _playerControls = new PlayerControls();
+        _playerControls.Movement.Enable();
+        _playerControls.Movement.Action.performed += ctx => Action();
+
         controller = GetComponent<PlayerMovement>();
         originalGravityScale = controller.rb.gravityScale;
 
@@ -38,18 +50,18 @@ public class FormChanger : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Action"))
-        {
-            if (inWater && form == Form.Dehydrated)
-            {
-                ChangeForm(Form.Hydrated);
-            } else if (form == Form.Hydrated)
-            {
-                ChangeForm(Form.Dehydrated);
-                ShootBubble();
-                Dash();
-            }
-        }
+        //if (_playerControls.Movement.Action.ReadValue<float>() > 0)
+        //{
+        //    if (inWater && form == Form.Dehydrated)
+        //    {
+        //        ChangeForm(Form.Hydrated);
+        //    } else if (form == Form.Hydrated)
+        //    {
+        //        ChangeForm(Form.Dehydrated);
+        //        ShootBubble();
+        //        Dash();
+        //    }
+        //}
 
         if (dashing)
         {
@@ -63,6 +75,20 @@ public class FormChanger : MonoBehaviour
                 controller.canControl = true;
                 controller.rb.gravityScale = originalGravityScale;
             }
+        }
+    }
+
+    private void Action()
+    {
+        if (inWater && form == Form.Dehydrated)
+        {
+            ChangeForm(Form.Hydrated);
+        }
+        else if (form == Form.Hydrated)
+        {
+            ChangeForm(Form.Dehydrated);
+            ShootBubble();
+            Dash();
         }
     }
 
