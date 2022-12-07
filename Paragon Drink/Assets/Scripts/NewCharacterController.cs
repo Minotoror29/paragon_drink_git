@@ -11,6 +11,8 @@ public class NewCharacterController : MonoBehaviour
     private Vector2 _direction;
     [SerializeField] private float speed = 1;
 
+    private Animator _anim;
+
     private void Start()
     {
         Initialize();
@@ -22,6 +24,8 @@ public class NewCharacterController : MonoBehaviour
         _playerControls.Movement.Enable();
 
         _rb = GetComponent<Rigidbody2D>();
+
+        _anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -38,6 +42,15 @@ public class NewCharacterController : MonoBehaviour
             {
                 transform.rotation = Quaternion.Euler(0, 0, 0);
             }
+        }
+
+        if (_direction.x == 0)
+        {
+            _anim.SetBool("isRunning", false);
+        }
+        else
+        {
+            _anim.SetBool("isRunning", true);
         }
 
         _direction.x *= speed;
