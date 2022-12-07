@@ -20,6 +20,8 @@ public class NewCharacterController : MonoBehaviour
     private bool _jumpRegistered = false;
     private bool _grounded = false;
     [SerializeField] private float groundNormalThreshold = 0.6f;
+    private Transform _currentGround;
+    [SerializeField] private float lowJumpMultiplier = 1f;
 
     private void Start()
     {
@@ -68,6 +70,10 @@ public class NewCharacterController : MonoBehaviour
             {
                 _anim.SetBool("isFalling", true);
             }
+            else if (_playerControls.Movement.Jump.ReadValue<float>() < 1)
+            {
+                _rb.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
+            }
         }
     }
 
@@ -80,11 +86,12 @@ public class NewCharacterController : MonoBehaviour
         {
             if (_grounded)
             {
-                _jumpRegistered = false;
                 _direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * _rb.gravityScale * (jumpHeight + 0.25f));
                 _anim.SetTrigger("Jump");
                 _anim.SetBool("isFalling", false);
             }
+
+            _jumpRegistered = false;
         }
 
         _rb.velocity = _direction;
@@ -95,20 +102,38 @@ public class NewCharacterController : MonoBehaviour
         _jumpRegistered = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        Vector2 normal = collision.GetContact(0).normal;
-        if (normal.y > groundNormalThreshold)
+        //Debug.Log("Enter");
+
+        ContactPoint2D[] normals = collision.contacts;
+        foreach (ContactPoint2D point in normals)
         {
-            _grounded = true;
-            _anim.SetBool("isGrounded", true);
-            _anim.SetBool("isFalling", false);
+            if (point.normal.y > groundNormalThreshold)
+            {
+                _grounded = true;
+                _currentGround = collision.transform;
+
+                _anim.SetBool("isGrounded", true);
+                _anim.SetBool("isFalling", false);
+
+                return;
+            }
         }
+
+        _grounded = false;
+        _anim.SetBool("isGrounded", false);
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        _grounded = false;
-        _anim.SetBool("isGrounded", false);
+        if (_currentGround != null)
+        {
+            _grounded = false;
+            _anim.SetBool("isGrounded", false);
+        }
+
+        
     }
 }
