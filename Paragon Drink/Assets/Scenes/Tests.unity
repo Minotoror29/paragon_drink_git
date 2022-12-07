@@ -140,9 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1892373cb1a87da4a8e46ddc5600dbf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  jumpHeight: 1
-  groundNormalThreshold: 0.6
+  speed: 4.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,10 +1465,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 867715918, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
       propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918617604486469588, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 918617604528628736, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
