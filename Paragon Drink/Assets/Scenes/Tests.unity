@@ -123,6 +123,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &60781891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 918617604528628858, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
+  m_PrefabInstance: {fileID: 918617605200333892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &60781892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60781891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1892373cb1a87da4a8e46ddc5600dbf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,12 +1468,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 918617604528628736, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 918617604528628736, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
       propertyPath: hydratedJumpHeight
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 918617604528628740, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
       propertyPath: m_Size.x
       value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 918617604528628742, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 918617604528628742, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
       propertyPath: coyoteJumpTime
@@ -1509,7 +1535,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 918617604528628742, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
 --- !u!1001 &1850549688233147823
 PrefabInstance:
