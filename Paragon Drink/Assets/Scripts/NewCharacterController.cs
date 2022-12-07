@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class NewCharacterController : MonoBehaviour
 {
@@ -8,10 +9,17 @@ public class NewCharacterController : MonoBehaviour
 
     private Rigidbody2D _rb;
 
-    private Vector2 _direction;
-    [SerializeField] private float speed = 1;
-
     private Animator _anim;
+
+    [Header("Movement")]
+    [SerializeField] private float speed = 1f;
+    private Vector2 _direction;
+
+    [Header("Jump")]
+    [SerializeField] private float jumpHeight = 1f;
+    private bool _jumpRegistered = false;
+    private bool _grounded = false;
+    [SerializeField] private float groundNormalThreshold = 0.6f;
 
     private void Start()
     {
@@ -22,6 +30,7 @@ public class NewCharacterController : MonoBehaviour
     {
         _playerControls = new PlayerControls();
         _playerControls.Movement.Enable();
+        _playerControls.Movement.Jump.performed += ctx => Jump();
 
         _rb = GetComponent<Rigidbody2D>();
 
@@ -53,9 +62,53 @@ public class NewCharacterController : MonoBehaviour
             _anim.SetBool("isRunning", true);
         }
 
+        if (!_grounded)
+        {
+            if (_rb.velocity.y < 0f)
+            {
+                _anim.SetBool("isFalling", true);
+            }
+        }
+    }
+
+    private void FixedUpdate()
+    {
         _direction.x *= speed;
         _direction.y = _rb.velocity.y;
 
+        if (_jumpRegistered)
+        {
+            if (_grounded)
+            {
+                _jumpRegistered = false;
+                _direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * _rb.gravityScale * (jumpHeight + 0.25f));
+                _anim.SetTrigger("Jump");
+                _anim.SetBool("isFalling", false);
+            }
+        }
+
         _rb.velocity = _direction;
+    }
+
+    private void Jump()
+    {
+        _jumpRegistered = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Vector2 normal = collision.GetContact(0).normal;
+        if (normal.y > groundNormalThreshold)
+        {
+            _grounded = true;
+            _anim.SetBool("isGrounded", true);
+            _anim.SetBool("isFalling", false);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        _grounded = false;
+        _anim.SetBool("isGrounded", false);
     }
 }
