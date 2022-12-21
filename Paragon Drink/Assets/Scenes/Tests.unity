@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 918617604528628742, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
       propertyPath: dashJumpDistance
-      value: 0.25
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 918617604528628858, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
       propertyPath: m_Name
