@@ -263,7 +263,7 @@ MonoBehaviour:
   lowJumpMultiplier: 10
   fallMultiplier: 2.5
   canFallJump: 0
-  dashJumpDistance: 0.55
+  dashJumpDistance: 10
   coyoteJumpTime: 0.1
 --- !u!114 &918617604528628736
 MonoBehaviour:
@@ -286,9 +286,9 @@ MonoBehaviour:
   shootPoint: {fileID: 918617604253486593}
   dashing: 0
   dashingSpeed: 25
-  dashingTime: 0.25
+  dashingTime: 0.15
   _canCoyoteDashJump: 0
-  coyoteDashJumpTime: 0
+  coyoteDashJumpTime: 0.5
   _coyoteDashJumpTimer: 0
 --- !u!95 &208028476
 Animator:

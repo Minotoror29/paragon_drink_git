@@ -213,8 +213,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!GetComponent<FormChanger>().dashing)
+        if (!GetComponent<FormChanger>().dashing && collision.GetContact(0).normal.y > -groundNormalThreshold)
         {
+            Debug.Log(collision.GetContact(0).normal.y);
             canControl = true;
             GetComponent<FormChanger>()._canCoyoteDashJump = false;
         }
