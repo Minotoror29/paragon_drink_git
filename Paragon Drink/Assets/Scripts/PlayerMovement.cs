@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float fallMultiplier;
     [HideInInspector] public bool canFallJump;
     private float _startGravity;
+    [SerializeField] private float dashJumpDistance = 1f;
 
     private bool _canCoyoteJump = true;
     [SerializeField] private float coyoteJumpTime;
@@ -178,7 +179,7 @@ public class PlayerMovement : MonoBehaviour
 
                 _jumpRegistered = false;
                 _direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
-                _direction.x = rb.velocity.x;
+                _direction.x = rb.velocity.x * dashJumpDistance;
                 rb.velocity = _direction;
                 _canJump = false;
                 _anim.SetTrigger("Jump");
