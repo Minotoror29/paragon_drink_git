@@ -24,8 +24,12 @@ public class FormChanger : MonoBehaviour
     [HideInInspector] public bool dashing = false;
     [SerializeField] private float dashingSpeed;
     [SerializeField] private float dashingTime;
-    private float t;
-    private float originalGravityScale;
+    private float _dashTimer;
+    private float _originalGravityScale;
+
+    public bool _canCoyoteDashJump = false;
+    [SerializeField] private float coyoteDashJumpTime;
+    public float _coyoteDashJumpTimer;
 
     private PlayerControls _playerControls;
 
@@ -41,7 +45,7 @@ public class FormChanger : MonoBehaviour
         _playerControls.Movement.Action.performed += ctx => Action();
 
         controller = GetComponent<PlayerMovement>();
-        originalGravityScale = controller.rb.gravityScale;
+        _originalGravityScale = controller.rb.gravityScale;
 
         controller.jumpHeight = dehydratedJumpHeight;
         controller.speed = dehydratedSpeed;
@@ -50,30 +54,30 @@ public class FormChanger : MonoBehaviour
 
     private void Update()
     {
-        //if (_playerControls.Movement.Action.ReadValue<float>() > 0)
-        //{
-        //    if (inWater && form == Form.Dehydrated)
-        //    {
-        //        ChangeForm(Form.Hydrated);
-        //    } else if (form == Form.Hydrated)
-        //    {
-        //        ChangeForm(Form.Dehydrated);
-        //        ShootBubble();
-        //        Dash();
-        //    }
-        //}
-
         if (dashing)
         {
-            if (t > 0)
+            if (_dashTimer > 0)
             {
-                t -= Time.deltaTime;
+                _dashTimer -= Time.deltaTime;
                 
             } else
             {
                 dashing = false;
                 controller.canControl = true;
-                controller.rb.gravityScale = originalGravityScale;
+                controller.rb.gravityScale = _originalGravityScale;
+                _canCoyoteDashJump = true;
+                _coyoteDashJumpTimer = coyoteDashJumpTime;
+            }
+        }
+
+        if (_canCoyoteDashJump)
+        {
+            if (_coyoteDashJumpTimer > 0)
+            {
+                _coyoteDashJumpTimer -= Time.deltaTime;
+            } else
+            {
+                _canCoyoteDashJump = false;
             }
         }
     }
@@ -96,7 +100,7 @@ public class FormChanger : MonoBehaviour
     {
         if (dashing)
         {
-            if (t > 0)
+            if (_dashTimer > 0)
             {
                 controller.rb.velocity = -transform.right * dashingSpeed;
             }
@@ -132,7 +136,7 @@ public class FormChanger : MonoBehaviour
         controller.rb.gravityScale = 0;
 
         dashing = true;
-        t = dashingTime;
+        _dashTimer = dashingTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

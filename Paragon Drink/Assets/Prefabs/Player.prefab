@@ -263,6 +263,7 @@ MonoBehaviour:
   lowJumpMultiplier: 10
   fallMultiplier: 2.5
   canFallJump: 0
+  dashJumpDistance: 0.55
   coyoteJumpTime: 0.1
 --- !u!114 &918617604528628736
 MonoBehaviour:
@@ -286,6 +287,9 @@ MonoBehaviour:
   dashing: 0
   dashingSpeed: 25
   dashingTime: 0.25
+  _canCoyoteDashJump: 0
+  coyoteDashJumpTime: 0
+  _coyoteDashJumpTimer: 0
 --- !u!95 &208028476
 Animator:
   serializedVersion: 3

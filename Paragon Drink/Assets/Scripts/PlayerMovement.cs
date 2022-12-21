@@ -157,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (_jumpRegistered)
         {
-            if (!GetComponent<FormChanger>().dashing)
+            if (!GetComponent<FormChanger>().dashing && !GetComponent<FormChanger>()._canCoyoteDashJump)
             {
                 if (_grounded || canFallJump || _canCoyoteJump)
                 {
@@ -171,15 +171,17 @@ public class PlayerMovement : MonoBehaviour
                     _anim.SetTrigger("Jump");
                     _anim.SetBool("isFalling", false);
                 }
-            } else
+            } else if (GetComponent<FormChanger>().dashing || GetComponent<FormChanger>()._canCoyoteDashJump)
             {
                 GetComponent<FormChanger>().dashing = false;
-                //canControl = true;
+                GetComponent<FormChanger>()._canCoyoteDashJump = false;
+                canControl = false;
                 rb.gravityScale = _startGravity;
 
                 _jumpRegistered = false;
                 _direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
-                _direction.x = rb.velocity.x * dashJumpDistance;
+                _direction.x = -transform.right.x * dashJumpDistance;
+                Debug.Log(-transform.right.x);
                 rb.velocity = _direction;
                 _canJump = false;
                 _anim.SetTrigger("Jump");
@@ -214,6 +216,7 @@ public class PlayerMovement : MonoBehaviour
         if (!GetComponent<FormChanger>().dashing)
         {
             canControl = true;
+            GetComponent<FormChanger>()._canCoyoteDashJump = false;
         }
 
         CleanGrounds();
