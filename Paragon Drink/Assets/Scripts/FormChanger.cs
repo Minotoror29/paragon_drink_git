@@ -27,9 +27,9 @@ public class FormChanger : MonoBehaviour
     private float _dashTimer;
     private float _originalGravityScale;
 
-    public bool _canCoyoteDashJump = false;
+    [HideInInspector] public bool _canCoyoteDashJump = false;
     [SerializeField] private float coyoteDashJumpTime;
-    public float _coyoteDashJumpTimer;
+    [HideInInspector] public float _coyoteDashJumpTimer;
 
     private PlayerControls _playerControls;
 
@@ -63,7 +63,6 @@ public class FormChanger : MonoBehaviour
             } else
             {
                 dashing = false;
-                controller.canControl = true;
                 controller.rb.gravityScale = _originalGravityScale;
                 _canCoyoteDashJump = true;
                 _coyoteDashJumpTimer = coyoteDashJumpTime;
@@ -78,6 +77,7 @@ public class FormChanger : MonoBehaviour
             } else
             {
                 _canCoyoteDashJump = false;
+                controller.canControl = true;
             }
         }
     }
