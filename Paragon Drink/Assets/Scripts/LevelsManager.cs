@@ -37,11 +37,16 @@ public class LevelsManager : MonoBehaviour
         }
 
         activeLevel = startLevel;
+
+        LevelTransition(startLevel, null);
     }
 
-    public void LevelTransition(Level nextlevel)
+    public void LevelTransition(Level nextlevel, Level previousLevel)
     {
-        activeLevel.vCam.Priority--;
+        if (previousLevel != null)
+        {
+            previousLevel.vCam.Priority--;
+        }
         nextlevel.vCam.Priority++;
 
         activeLevel = nextlevel;

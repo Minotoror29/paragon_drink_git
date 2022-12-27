@@ -58,11 +58,8 @@ public class PlayerMovement : MonoBehaviour
         _playerControls = new PlayerControls();
         _playerControls.Movement.Enable();
         _playerControls.Movement.Jump.performed += ctx => Jump();
-        //_playerControls.Movement.Jump.canceled += ctx => Fall();
 
         canControl = true;
-
-        DontDestroyOnLoad(this);
 
         _anim = GetComponent<Animator>();
 
@@ -98,11 +95,6 @@ public class PlayerMovement : MonoBehaviour
             }   
         }
 
-        //if (_playerControls.Movement.Jump.ReadValue<float>() > 0 && _canJump)
-        //{
-        //    _jumpRegistered = true;
-        //}
-
         if (!_grounded)
         {
             if (rb.velocity.y < 0f)
@@ -135,17 +127,6 @@ public class PlayerMovement : MonoBehaviour
 
         _jumpRegistered = true;
     }
-
-    //private void Fall()
-    //{
-    //    if (!_grounded)
-    //    {
-    //        if (rb.velocity.y >= 0f)
-    //        {
-    //            rb.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
-    //        }
-    //    }
-    //}
 
     private void FixedUpdate()
     {
@@ -181,17 +162,11 @@ public class PlayerMovement : MonoBehaviour
                 _jumpRegistered = false;
                 _direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
                 _direction.x = -transform.right.x * dashJumpDistance;
-                Debug.Log(-transform.right.x);
                 rb.velocity = _direction;
                 _canJump = false;
                 _anim.SetTrigger("Jump");
                 _anim.SetBool("isFalling", false);
             }
-
-            //if (GetComponent<FormChanger>().dashing)
-            //{
-            //    _direction.x = rb.velocity.x;
-            //}
         }
 
         if (canControl)
