@@ -1,33 +1,49 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelsManager : MonoBehaviour
 {
-    [SerializeField] private Transform levels;
-    private Transform activeLevel;
-    [SerializeField] private int startLevel;
+    private static LevelsManager m_instance;
+    public static LevelsManager Instance => m_instance;
+
+    [SerializeField] private List<Level> levels;
+    [HideInInspector] public Level activeLevel;
+    [SerializeField] private Level startLevel;
+
+    private void Awake()
+    {
+        if (m_instance != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            m_instance = this;
+        }
+    }
 
     private void Start()
     {
-        activeLevel = levels.GetChild(startLevel);
-        Camera.main.GetComponent<CameraTransition>().Transition(activeLevel);
+        Initialize();
     }
 
-    public void LevelTransition(Transform level)
+    private void Initialize()
     {
-        activeLevel = level;
-
-        for (int i = 0; i < levels.childCount; i++)
+        foreach (Level level in levels)
         {
-            if (levels.GetChild(i) != activeLevel)
-            {
-                levels.GetChild(i).GetChild(0).gameObject.SetActive(false);
-            }
-            else
-            {
-                levels.GetChild(i).GetChild(0).gameObject.SetActive(true);
-            }
+            level.Initialize(this);
         }
+
+        activeLevel = startLevel;
+    }
+
+    public void LevelTransition(Level nextlevel)
+    {
+        activeLevel.vCam.Priority--;
+        nextlevel.vCam.Priority++;
+
+        activeLevel = nextlevel;
     }
 }

@@ -215,7 +215,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!GetComponent<FormChanger>().dashing && collision.GetContact(0).normal.y > -groundNormalThreshold)
         {
-            Debug.Log(collision.GetContact(0).normal.y);
             canControl = true;
             GetComponent<FormChanger>()._canCoyoteDashJump = false;
         }
