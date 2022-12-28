@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Jump")]
     public float jumpHeight;
     private bool _jumpRegistered;
-    private bool _grounded = true;
+    public bool _grounded = true;
     private bool _canJump = true;
     [SerializeField, Range(0, 1)] private float groundNormalThreshold;
     private List<Transform> _grounds;
@@ -48,11 +48,13 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        Initialize();
     }
 
     private void Start()
     {
-        Initialize();
+        //Initialize();
     }
 
     private void Initialize()
@@ -213,8 +215,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.otherCollider.gameObject.CompareTag("Player"))
         {
-
-            Vector2 normal = collision.GetContact(0).normal;
+            Vector2 normal = collision.contacts[0].normal;
             if (normal.y > groundNormalThreshold)
             {
                 _canJump = true;
@@ -225,6 +226,8 @@ public class PlayerMovement : MonoBehaviour
                 _anim.SetBool("isFalling", false);
             }
         }
+
+        CleanGrounds();
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -252,5 +255,7 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
+
+        CleanGrounds();
     }
 }
