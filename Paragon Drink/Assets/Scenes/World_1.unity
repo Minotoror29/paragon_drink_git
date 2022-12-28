@@ -15951,7 +15951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 918617604528628859, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 918617604528628859, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17216,43 +17216,6 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 1523648712187057190, guid: c3f15af470d42ae4f89ae131720f56be, type: 3}
   m_PrefabInstance: {fileID: 1805805036}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1806408542 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 918617604486469588, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
-  m_PrefabInstance: {fileID: 1650290186}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &1806408544
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806408542}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: c4eee49ab94937f459a2df7be7cc70cd, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.375, y: 0.375}
-  serializedVersion: 2
-  m_Radius: 0.14
---- !u!58 &1806408548
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806408542}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: c4eee49ab94937f459a2df7be7cc70cd, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.375, y: 0.375}
-  serializedVersion: 2
-  m_Radius: 0.14
 --- !u!1 &1810526982
 GameObject:
   m_ObjectHideFlags: 0
@@ -80328,7 +80291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104541349}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: -10}
+  m_LocalPosition: {x: 0, y: -2.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1245477288}
