@@ -26,6 +26,6 @@ public class LevelTransition : MonoBehaviour
 
     private void Transition()
     {
-        _levelsManager.LevelTransition(nextLevel, _level);
+        _levelsManager.StartCoroutine(_levelsManager.LevelTransition(nextLevel, _level));
     }
 }

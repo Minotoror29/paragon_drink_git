@@ -13,7 +13,7 @@ public class Level : MonoBehaviour
     public void Initialize(LevelsManager levelsManager)
     {
         _levelsManager = levelsManager;
-        vCam = GetComponentInChildren<CinemachineVirtualCamera>();
+        vCam = GetComponentInChildren<CinemachineVirtualCamera>(true);
 
         transitions = new List<LevelTransition>();
         foreach (LevelTransition transition in GetComponentsInChildren<LevelTransition>())

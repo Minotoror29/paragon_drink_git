@@ -41,14 +41,20 @@ public class LevelsManager : MonoBehaviour
         LevelTransition(startLevel, null);
     }
 
-    public void LevelTransition(Level nextlevel, Level previousLevel)
+    public IEnumerator LevelTransition(Level nextlevel, Level previousLevel)
     {
+        nextlevel.vCam.gameObject.SetActive(true);
         if (previousLevel != null)
         {
-            previousLevel.vCam.Priority--;
+            previousLevel.vCam.gameObject.SetActive(false);
         }
-        nextlevel.vCam.Priority++;
 
         activeLevel = nextlevel;
+
+        StateMachine.Instance.ChangeState(new TransitionState());
+
+        yield return new WaitForSeconds(0.5f);
+
+        StateMachine.Instance.ChangeState(new PlayState());
     }
 }

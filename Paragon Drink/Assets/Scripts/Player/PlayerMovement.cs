@@ -32,9 +32,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float coyoteJumpTime;
     private float _cjTimer = 0;
 
-    private Animator _anim;
+    [SerializeField] private Animator _anim;
 
     private PlayerControls _playerControls;
+
+    public PlayerStateMachine playerStateMachine;
 
     private void Awake()
     {
@@ -61,13 +63,26 @@ public class PlayerMovement : MonoBehaviour
 
         canControl = true;
 
-        _anim = GetComponent<Animator>();
+        //_anim = GetComponent<Animator>();
 
         _grounds = new List<Transform>();
         _startGravity = rb.gravityScale;
     }
 
-    private void Update()
+    public void StopMovement()
+    {
+        rb.velocity = Vector2.zero;
+        rb.gravityScale = 0f;
+        _anim.enabled = false;
+    }
+
+    public void StartMovement()
+    {
+        rb.gravityScale = _startGravity;
+        _anim.enabled = true;
+    }
+
+    public void UpdateLogic()
     {
         if (canControl)
         {
@@ -128,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
         _jumpRegistered = true;
     }
 
-    private void FixedUpdate()
+    public void UpdatePhysics()
     {
         if (canControl)
         {
