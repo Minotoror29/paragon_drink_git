@@ -302,10 +302,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 918617604253486593, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 918617604528628736, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
       propertyPath: dashingTime
       value: 0.15
