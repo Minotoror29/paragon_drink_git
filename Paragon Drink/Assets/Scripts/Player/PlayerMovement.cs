@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
 
         Initialize();
