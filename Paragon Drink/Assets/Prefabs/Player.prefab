@@ -299,7 +299,7 @@ MonoBehaviour:
   lowJumpMultiplier: 10
   fallMultiplier: 2.5
   canFallJump: 0
-  dashJumpDistance: 10
+  dashJumpDistance: 13
   coyoteJumpTime: 0.1
   _anim: {fileID: 208028476}
   formChanger: {fileID: 918617604528628736}
@@ -324,8 +324,8 @@ MonoBehaviour:
   bubblePrefab: {fileID: 1013165450441381059, guid: 34d7ed78022d27d448dd66be9b65729c, type: 3}
   shootPoint: {fileID: 918617604253486593}
   dashing: 0
-  dashingSpeed: 25
-  dashingDistance: 0
+  dashingSpeed: 0.15
+  dashingDistance: 5
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
