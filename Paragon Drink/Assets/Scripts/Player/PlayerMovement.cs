@@ -66,8 +66,6 @@ public class PlayerMovement : MonoBehaviour
 
         canControl = true;
 
-        //_anim = GetComponent<Animator>();
-
         _grounds = new List<Transform>();
         _startGravity = rb.gravityScale;
     }
@@ -185,8 +183,7 @@ public class PlayerMovement : MonoBehaviour
                 }
             } else if (formChanger.dashing || formChanger._canCoyoteDashJump)
             {
-                formChanger.dashing = false;
-                formChanger._canCoyoteDashJump = false;
+                formChanger.StopDashing();
                 canControl = false;
                 rb.gravityScale = _startGravity;
 
@@ -225,9 +222,12 @@ public class PlayerMovement : MonoBehaviour
             formChanger._canCoyoteDashJump = false;
         }
 
-        if (formChanger.dashing && collision.GetContact(0).normal.y < groundNormalThreshold && collision.gameObject.CompareTag("Breakable Platform"))
+        if (!collision.gameObject.CompareTag("Breakable Platform"))
         {
-            formChanger.StopDashing();
+            if (formChanger.dashing && collision.GetContact(0).normal.y < groundNormalThreshold)
+            {
+                formChanger.StopDashing();
+            }
         }
 
         CleanGrounds();
