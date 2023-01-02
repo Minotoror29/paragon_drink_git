@@ -2,37 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlState : State
+public class ControlState : PlayerState
 {
-    private PlayerMovement _playerMovement;
-
     public override void Enter(State previousState)
     {
         base.Enter(previousState);
 
-        _playerMovement = PlayerMovement.Instance;
+        playerMovement = PlayerMovement.Instance;
 
-        _playerMovement.StartMovement();
+        playerMovement.StartMovement();
+        playerMovement.StartAnimation();
     }
 
     public override void UpdateLogic()
     {
         base.UpdateLogic();
 
-        _playerMovement.UpdateLogic();
+        playerMovement.UpdateLogic();
     }
 
     public override void UpdatePhysics()
     {
         base.UpdatePhysics();
 
-        _playerMovement.UpdatePhysics();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-
-        _playerMovement.StopMovement();
+        playerMovement.UpdatePhysics();
     }
 }

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerStateMachine : MonoBehaviour
 {
-    public State _currentState;
+    public PlayerState _currentState;
 
-    public void ChangeState(State newState)
+    public void ChangeState(PlayerState newState)
     {
         _currentState?.Exit();
-        State previousState = _currentState;
+        PlayerState previousState = _currentState;
         _currentState = newState;
         _currentState.Enter(previousState);
     }

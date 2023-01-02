@@ -328,6 +328,7 @@ MonoBehaviour:
   _canCoyoteDashJump: 0
   coyoteDashJumpTime: 0.5
   _coyoteDashJumpTimer: 0
+  animator: {fileID: 208028476}
 --- !u!95 &208028476
 Animator:
   serializedVersion: 3

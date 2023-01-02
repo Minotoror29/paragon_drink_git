@@ -33,6 +33,8 @@ public class FormChanger : MonoBehaviour
 
     private PlayerControls _playerControls;
 
+    [SerializeField] private Animator animator;
+
     private void Start()
     {
         Initialize();
@@ -113,17 +115,36 @@ public class FormChanger : MonoBehaviour
 
         if (this.form == Form.Hydrated)
         {
-            transform.localScale *= 2;
-            controller.jumpHeight = hydratedJumpHeight;
-            controller.speed = hydratedSpeed;
-            controller.canFallJump = false;
+            StartCoroutine(Absorbing());
         } else
         {
-            transform.localScale /= 2;
+            animator.SetBool("Hydrated", false);
+
+            //transform.localScale /= 2;
             controller.jumpHeight = dehydratedJumpHeight;
             controller.speed = dehydratedSpeed;
             controller.canFallJump = true;
         }
+    }
+
+    private IEnumerator Absorbing()
+    {
+        animator.SetTrigger("Absorb");
+        animator.SetBool("Hydrated", true);
+        animator.SetBool("Absorbing", true);
+
+        controller.playerStateMachine.ChangeState(new AbsorbtionState());
+
+        yield return new WaitForSeconds(0.5f);
+
+        controller.playerStateMachine.ChangeState(new ControlState());
+
+        animator.SetBool("Absorbing", false);
+
+        //transform.localScale *= 2;
+        controller.jumpHeight = hydratedJumpHeight;
+        controller.speed = hydratedSpeed;
+        controller.canFallJump = false;
     }
 
     private void ShootBubble()
@@ -132,6 +153,8 @@ public class FormChanger : MonoBehaviour
     }
     private void Dash()
     {
+        animator.SetTrigger("Dash");
+
         controller.canControl = false;
         controller.rb.gravityScale = 0;
 

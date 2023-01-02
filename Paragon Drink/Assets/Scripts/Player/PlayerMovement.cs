@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _playerControls = new PlayerControls();
         _playerControls.Movement.Enable();
-        _playerControls.Movement.Jump.performed += ctx => Jump();
+        //_playerControls.Movement.Jump.performed += ctx => Jump();
 
         canControl = true;
 
@@ -75,12 +75,20 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity = Vector2.zero;
         rb.gravityScale = 0f;
+    }
+
+    public void StopAnimation()
+    {
         _anim.enabled = false;
     }
 
     public void StartMovement()
     {
         rb.gravityScale = _startGravity;
+    }
+
+    public void StartAnimation()
+    {
         _anim.enabled = true;
     }
 
@@ -109,7 +117,12 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 _anim.SetBool("isRunning", true);
-            }   
+            }
+        }
+
+        if (_playerControls.Movement.Jump.ReadValue<float>() > 0)
+        {
+            Jump();
         }
 
         if (!_grounded)

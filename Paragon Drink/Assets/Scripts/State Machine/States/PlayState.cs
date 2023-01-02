@@ -16,11 +16,4 @@ public class PlayState : State
 
         _playerStateMachine.ChangeState(new ControlState());
     }
-
-    public override void Exit()
-    {
-        base.Exit();
-
-        _playerStateMachine.ChangeState(new StillState());
-    }
 }
