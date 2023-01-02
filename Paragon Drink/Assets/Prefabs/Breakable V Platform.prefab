@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6011431058220178655}
   m_Layer: 0
   m_Name: Breakable V Platform
-  m_TagString: Untagged
+  m_TagString: Breakable Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
