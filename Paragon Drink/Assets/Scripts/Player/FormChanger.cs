@@ -23,9 +23,10 @@ public class FormChanger : MonoBehaviour
 
     [HideInInspector] public bool dashing = false;
     [SerializeField] private float dashingSpeed;
-    [SerializeField] private float dashingTime;
-    private float _dashTimer;
+    [SerializeField] private float dashingDistance;
+    private Vector2 dashTarget;
     private float _originalGravityScale;
+    [SerializeField] private LayerMask groundLayer;
 
     [HideInInspector] public bool _canCoyoteDashJump = false;
     [SerializeField] private float coyoteDashJumpTime;
@@ -58,16 +59,13 @@ public class FormChanger : MonoBehaviour
     {
         if (dashing)
         {
-            if (_dashTimer > 0)
+            if ((Vector2)transform.position != dashTarget)
             {
-                _dashTimer -= Time.deltaTime;
-                
+                transform.position = Vector2.MoveTowards(transform.position, dashTarget, dashingSpeed);
+                controller.rb.velocity = Vector2.zero;
             } else
             {
-                dashing = false;
-                controller.rb.gravityScale = _originalGravityScale;
-                _canCoyoteDashJump = true;
-                _coyoteDashJumpTimer = coyoteDashJumpTime;
+                StopDashing();
             }
         }
 
@@ -100,13 +98,7 @@ public class FormChanger : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (dashing)
-        {
-            if (_dashTimer > 0)
-            {
-                controller.rb.velocity = -transform.right * dashingSpeed;
-            }
-        }
+        
     }
 
     private void ChangeForm(Form form)
@@ -120,7 +112,6 @@ public class FormChanger : MonoBehaviour
         {
             animator.SetBool("Hydrated", false);
 
-            //transform.localScale /= 2;
             controller.jumpHeight = dehydratedJumpHeight;
             controller.speed = dehydratedSpeed;
             controller.canFallJump = true;
@@ -141,7 +132,6 @@ public class FormChanger : MonoBehaviour
 
         animator.SetBool("Absorbing", false);
 
-        //transform.localScale *= 2;
         controller.jumpHeight = hydratedJumpHeight;
         controller.speed = hydratedSpeed;
         controller.canFallJump = false;
@@ -153,13 +143,35 @@ public class FormChanger : MonoBehaviour
     }
     private void Dash()
     {
-        animator.SetTrigger("Dash");
+        animator.SetBool("Dashing", true);
 
         controller.canControl = false;
         controller.rb.gravityScale = 0;
 
         dashing = true;
-        _dashTimer = dashingTime;
+
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position,
+            new Vector2(-Mathf.Sign(transform.rotation.y), 0),
+            dashingDistance,
+            groundLayer);
+
+        if (hit.collider != null)
+        {
+            dashTarget = new Vector2(hit.point.x - ((transform.localScale.x / 4) * -Mathf.Sign(transform.rotation.y)), hit.point.y);
+        } else
+        {
+            dashTarget = new Vector2(transform.position.x - dashingDistance * Mathf.Sign(transform.rotation.y), transform.position.y);
+        }
+    }
+
+    public void StopDashing()
+    {
+        dashing = false;
+        controller.rb.gravityScale = _originalGravityScale;
+        _canCoyoteDashJump = true;
+        _coyoteDashJumpTimer = coyoteDashJumpTime;
+
+        animator.SetBool("Dashing", false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

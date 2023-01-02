@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     private float _cjTimer = 0;
 
     [SerializeField] private Animator _anim;
+    [SerializeField] private FormChanger formChanger;
 
     private PlayerControls _playerControls;
 
@@ -168,11 +169,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (_jumpRegistered)
         {
-            if (!GetComponent<FormChanger>().dashing && !GetComponent<FormChanger>()._canCoyoteDashJump)
+            if (!formChanger.dashing && !formChanger._canCoyoteDashJump)
             {
                 if (_grounded || canFallJump || _canCoyoteJump)
                 {
-                    GetComponent<FormChanger>().dashing = false;
+                    formChanger.dashing = false;
                     canControl = true;
                     rb.gravityScale = _startGravity;
 
@@ -182,10 +183,10 @@ public class PlayerMovement : MonoBehaviour
                     _anim.SetTrigger("Jump");
                     _anim.SetBool("isFalling", false);
                 }
-            } else if (GetComponent<FormChanger>().dashing || GetComponent<FormChanger>()._canCoyoteDashJump)
+            } else if (formChanger.dashing || formChanger._canCoyoteDashJump)
             {
-                GetComponent<FormChanger>().dashing = false;
-                GetComponent<FormChanger>()._canCoyoteDashJump = false;
+                formChanger.dashing = false;
+                formChanger._canCoyoteDashJump = false;
                 canControl = false;
                 rb.gravityScale = _startGravity;
 
@@ -218,10 +219,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!GetComponent<FormChanger>().dashing && collision.GetContact(0).normal.y > -groundNormalThreshold)
+        if (!formChanger.dashing && collision.GetContact(0).normal.y > -groundNormalThreshold)
         {
             canControl = true;
-            GetComponent<FormChanger>()._canCoyoteDashJump = false;
+            formChanger._canCoyoteDashJump = false;
+        }
+
+        if (formChanger.dashing && collision.GetContact(0).normal.y < groundNormalThreshold && collision.gameObject.CompareTag("Breakable Platform"))
+        {
+            formChanger.StopDashing();
         }
 
         CleanGrounds();
