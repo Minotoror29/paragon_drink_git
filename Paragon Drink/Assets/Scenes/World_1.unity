@@ -6355,7 +6355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1523648712187057190, guid: c3f15af470d42ae4f89ae131720f56be, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: -23
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 1523648712187057190, guid: c3f15af470d42ae4f89ae131720f56be, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
@@ -6363,7 +6363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1523648712187057190, guid: c3f15af470d42ae4f89ae131720f56be, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: -23
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 1523648712187057190, guid: c3f15af470d42ae4f89ae131720f56be, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
@@ -11721,7 +11721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1523648712187057190, guid: c3f15af470d42ae4f89ae131720f56be, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: 9.75
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1523648712187057190, guid: c3f15af470d42ae4f89ae131720f56be, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
@@ -11745,7 +11745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1523648712187057190, guid: c3f15af470d42ae4f89ae131720f56be, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: 9.75
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1523648712187057190, guid: c3f15af470d42ae4f89ae131720f56be, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
@@ -15937,6 +15937,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 918617604486469590, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 918617604486469591, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 918617604528628858, guid: 5efab0ac8959d5244a87bad138626ade, type: 3}
       propertyPath: m_Name
       value: Player
