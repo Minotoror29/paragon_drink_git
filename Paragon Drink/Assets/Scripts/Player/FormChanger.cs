@@ -57,18 +57,7 @@ public class FormChanger : MonoBehaviour
 
     private void Update()
     {
-        if (dashing)
-        {
-            if ((Vector2)transform.position != dashTarget)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, dashTarget, dashingSpeed);
-                controller.rb.velocity = Vector2.zero;
-            } else
-            {
-                StopDashing();
-                controller.rb.velocity = -transform.right * 10;
-            }
-        }
+        
 
         if (_canCoyoteDashJump)
         {
@@ -99,7 +88,19 @@ public class FormChanger : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        if (dashing)
+        {
+            if ((Vector2)transform.position != dashTarget)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, dashTarget, dashingSpeed);
+                controller.rb.velocity = Vector2.zero;
+            }
+            else
+            {
+                StopDashing();
+                controller.rb.velocity = -transform.right * 10;
+            }
+        }
     }
 
     private void ChangeForm(Form form)
