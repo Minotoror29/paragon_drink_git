@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public bool _grounded = true;
     private bool _canJump = true;
     [SerializeField, Range(0, 1)] private float groundNormalThreshold;
-    private List<Transform> _grounds;
+    public List<Transform> _grounds;
     [SerializeField] private float lowJumpMultiplier;
     [SerializeField] private float fallMultiplier;
     [HideInInspector] public bool canFallJump;
@@ -225,6 +225,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
         if (!formChanger.dashing && collision.GetContact(0).normal.y > -groundNormalThreshold)
         {
             canControl = true;
@@ -243,15 +248,30 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.otherCollider.gameObject.CompareTag("Player"))
         {
-            Vector2 normal = collision.contacts[0].normal;
-            if (normal.y > groundNormalThreshold)
+            int g = 0;
+
+            for (int i = 0; i < collision.contactCount; i++)
             {
-                _canJump = true;
-                _canCoyoteJump = true;
-                _grounded = true;
-                _anim.SetBool("isGrounded", true);
-                _grounds.Add(collision.transform);
-                _anim.SetBool("isFalling", false);
+                Vector2 normal = collision.contacts[i].normal;
+                if (normal.y > groundNormalThreshold)
+                {
+                    g++;
+                    _canJump = true;
+                    _canCoyoteJump = true;
+                    _grounded = true;
+                    _anim.SetBool("isGrounded", true);
+                    if (!_grounds.Contains(collision.transform))
+                    {
+                        _grounds.Add(collision.transform);
+                    }
+                    _anim.SetBool("isFalling", false);
+                }
+            }
+
+            if (g <= 0)
+            {
+                _grounded = false;
+                _anim.SetBool("isGrounded", false);
             }
         }
 

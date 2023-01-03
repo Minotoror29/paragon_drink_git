@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3964159973690762210}
   - component: {fileID: 3964159973690762212}
   - component: {fileID: 1248516344036367035}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Breakable H Platform (Permanent)
   m_TagString: Breakable Platform
   m_Icon: {fileID: 0}
