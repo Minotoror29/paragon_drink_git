@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Jump")]
     public float jumpHeight;
     private bool _jumpRegistered;
+    private bool _jumpInput;
     public bool _grounded = true;
     private bool _canJump = true;
     [SerializeField, Range(0, 1)] private float groundNormalThreshold;
@@ -122,6 +123,12 @@ public class PlayerMovement : MonoBehaviour
         if (_playerControls.Movement.Jump.ReadValue<float>() > 0)
         {
             Jump();
+        } else
+        {
+            if (_grounded)
+            {
+                _jumpInput = false;
+            }
         }
 
         if (!_grounded)
@@ -152,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        if (!_canJump) { return; }
+        if (!_canJump || _jumpInput) { return; }
 
         _jumpRegistered = true;
     }
@@ -176,6 +183,7 @@ public class PlayerMovement : MonoBehaviour
                     rb.gravityScale = _startGravity;
 
                     _jumpRegistered = false;
+                    _jumpInput = true;
                     _direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
                     _canJump = false;
                     _anim.SetTrigger("Jump");
@@ -188,6 +196,7 @@ public class PlayerMovement : MonoBehaviour
                 rb.gravityScale = _startGravity;
 
                 _jumpRegistered = false;
+                _jumpInput = true;
                 _direction.y = Mathf.Sqrt(-2f * Physics2D.gravity.y * rb.gravityScale * (jumpHeight + 0.25f));
                 _direction.x = -transform.right.x * dashJumpDistance;
                 rb.velocity = _direction;

@@ -66,6 +66,7 @@ public class FormChanger : MonoBehaviour
             } else
             {
                 StopDashing();
+                controller.rb.velocity = -transform.right * 10;
             }
         }
 
