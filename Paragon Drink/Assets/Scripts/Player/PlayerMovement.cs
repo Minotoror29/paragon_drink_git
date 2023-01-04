@@ -212,20 +212,23 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void CleanGrounds(Collision2D collision)
+    private void CleanGroundsStay(Collision2D collision)
     {
         for (int i = 0; i < _grounds.Count; i++)
         {
-            if (_grounds[i] == null || _grounds[i] != collision.transform)
+            if (_grounds[i] == null)
             {
                 _grounds.Remove(_grounds[i]);
             }
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void CleanGroundsExit(Collision2D collision)
     {
-        
+        for (int i = 0; i < _grounds.Count; i++)
+        {
+            _grounds.Remove(_grounds[i]);
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -244,7 +247,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        CleanGrounds(collision);
+        CleanGroundsStay(collision);
 
         if (collision.otherCollider.gameObject.CompareTag("Player"))
         {
@@ -275,22 +278,25 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        CleanGrounds(collision);
+        CleanGroundsStay(collision);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        CleanGrounds(collision);
+        //CleanGroundsExit(collision);
 
         if (collision.otherCollider.gameObject.CompareTag("Player"))
         {
             if (_grounds.Contains(collision.transform))
             {
+                
                 if (_grounds[0].gameObject.CompareTag("Breakable Platform"))
                 {
                     _canCoyoteJump = false;
                 }
                 _grounds.Remove(collision.transform);
+
+                CleanGroundsExit(collision);
 
                 if (_grounds.Count == 0)
                 {
@@ -302,8 +308,6 @@ public class PlayerMovement : MonoBehaviour
                     _anim.SetBool("isGrounded", false);
                 }
             }
-        }
-
-        CleanGrounds(collision);
+        }        
     }
 }
