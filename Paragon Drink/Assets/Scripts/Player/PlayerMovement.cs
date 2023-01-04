@@ -212,11 +212,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void CleanGrounds()
+    private void CleanGrounds(Collision2D collision)
     {
         for (int i = 0; i < _grounds.Count; i++)
         {
-            if (_grounds[i] == null)
+            if (_grounds[i] == null || _grounds[i] != collision.transform)
             {
                 _grounds.Remove(_grounds[i]);
             }
@@ -244,7 +244,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        CleanGrounds();
+        CleanGrounds(collision);
 
         if (collision.otherCollider.gameObject.CompareTag("Player"))
         {
@@ -275,12 +275,12 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        CleanGrounds();
+        CleanGrounds(collision);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        CleanGrounds();
+        CleanGrounds(collision);
 
         if (collision.otherCollider.gameObject.CompareTag("Player"))
         {
@@ -304,6 +304,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        CleanGrounds();
+        CleanGrounds(collision);
     }
 }
