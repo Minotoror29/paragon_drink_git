@@ -135,12 +135,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (rb.velocity.y < 0f)
             {
-                rb.velocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
+                rb.velocity += fallMultiplier * Physics2D.gravity.y * Time.deltaTime * Vector2.up;
                 _anim.SetBool("isFalling", true);
             }
             else if (_playerControls.Movement.Jump.ReadValue<float>() < 1)
             {
-                rb.velocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
+                rb.velocity += lowJumpMultiplier * Physics2D.gravity.y * Time.deltaTime * Vector2.up;
             }
 
             if (_canCoyoteJump)
@@ -273,6 +273,10 @@ public class PlayerMovement : MonoBehaviour
 
             if (g <= 0)
             {
+                for (int i = 0; i < _grounds.Count; i++)
+                {
+                    _grounds.Remove(_grounds[i]);
+                }
                 _grounded = false;
                 _anim.SetBool("isGrounded", false);
             }

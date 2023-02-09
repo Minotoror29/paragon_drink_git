@@ -32,6 +32,8 @@ public class FormChanger : MonoBehaviour
     [SerializeField] private float coyoteDashJumpTime;
     [HideInInspector] public float _coyoteDashJumpTimer;
 
+    private bool _absorbing;
+
     private PlayerControls _playerControls;
 
     [SerializeField] private Animator animator;
@@ -57,7 +59,19 @@ public class FormChanger : MonoBehaviour
 
     private void Update()
     {
-        
+        if (dashing)
+        {
+            if ((Vector2)transform.position != dashTarget)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, dashTarget, dashingSpeed * Time.deltaTime);
+                controller.rb.velocity = Vector2.zero;
+            }
+            else
+            {
+                StopDashing();
+                controller.rb.velocity = -transform.right * 10;
+            }
+        }
 
         if (_canCoyoteDashJump)
         {
@@ -74,6 +88,11 @@ public class FormChanger : MonoBehaviour
 
     private void Action()
     {
+        if (_absorbing)
+        {
+            return;
+        }
+
         if (inWater && form == Form.Dehydrated)
         {
             ChangeForm(Form.Hydrated);
@@ -88,19 +107,7 @@ public class FormChanger : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (dashing)
-        {
-            if ((Vector2)transform.position != dashTarget)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, dashTarget, dashingSpeed);
-                controller.rb.velocity = Vector2.zero;
-            }
-            else
-            {
-                StopDashing();
-                controller.rb.velocity = -transform.right * 10;
-            }
-        }
+        
     }
 
     private void ChangeForm(Form form)
@@ -122,6 +129,8 @@ public class FormChanger : MonoBehaviour
 
     private IEnumerator Absorbing()
     {
+        _absorbing = true;
+
         animator.SetTrigger("Absorb");
         animator.SetBool("Hydrated", true);
         animator.SetBool("Absorbing", true);
@@ -137,6 +146,8 @@ public class FormChanger : MonoBehaviour
         controller.jumpHeight = hydratedJumpHeight;
         controller.speed = hydratedSpeed;
         controller.canFallJump = false;
+
+        _absorbing = false;
     }
 
     private void ShootBubble()
