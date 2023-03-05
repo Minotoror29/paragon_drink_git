@@ -5,15 +5,27 @@ using UnityEngine;
 public class PlayState : State
 {
     private PlayerMovement _playerMovement;
-    private PlayerStateMachine _playerStateMachine;
+    private PlayerController _playerController;
 
-    public override void Enter(State previousState)
+    public override void Enter(State previousState, State superState)
     {
-        base.Enter(previousState);
+        base.Enter(previousState, superState);
 
         _playerMovement = PlayerMovement.Instance;
-        _playerStateMachine = _playerMovement.playerStateMachine;
+        _playerController = _stateMachine.playerController;
+    }
 
-        _playerStateMachine.ChangeState(new ControlState());
+    public override void UpdateLogic()
+    {
+        base.UpdateLogic();
+
+        _playerController.UpdateLogic();
+    }
+
+    public override void UpdatePhysics()
+    {
+        base.UpdatePhysics();
+
+        _playerController.UpdatePhysics();
     }
 }

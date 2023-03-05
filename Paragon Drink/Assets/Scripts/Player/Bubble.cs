@@ -4,22 +4,48 @@ using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    private Rigidbody2D _rb;
+    private Animator _animator;
 
+    private Vector2 _direction;
     [SerializeField] private float speed;
+    private bool _moving = true;
 
-    private void Start()
+    public void Initialize()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        if (_moving)
+        {
+            _direction = Vector2.right * speed;
+        } else
+        {
+            _direction = Vector2.zero;
+        }
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = transform.right * speed;
+        _rb.velocity = transform.right * _direction;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    _moving = false;
+    //    //_rb.velocity = Vector2.zero;
+    //    _animator.CrossFade("Splash", 0f);
+    //    Destroy(gameObject, 0.545f);
+    //}
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        _moving = false;
+        //_rb.velocity = Vector2.zero;
+        _animator.CrossFade("Splash", 0f);
+        Destroy(gameObject, 0.545f);
     }
 }

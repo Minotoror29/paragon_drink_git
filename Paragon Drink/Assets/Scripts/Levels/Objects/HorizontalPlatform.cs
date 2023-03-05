@@ -12,13 +12,10 @@ public class HorizontalPlatform : BreakablePlatform
         {
             if (collision.gameObject.CompareTag("Feet"))
             {
-                if (collision.transform.parent.GetComponent<FormChanger>().form == Form.Hydrated)
+                feet++;
+                if (feet == 2)
                 {
-                    feet++;
-                    if (feet == 2)
-                    {
-                        Break();
-                    }
+                    Break();
                 }
             }
         }
@@ -30,10 +27,7 @@ public class HorizontalPlatform : BreakablePlatform
         {
             if (collision.gameObject.CompareTag("Feet"))
             {
-                if (collision.transform.parent.GetComponent<FormChanger>().form == Form.Hydrated)
-                {
-                    feet--;
-                }
+                feet--;
             }
         }
     }

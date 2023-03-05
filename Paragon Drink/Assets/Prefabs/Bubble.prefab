@@ -68,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1330621299
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b96f681fa8561714d8744a62d43d5b97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -91,10 +91,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1013165450441381057}
-  - component: {fileID: 1013165450441381056}
   - component: {fileID: 1013165450441381070}
   - component: {fileID: 5410804724924150860}
   - component: {fileID: 3690027178394175821}
+  - component: {fileID: 4530703109005685964}
   m_Layer: 9
   m_Name: Bubble
   m_TagString: Untagged
@@ -117,22 +117,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1013165450441381056
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013165450441381059}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &1013165450441381070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +150,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!95 &3690027178394175821
 Animator:
   serializedVersion: 3
@@ -186,3 +170,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &4530703109005685964
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013165450441381059}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.05}
+  m_Size: {x: 1.5, y: 0.6}
+  m_Direction: 1

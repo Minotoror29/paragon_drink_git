@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class VerticalPlatform : BreakablePlatform
 {
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.GetComponent<FormChanger>().dashing)
-        {
-            Break();
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.GetComponent<FormChanger>().dashing)
+    //    {
+    //        Break();
+    //    }
+    //}
 }

@@ -9,6 +9,8 @@ public class StateMachine : MonoBehaviour
 
     public State _currentState;
 
+    public PlayerController playerController;
+
     private void Awake()
     {
         if (instance == null)
@@ -21,8 +23,10 @@ public class StateMachine : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void Initialize()
     {
+        playerController.Initialize();
+
         ChangeState(new PlayState());
     }
 
@@ -31,15 +35,15 @@ public class StateMachine : MonoBehaviour
         _currentState?.Exit();
         State previousState = _currentState;
         _currentState = newState;
-        _currentState.Enter(previousState);
+        _currentState.Enter(previousState, null);
     }
 
-    private void Update()
+    public void UpdateLogic()
     {
         _currentState.UpdateLogic();
     }
 
-    private void FixedUpdate()
+    public void UpdatePhysics()
     {
         _currentState.UpdatePhysics();
     }

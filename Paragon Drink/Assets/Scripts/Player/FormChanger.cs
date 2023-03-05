@@ -24,6 +24,7 @@ public class FormChanger : MonoBehaviour
     public bool dashing = false;
     [SerializeField] private float dashingSpeed;
     [SerializeField] private float dashingDistance;
+    [SerializeField] private float dashingTime;
     private Vector2 dashTarget;
     private float _originalGravityScale;
     [SerializeField] private LayerMask groundLayer;
@@ -135,11 +136,11 @@ public class FormChanger : MonoBehaviour
         animator.SetBool("Hydrated", true);
         animator.SetBool("Absorbing", true);
 
-        controller.playerStateMachine.ChangeState(new AbsorbtionState());
+        //controller.playerStateMachine.ChangeState(new AbsorbtionState());
 
         yield return new WaitForSeconds(0.5f);
 
-        controller.playerStateMachine.ChangeState(new ControlState());
+        //controller.playerStateMachine.ChangeState(new ControlState());
 
         animator.SetBool("Absorbing", false);
 
