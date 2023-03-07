@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public Transform currentGround;
     public LayerMask groundLayer;
     public bool requireNewJumpPress = false;
+    public bool canJump;
 
     public bool inWater;
 
@@ -67,6 +68,11 @@ public class PlayerController : MonoBehaviour
         rb.velocity = Vector2.zero;
     }
 
+    public void Grounded()
+    {
+        _direction.y = 0f;
+    }
+
     public void Move(Vector2 direction, float movementSpeed)
     {
         _direction.x = direction.x * movementSpeed;
@@ -92,6 +98,10 @@ public class PlayerController : MonoBehaviour
     public void Fall()
     {
         _direction.y += _gravityForce * gravityMultiplier;
+
+        //Debug.Log(_direction.y);
+
+        //_direction.y = Mathf.Clamp(_direction.y, -18f, 50f);
     }
 
     public void LowFall()

@@ -8,6 +8,13 @@ public abstract class GroundedState : PlayerState
     {
     }
 
+    public override void Enter(State previousState, State superState)
+    {
+        base.Enter(previousState, superState);
+
+        _playerController.Grounded();
+    }
+
     public override void UpdateLogic()
     {
         base.UpdateLogic();

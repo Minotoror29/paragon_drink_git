@@ -22,19 +22,12 @@ public class FallState : AerialState
     {
         base.UpdateLogic();
 
-        if (_canFallJump && _jumpInput)
+        if (_playerController.canJump || _canFallJump)
         {
-            _currentSuperState.ChangeSubState(new JumpState(_playerStateMachine, _playerController, _animator));
-        }
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-
-        if (_jumpInput)
-        {
-            _playerController.requireNewJumpPress = true;
+            if (_jumpInput && !_playerController.requireNewJumpPress)
+            {
+                _currentSuperState.ChangeSubState(new JumpState(_playerStateMachine, _playerController, _animator));
+            }
         }
     }
 }

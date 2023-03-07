@@ -43,6 +43,7 @@ public abstract class PlayerState : State
 
         GetInputs();
         DetectGround();
+        JumpHeight();
 
         _currentSubState?.UpdateLogic();
     }
@@ -77,10 +78,39 @@ public abstract class PlayerState : State
             if (ray.normal.y > 0.6f)
             {
                 _playerController.currentGround = ray.transform;
+            } else
+            {
+                _playerController.currentGround = null;
             }
         } else
         {
             _playerController.currentGround = null;
+        }
+    }
+
+    private void JumpHeight()
+    {
+        RaycastHit2D ray = Physics2D.BoxCast(
+            (Vector2)_playerController.transform.position + (Vector2.up * (0.9f * (_playerController.transform.localScale.x - 0.075f) / 2)),
+            _playerController.transform.localScale * 0.9f,
+            0f,
+            Vector2.down,
+            0.25f,
+            _playerController.groundLayer);
+
+        if (ray)
+        {
+            if (ray.normal.y > 0.6f)
+            {
+                _playerController.canJump = true;
+            } else
+            {
+                _playerController.canJump = false;
+            }
+        }
+        else
+        {
+            _playerController.canJump = false;
         }
     }
 
@@ -99,6 +129,8 @@ public abstract class PlayerState : State
     public override void Exit()
     {
         base.Exit();
+
+        GetInputs();
 
         if (_jumpInput)
         {

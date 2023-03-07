@@ -34,7 +34,10 @@ public abstract class AerialState : PlayerState
 
         if (_playerController.currentGround != null && _canDetectGround)
         {
-            _currentSuperState.ChangeSubState(new LandState(_playerStateMachine, _playerController, _animator));
+            if (_playerController.rb.velocity.y <= 0f || !_playerController.currentGround.gameObject.CompareTag("Breakable Platform"))
+            {
+                _currentSuperState.ChangeSubState(new LandState(_playerStateMachine, _playerController, _animator));
+            }
         }
     }
 
