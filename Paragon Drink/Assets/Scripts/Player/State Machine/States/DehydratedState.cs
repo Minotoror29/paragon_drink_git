@@ -33,7 +33,7 @@ public class DehydratedState : PlayerState
     {
         base.Action();
 
-        if (_playerController.inWater)
+        if (_playerController.inWater && _playerController.currentGround != null)
         {
             _playerStateMachine.ChangeState(new AbsorptionState(_playerStateMachine, _playerController, _animator));
         }

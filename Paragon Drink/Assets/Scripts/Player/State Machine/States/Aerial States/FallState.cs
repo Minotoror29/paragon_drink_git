@@ -22,7 +22,7 @@ public class FallState : AerialState
     {
         base.UpdateLogic();
 
-        if (_playerController.canJump || _canFallJump)
+        if (/*_playerController.canJump || */_canFallJump)
         {
             if (_jumpInput && !_playerController.requireNewJumpPress)
             {

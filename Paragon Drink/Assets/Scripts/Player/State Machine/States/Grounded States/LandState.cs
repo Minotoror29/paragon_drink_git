@@ -6,9 +6,11 @@ using UnityEngine.XR;
 public class LandState : GroundedState
 {
     private float _timer = 0.133f;
+    private bool _canAnticipateJump;
 
-    public LandState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
+    public LandState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator, bool canAnticipateJump) : base(playerStateMachine, playerController, animator)
     {
+        _canAnticipateJump = canAnticipateJump;
     }
 
     public override void Enter(State previousState, State superState)
@@ -16,6 +18,11 @@ public class LandState : GroundedState
         base.Enter(previousState, superState);
 
         _animator.CrossFade(_playerController.land, 0f);
+
+        if (_jumpInput && _canAnticipateJump)
+        {
+            _currentSuperState.ChangeSubState(new JumpState(_playerStateMachine, _playerController, _animator));
+        }
     }
 
     public override void UpdateLogic()

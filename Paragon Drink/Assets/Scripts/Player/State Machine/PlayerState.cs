@@ -35,6 +35,8 @@ public abstract class PlayerState : State
             _movementSpeed = sState._movementSpeed;
             _jumpHeight = sState._jumpHeight;
         }
+
+        GetInputs();
     }
 
     public override void UpdateLogic()

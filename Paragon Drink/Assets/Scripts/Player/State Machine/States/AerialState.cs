@@ -7,6 +7,9 @@ public abstract class AerialState : PlayerState
     private bool _canDetectGround;
     private float _securityTimer = 0.1f;
 
+    private float _anticipatedJumpTimer = 0.1f;
+    private bool _canAnticipateJump = true;
+
     public AerialState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
     {
 
@@ -32,11 +35,20 @@ public abstract class AerialState : PlayerState
             _canDetectGround = true;
         }
 
+        if (_anticipatedJumpTimer > 0 && _jumpInput)
+        {
+            _anticipatedJumpTimer -= Time.deltaTime;
+            _canAnticipateJump = true;
+        } else
+        {
+            _canAnticipateJump = false;
+        }
+
         if (_playerController.currentGround != null && _canDetectGround)
         {
             if (_playerController.rb.velocity.y <= 0f || !_playerController.currentGround.gameObject.CompareTag("Breakable Platform"))
             {
-                _currentSuperState.ChangeSubState(new LandState(_playerStateMachine, _playerController, _animator));
+                _currentSuperState.ChangeSubState(new LandState(_playerStateMachine, _playerController, _animator, _canAnticipateJump));
             }
         }
     }
