@@ -5,25 +5,30 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
+    private GameManager _gameManager;
     private LevelsManager _levelsManager;
     [HideInInspector] public CinemachineVirtualCamera vCam;
 
-    private List<LevelTransition> transitions = new List<LevelTransition>();
+    private LevelTransition[] _transitions;
 
-    public void Initialize(LevelsManager levelsManager)
+    private Collectible[] _collectibles;
+
+    public void Initialize(GameManager gameManager, LevelsManager levelsManager)
     {
+        _gameManager = gameManager;
         _levelsManager = levelsManager;
         vCam = GetComponentInChildren<CinemachineVirtualCamera>(true);
 
-        transitions = new List<LevelTransition>();
-        foreach (LevelTransition transition in GetComponentsInChildren<LevelTransition>())
-        {
-            transitions.Add(transition);
-        }
-
-        foreach (LevelTransition transition in transitions)
+        _transitions = GetComponentsInChildren<LevelTransition>();
+        foreach (LevelTransition transition in _transitions)
         {
             transition.Initialize(_levelsManager, this);
+        }
+
+        _collectibles = GetComponentsInChildren<Collectible>();
+        foreach (Collectible collectible in _collectibles)
+        {
+            collectible.Initialize(_gameManager);
         }
     }
 }

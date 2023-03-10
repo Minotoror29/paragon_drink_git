@@ -8,6 +8,8 @@ public class LevelsManager : MonoBehaviour
     private static LevelsManager m_instance;
     public static LevelsManager Instance => m_instance;
 
+    private GameManager _gameManager;
+
     [SerializeField] private List<Level> levels;
     [HideInInspector] public Level activeLevel;
     [SerializeField] private Level startLevel;
@@ -24,16 +26,13 @@ public class LevelsManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void Initialize(GameManager gameManager)
     {
-        Initialize();
-    }
+        _gameManager = gameManager;
 
-    private void Initialize()
-    {
         foreach (Level level in levels)
         {
-            level.Initialize(this);
+            level.Initialize(_gameManager, this);
         }
 
         activeLevel = startLevel;
