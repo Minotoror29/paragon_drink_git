@@ -5,7 +5,7 @@ using UnityEngine;
 public class BreakablePlatform : MonoBehaviour
 {
     public SpriteRenderer sprite;
-    [SerializeField] private BoxCollider2D coll;
+    [SerializeField] private Collider2D coll;
 
     [HideInInspector] public bool broken = false;
     public bool canRespawn;

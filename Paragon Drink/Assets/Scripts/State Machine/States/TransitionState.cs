@@ -16,6 +16,8 @@ public class TransitionState : State
 
         _playerController.Idle();
 
+        _playerController.animator.enabled = false;
+
         //_playerStateMachine.ChangeState(new StillState());
     }
 }

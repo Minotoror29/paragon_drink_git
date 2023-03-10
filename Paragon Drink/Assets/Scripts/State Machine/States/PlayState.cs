@@ -13,6 +13,8 @@ public class PlayState : State
 
         _playerMovement = PlayerMovement.Instance;
         _playerController = _stateMachine.playerController;
+
+        _playerController.animator.enabled = true;
     }
 
     public override void UpdateLogic()

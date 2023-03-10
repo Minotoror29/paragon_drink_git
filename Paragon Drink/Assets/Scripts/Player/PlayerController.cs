@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerStateMachine playerStateMachine;
-    [SerializeField] private Animator animator;
+    public Animator animator;
     public Rigidbody2D rb;
 
     public PlayerControls _playerControls;
