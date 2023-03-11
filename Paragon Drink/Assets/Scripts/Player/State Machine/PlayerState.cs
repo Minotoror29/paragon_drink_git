@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
+using FMODUnity;
+using FMOD.Studio;
 
 public abstract class PlayerState : State
 {
@@ -16,6 +18,9 @@ public abstract class PlayerState : State
 
     public float _movementSpeed;
     public float _jumpHeight;
+
+    protected EventInstance _soundInstance;
+    protected string _soundPath;
 
     public PlayerState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator)
     {
@@ -37,6 +42,12 @@ public abstract class PlayerState : State
         }
 
         GetInputs();
+
+        if (_soundPath != null)
+        {
+            _soundInstance = RuntimeManager.CreateInstance(_soundPath);
+            _soundInstance.start();
+        }
     }
 
     public override void UpdateLogic()

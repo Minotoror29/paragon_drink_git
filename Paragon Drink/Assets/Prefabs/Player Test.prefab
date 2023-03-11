@@ -405,6 +405,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2112
   requireNewJumpPress: 0
+  canJump: 0
   inWater: 0
   dashSpeed: 25
   dashTime: 0.1

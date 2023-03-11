@@ -20,6 +20,133 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 45312
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000013A11FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA787F3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA787F3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA787F3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA787F3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F039E91108
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='166320__deleted_user_2104797__water_drop_6', format=5, channels=2, frequency=48000, lengthbytes=3872, lengthpcm=32067, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.025543.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 45312
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000013A11FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA787F3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA787F3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA787F3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA787F3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F039E92DE8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='juan_dehydrated_land_3', format=5, channels=2, frequency=48000, lengthbytes=9920, lengthpcm=95065, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.949142.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 45312
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000013A11FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA787F3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA787F3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA787F3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA787F3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F039E92DE8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='juan_dehydrated_land_1', format=5, channels=2, frequency=48000, lengthbytes=9280, lengthpcm=95065, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.941196.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 45312
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000013A11FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA787F3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA787F3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA787F3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA787F3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F039E92DE8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='juan_dehydrated_land_2', format=5, channels=2, frequency=48000, lengthbytes=9024, lengthpcm=95065, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.956040.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 45312
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000013A11FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA787F3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA787F3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA787F3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA787F3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F046EF78C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='juan_dehydrated_footstep_2', format=5, channels=2, frequency=48000, lengthbytes=4512, lengthpcm=64355, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.397509.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 45312
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000013A11FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA787F3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA787F3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA787F3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA787F3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F046EF78C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='juan_dehydrated_footstep_1', format=5, channels=2, frequency=48000, lengthbytes=4864, lengthpcm=64355, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.531902.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 45312
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000013A11FF5C8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA787F3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA787F3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA787F3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA787F3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F046EF78C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='juan_dehydrated_footstep_3', format=5, channels=2, frequency=48000, lengthbytes=3296, lengthpcm=64355, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.457274.
+[LOG] SoundI::release                          :  (000001F0C1E94048)
+[LOG] SoundI::release                          :     166320__deleted_user_2104797__water_drop_6 (000001F036B17F08)
+[LOG] SoundI::release                          :  (000001F0C1E94328)
+[LOG] SoundI::release                          :     juan_dehydrated_land_1 (000001F036B166A8)
+[LOG] SoundI::release                          :  (000001F03A888918)
+[LOG] SoundI::release                          :     juan_dehydrated_land_2 (000001F036B15B48)
+[LOG] SoundI::release                          :  (000001F0C1E941B8)
+[LOG] SoundI::release                          :     juan_dehydrated_land_3 (000001F036B16368)
+[LOG] SoundI::release                          :  (000001F1355BE198)
+[LOG] SoundI::release                          :     juan_dehydrated_footstep_1 (000001F05F3BAA78)
+[LOG] SoundI::release                          :  (000001F1355BE478)
+[LOG] SoundI::release                          :     juan_dehydrated_footstep_2 (000001F05F3BA738)
+[LOG] SoundI::release                          :  (000001F1355BE308)
+[LOG] SoundI::release                          :     juan_dehydrated_footstep_3 (000001F039BB7048)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

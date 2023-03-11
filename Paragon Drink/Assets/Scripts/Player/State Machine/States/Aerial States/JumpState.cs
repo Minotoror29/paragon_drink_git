@@ -8,7 +8,7 @@ public class JumpState : AerialState
 
     public JumpState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
     {
-
+        _soundPath = "event:/Player/juan_dehydrated_jump";
     }
 
     public override void Enter(State previousState, State superState)

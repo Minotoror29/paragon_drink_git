@@ -11,6 +11,8 @@ public class LandState : GroundedState
     public LandState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator, bool canAnticipateJump) : base(playerStateMachine, playerController, animator)
     {
         _canAnticipateJump = canAnticipateJump;
+
+        _soundPath = "event:/Player/juan_dehydrated_land";
     }
 
     public override void Enter(State previousState, State superState)
