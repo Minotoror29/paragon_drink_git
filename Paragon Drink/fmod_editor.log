@@ -21,10 +21,183 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 106816
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009CB47FF548
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA887C3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA887C3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA887C3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA887C3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002991F09FB08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='interaction_whoosh_medium_02', format=5, channels=1, frequency=48000, lengthbytes=2272, lengthpcm=11840, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891266.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 106816
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009CB47FF548
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA887C3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA887C3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA887C3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA887C3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002991F09FB08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='interaction_whoosh_medium_01', format=5, channels=1, frequency=48000, lengthbytes=2016, lengthpcm=10848, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891266.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 106816
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009CB47FF548
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA887C3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA887C3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA887C3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA887C3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002991F09FB08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='interaction_whoosh_medium_03', format=5, channels=1, frequency=48000, lengthbytes=2560, lengthpcm=13152, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891266.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 106816
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009CB47FF548
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA887C3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA887C3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA887C3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA887C3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002990C870858
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='footsteps_shoe_metal_land_02', format=5, channels=1, frequency=48000, lengthbytes=3136, lengthpcm=16462, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891266.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 106816
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009CB47FF548
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA887C3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA887C3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA887C3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA887C3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002990C870858
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='footsteps_shoe_wood_land_02', format=5, channels=1, frequency=48000, lengthbytes=4256, lengthpcm=21318, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891266.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 106816
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009CB47FF548
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA887C3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA887C3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA887C3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA887C3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002990C870858
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='footsteps_shoe_metal_land_01', format=5, channels=1, frequency=48000, lengthbytes=3328, lengthpcm=16337, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891266.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 106816
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009CB47FF548
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA887C3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA887C3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA887C3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA887C3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002990C870858
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='footsteps_shoe_wood_land_01', format=5, channels=1, frequency=48000, lengthbytes=2688, lengthpcm=13904, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891266.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 106816
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19872
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009CB47FF548
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA887C3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA887C3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA887C3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA887C3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000029936199148
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='368711__drmaysta__heavy_swallow', format=5, channels=1, frequency=48000, lengthbytes=10048, lengthpcm=54008, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.406281.
+[LOG] SoundI::release                          :  (0000029932465A48)
+[LOG] SoundI::release                          :     footsteps_shoe_metal_run_01 (0000029932144548)
+[LOG] SoundI::release                          :  (00000299324693C8)
+[LOG] SoundI::release                          :     footsteps_shoe_metal_run_02 (000002991EDAFB18)
+[LOG] SoundI::release                          :  (0000029932468E08)
+[LOG] SoundI::release                          :     footsteps_shoe_metal_run_03 (000002991B72F4A8)
+[LOG] SoundI::release                          :  (0000029932464798)
+[LOG] SoundI::release                          :     footsteps_shoe_metal_run_04 (000002991EDAF498)
+[LOG] SoundI::release                          :  (00000299324641D8)
+[LOG] SoundI::release                          :     footsteps_shoe_metal_run_05 (0000029921A74FF8)
+[LOG] SoundI::release                          :  (00000299324655F8)
+[LOG] SoundI::release                          :     footsteps_shoe_wood_run_01 (00000299321443A8)
+[LOG] SoundI::release                          :  (0000029932465488)
+[LOG] SoundI::release                          :     footsteps_shoe_wood_run_02 (0000029932144888)
+[LOG] SoundI::release                          :  (00000299324658D8)
+[LOG] SoundI::release                          :     footsteps_shoe_wood_run_03 (000002991EDAF978)
+[LOG] SoundI::release                          :  (0000029932464908)
+[LOG] SoundI::release                          :     footsteps_shoe_wood_run_04 (0000029932144BC8)
+[LOG] SoundI::release                          :  (0000029932468C98)
+[LOG] SoundI::release                          :     footsteps_shoe_wood_run_05 (0000029932144208)
+[LOG] SoundI::release                          :  (0000029932467708)
+[LOG] SoundI::release                          :     juan_dehydrated_land_1 (000002991EDAF2F8)
+[LOG] SoundI::release                          :  (0000029932464A78)
+[LOG] SoundI::release                          :     juan_dehydrated_land_2 (0000029921A74638)
+[LOG] SoundI::release                          :  (0000029932464628)
+[LOG] SoundI::release                          :     juan_dehydrated_land_3 (000002991B72F988)
+[LOG] SoundI::release                          :  (000002993246A508)
+[LOG] SoundI::release                          :     footsteps_shoe_metal_land_01 (00000299110E1D18)
+[LOG] SoundI::release                          :  (000002993246BD78)
+[LOG] SoundI::release                          :     footsteps_shoe_metal_land_02 (00000299110DDC18)
+[LOG] SoundI::release                          :  (000002993246B7B8)
+[LOG] SoundI::release                          :     footsteps_shoe_wood_land_01 (00000299110E1698)
+[LOG] SoundI::release                          :  (000002993246A678)
+[LOG] SoundI::release                          :     footsteps_shoe_wood_land_02 (00000299110E04B8)
+[LOG] SoundI::release                          :  (0000029932469F48)
+[LOG] SoundI::release                          :     368711__drmaysta__heavy_swallow (0000029921A74B18)
+[LOG] SoundI::release                          :  (000002993246B088)
+[LOG] SoundI::release                          :     interaction_whoosh_medium_01 (0000029921A767B8)
+[LOG] SoundI::release                          :  (000002993246B648)
+[LOG] SoundI::release                          :     interaction_whoosh_medium_02 (0000029921A76AF8)
+[LOG] SoundI::release                          :  (000002993246B368)
+[LOG] SoundI::release                          :     interaction_whoosh_medium_03 (0000029920A994F8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.

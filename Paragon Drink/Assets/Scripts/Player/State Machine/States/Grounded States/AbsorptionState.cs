@@ -8,6 +8,7 @@ public class AbsorptionState : GroundedState
 
     public AbsorptionState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
     {
+        _soundPath = "event:/Player/juan_absorption";
     }
 
     public override void Enter(State previousState, State superState)
