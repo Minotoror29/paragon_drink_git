@@ -12,6 +12,7 @@ public class LandState : GroundedState
     {
         _canAnticipateJump = canAnticipateJump;
 
+        
         _soundPath = "event:/Player/juan_dehydrated_land";
     }
 

@@ -46,6 +46,8 @@ public abstract class PlayerState : State
         if (_soundPath != null)
         {
             _soundInstance = RuntimeManager.CreateInstance(_soundPath);
+            _soundInstance.setParameterByNameWithLabel("Surface", _playerController.GetFloorSurfaceType());
+            _soundInstance.setParameterByName("Size", _playerController.size);
             _soundInstance.start();
         }
     }

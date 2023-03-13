@@ -15,6 +15,8 @@ public class DehydratedState : PlayerState
         _playerController.land = "Juan-DeHydrated-Land";
 
         _initialSubState = subState;
+
+        _playerController.size = 0;
 }
 
     public override void Enter(State previousState, State superState)

@@ -15,10 +15,34 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638143040063258679
+  lastModified: 638143309727128611
   FileSizes:
   - Name: Desktop
-    Value: 50816
+    Value: 119520
+  Exists: 1
+--- !u!114 &-8426696461949261059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_jump/Size
+  m_EditorClassIdentifier: 
+  Name: Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3875665658
+    data2: 283754117
+  Type: 1
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-8194126612329841116
 MonoBehaviour:
@@ -35,10 +59,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638143040063248707
+  lastModified: 638143309726787787
   FileSizes:
   - Name: Desktop
-    Value: 912
+    Value: 1008
   Exists: 1
 --- !u!114 &-6166603115485652168
 MonoBehaviour:
@@ -55,7 +79,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638143040063238733
+  lastModified: 638143309726732626
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -83,10 +107,36 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 8517075205636545998}
+  - {fileID: -3427083876546226600}
   MinDistance: 1
   MaxDistance: 20
-  Length: 1980
+  Length: 0
+--- !u!114 &-3427083876546226600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_land/Size
+  m_EditorClassIdentifier: 
+  Name: Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3875665658
+    data2: 283754117
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,16 +155,43 @@ MonoBehaviour:
   - {fileID: -8540300806866508509}
   EditorEvents:
   - {fileID: 6386453009044777240}
-  - {fileID: 1893720798798033275}
   - {fileID: -5829265128078502385}
+  - {fileID: 6226325509778522014}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6166603115485652168}
   StringsBanks:
   - {fileID: -8194126612329841116}
-  cacheTime: 638143040063258679
+  cacheTime: 638143309727128611
   cacheVersion: 131601
---- !u!114 &1893720798798033275
+--- !u!114 &384910887342145221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3827373414
+    data2: 425796583
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Floor
+  - Water
+  - Fence
+  Exists: 1
+--- !u!114 &6226325509778522014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,23 +201,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dehydrated_footstep
+  m_Name: event:/Player/juan_dehydrated_footsteps
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dehydrated_footstep
+  Path: event:/Player/juan_dehydrated_footsteps
   Guid:
-    Data1: 2031761903
-    Data2: 1222621418
-    Data3: -561177450
-    Data4: 1109450481
+    Data1: -2030679057
+    Data2: 1199752672
+    Data3: -1388412256
+    Data4: -1210121806
   Banks:
   - {fileID: -8540300806866508509}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
-  Parameters: []
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 384910887342145221}
+  - {fileID: 6998387014414839248}
   MinDistance: 1
   MaxDistance: 20
-  Length: 340
+  Length: 0
 --- !u!114 &6386453009044777240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +243,87 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 8642525483559078343}
+  - {fileID: -8426696461949261059}
   MinDistance: 1
   MaxDistance: 20
-  Length: 393
+  Length: 0
+--- !u!114 &6998387014414839248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_footsteps/Size
+  m_EditorClassIdentifier: 
+  Name: Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3875665658
+    data2: 283754117
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8517075205636545998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_land/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3827373414
+    data2: 425796583
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Floor
+  - Water
+  - Fence
+  Exists: 1
+--- !u!114 &8642525483559078343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_jump/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3827373414
+    data2: 425796583
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Floor
+  - Water
+  - Fence
+  Exists: 1

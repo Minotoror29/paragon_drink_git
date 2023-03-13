@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         stateMachine.Initialize();
-        levelsManager.Initialize(this);
-        credits.Initialize(this);
+        levelsManager?.Initialize(this);
+        credits?.Initialize(this);
     }
 
     private void Update()

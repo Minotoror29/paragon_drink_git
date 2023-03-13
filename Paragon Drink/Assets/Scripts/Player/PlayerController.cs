@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMOD.Studio;
+using FMODUnity;
 
 public class PlayerController : MonoBehaviour
 {
@@ -44,6 +46,9 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public string land;
     public string absorption = "Absorption";
 
+    private EventInstance _soundInstance;
+    [HideInInspector] public int size = 0;
+
     public void Initialize()
     {
         _playerControls = new PlayerControls();
@@ -53,6 +58,9 @@ public class PlayerController : MonoBehaviour
         _grounds = new List<Transform>();
 
         playerStateMachine.Initialize(new DehydratedState(playerStateMachine, this, animator, new IdleState(playerStateMachine, this, animator)));
+
+        //Initialize footstep sound
+        _soundInstance = RuntimeManager.CreateInstance("event:/Player/juan_dehydrated_footsteps");
     }
 
     private void OnDrawGizmos()
@@ -172,5 +180,33 @@ public class PlayerController : MonoBehaviour
         {
             inWater = false;
         }
+    }
+
+    public void PlayFootStepSound()
+    {
+        _soundInstance.setParameterByNameWithLabel("Surface", GetFloorSurfaceType());
+        _soundInstance.setParameterByName("Size", size);
+        _soundInstance.start();
+    }
+
+    public string GetFloorSurfaceType()
+    {
+        if (currentGround == null)
+        {
+            return "Floor";
+        }
+
+        string surfaceType = "Floor";
+
+        if (currentGround.gameObject.CompareTag("Breakable Platform"))
+        {
+            surfaceType = "Fence";
+        }
+        else if (inWater)
+        {
+            surfaceType = "Water";
+        }
+
+        return surfaceType;
     }
 }

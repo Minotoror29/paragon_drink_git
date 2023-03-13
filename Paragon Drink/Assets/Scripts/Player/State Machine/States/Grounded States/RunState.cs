@@ -8,7 +8,7 @@ public class RunState : GroundedState
 {
     public RunState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
     {
-        _soundPath = "event:/Player/juan_dehydrated_footstep";
+        //_soundPath = "event:/Player/juan_dehydrated_footsteps";
     }
 
     public override void Enter(State previousState, State superState)
@@ -32,6 +32,6 @@ public class RunState : GroundedState
     {
         base.Exit();
 
-        _soundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //_soundInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }
