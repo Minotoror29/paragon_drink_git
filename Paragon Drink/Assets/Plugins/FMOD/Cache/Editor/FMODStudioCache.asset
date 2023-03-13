@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638141510187071978
+  lastModified: 638143040063258679
   FileSizes:
   - Name: Desktop
     Value: 50816
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638141510186853325
+  lastModified: 638143040063248707
   FileSizes:
   - Name: Desktop
     Value: 912
@@ -55,7 +55,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638141510186403140
+  lastModified: 638143040063238733
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -112,7 +112,7 @@ MonoBehaviour:
   - {fileID: -6166603115485652168}
   StringsBanks:
   - {fileID: -8194126612329841116}
-  cacheTime: 638141510187071978
+  cacheTime: 638143040063258679
   cacheVersion: 131601
 --- !u!114 &1893720798798033275
 MonoBehaviour:
