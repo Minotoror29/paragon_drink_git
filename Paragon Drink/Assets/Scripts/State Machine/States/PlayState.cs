@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class PlayState : State
 {
-    private PlayerMovement _playerMovement;
     private PlayerController _playerController;
 
     public override void Enter(State previousState, State superState)
     {
         base.Enter(previousState, superState);
 
-        _playerMovement = PlayerMovement.Instance;
         _playerController = _stateMachine.playerController;
 
         _playerController.animator.enabled = true;
+        _playerController._playerControls.Enable();
     }
 
     public override void UpdateLogic()
@@ -29,5 +28,15 @@ public class PlayState : State
         base.UpdatePhysics();
 
         _playerController.UpdatePhysics();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+
+        _playerController.Idle();
+
+        _playerController.animator.enabled = false;
+        _playerController._playerControls.Disable();
     }
 }

@@ -4,12 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class MenuManager : MonoBehaviour
+public class MenuManager : Manager
 {
-    private MenuControls _menuControls;
+    private static MenuManager instance;
+    public static MenuManager Instance => instance;
+
+    [HideInInspector] public MenuControls menuControls;
+
+    [SerializeField] private GameObject playButton;
 
     [SerializeField] private GameObject optionsMenu;
+    [SerializeField] private GameObject frenchButton;
     [SerializeField] private Slider sfxSlider;
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Image fullscreen;
@@ -17,15 +24,25 @@ public class MenuManager : MonoBehaviour
 
     private WindowMode currentWindowMode = WindowMode.Fullscreen;
 
-    private void Start()
+    private void Awake()
     {
-        Initialize();
+        if (instance != null)
+        {
+            Destroy(instance);
+        } else
+        {
+            instance = this;
+        }
     }
 
-    public void Initialize()
+    public override void Initialize(GameManager gameManager, StateMachine stateMachine)
     {
-        _menuControls = new MenuControls();
-        _menuControls.Menu.QuitMenu.performed += ctx => HideOptionsMenu();
+        base.Initialize(gameManager, stateMachine);
+
+        DontDestroyOnLoad(gameObject);
+
+        menuControls = new MenuControls();
+        menuControls.Menu.QuitMenu.performed += ctx => HideOptionsMenu();
     }
 
     public void Play()
@@ -36,13 +53,15 @@ public class MenuManager : MonoBehaviour
     public void DisplayOptionsMenu()
     {
         optionsMenu.SetActive(true);
-        _menuControls.Menu.Enable();
+        menuControls.Menu.Enable();
+        EventSystem.current.SetSelectedGameObject(frenchButton);
     }
     
     public void HideOptionsMenu()
     {
         optionsMenu.SetActive(false);
-        _menuControls.Menu.Disable();
+        menuControls.Menu.Disable();
+        EventSystem.current.SetSelectedGameObject(playButton);
     }
 
     public void ChangeLanguage(string language)

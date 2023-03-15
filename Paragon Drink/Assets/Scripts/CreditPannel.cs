@@ -6,13 +6,13 @@ using TMPro;
 public class CreditPannel : MonoBehaviour
 {
     protected GameManager _gameManager;
-    private Credits _credits;
+    private CreditsManager _credits;
 
     protected TextMeshProUGUI _text;
     private float _fadeSpeed = 0.5f;
     private float _pannelTime = 5f;
 
-    public void Initialize(GameManager gameManager, Credits credits)
+    public void Initialize(GameManager gameManager, CreditsManager credits)
     {
         _gameManager = gameManager;
 

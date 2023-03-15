@@ -1,21 +1,65 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager instance;
+    public static GameManager Instance => instance;
+
     [SerializeField] private StateMachine stateMachine;
-    [SerializeField] private LevelsManager levelsManager;
+    [SerializeField] private Manager[] _managers;
 
     public int itemsCollected = 0;
 
-    [SerializeField] private Credits credits;
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.activeSceneChanged += OnSceneChanged;
+    }
 
     private void Start()
     {
-        stateMachine.Initialize();
-        levelsManager?.Initialize(this);
-        credits?.Initialize(this);
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void OnSceneChanged(Scene currentScene, Scene nextScene)
+    {
+        GetManagers();
+        InitializeManagers();
+
+        if (nextScene == SceneManager.GetSceneByBuildIndex(0))
+        {
+            stateMachine.Initialize(new MenuState());
+        } else if (nextScene == SceneManager.GetSceneByBuildIndex(1))
+        {
+            stateMachine.Initialize(new PlayState());
+        }
+    }
+
+    private void GetManagers()
+    {
+        _managers = FindObjectsOfType<Manager>(true);
+    }
+
+    private void InitializeManagers()
+    {
+        foreach (Manager manager in _managers)
+        {
+            manager.Initialize(this, stateMachine);
+        }
     }
 
     private void Update()
@@ -33,9 +77,8 @@ public class GameManager : MonoBehaviour
         itemsCollected++;
     }
 
-    public void StartCredits()
+    private void OnDisable()
     {
-        stateMachine.ChangeState(new TransitionState());
-        credits.StartCredits();
+        SceneManager.activeSceneChanged -= OnSceneChanged;
     }
 }

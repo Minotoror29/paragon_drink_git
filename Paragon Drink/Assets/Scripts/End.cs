@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class End : MonoBehaviour
 {
-    [SerializeField] private GameManager _gameManager;
+    [SerializeField] private CreditsManager _credits;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<PlayerController>())
         {
-            _gameManager.StartCredits();
+            _credits.StartCredits();
         }
     }
 }

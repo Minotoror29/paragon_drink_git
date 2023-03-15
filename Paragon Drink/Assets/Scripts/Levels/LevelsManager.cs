@@ -3,12 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelsManager : MonoBehaviour
+public class LevelsManager : Manager
 {
-    private static LevelsManager m_instance;
-    public static LevelsManager Instance => m_instance;
-
-    private GameManager _gameManager;
+    private static LevelsManager instance;
+    public static LevelsManager Instance => instance;
 
     [SerializeField] private List<Level> levels;
     [HideInInspector] public Level activeLevel;
@@ -16,19 +14,19 @@ public class LevelsManager : MonoBehaviour
 
     private void Awake()
     {
-        if (m_instance != null)
+        if (instance != null)
         {
             Destroy(this);
         }
         else
         {
-            m_instance = this;
+            instance = this;
         }
     }
 
-    public void Initialize(GameManager gameManager)
+    public override void Initialize(GameManager gameManager, StateMachine stateMachine)
     {
-        _gameManager = gameManager;
+        base.Initialize(gameManager, stateMachine);
 
         foreach (Level level in levels)
         {

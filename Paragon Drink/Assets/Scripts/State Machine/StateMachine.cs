@@ -13,21 +13,24 @@ public class StateMachine : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
+        if (instance != null)
         {
             Destroy(this);
         }
+        else
+        {
+            instance = this;
+        }
     }
 
-    public void Initialize()
+    public void Initialize(State startState)
     {
-        playerController.Initialize();
+        DontDestroyOnLoad(gameObject);
 
-        ChangeState(new PlayState());
+        playerController = FindObjectOfType<PlayerController>();
+        playerController?.Initialize();
+
+        ChangeState(startState);
     }
 
     public void ChangeState(State newState)

@@ -25,14 +25,6 @@ public class @MenuControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
-                },
-                {
-                    ""name"": ""Navigation"",
-                    ""type"": ""Value"",
-                    ""id"": ""86907199-fc3c-42be-a923-eb3517a6a829"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -50,33 +42,11 @@ public class @MenuControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""86963c76-83cd-40fe-b148-d956a017eac0"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Quit Menu"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""84676333-89fd-4f78-a82b-3b1f5e8684f5"",
-                    ""path"": ""<Gamepad>/leftStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Navigation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f7e52706-f150-4be1-ab76-932340864550"",
-                    ""path"": ""<Gamepad>/dpad"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Navigation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -116,7 +86,6 @@ public class @MenuControls : IInputActionCollection, IDisposable
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_QuitMenu = m_Menu.FindAction("Quit Menu", throwIfNotFound: true);
-        m_Menu_Navigation = m_Menu.FindAction("Navigation", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -167,13 +136,11 @@ public class @MenuControls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Menu;
     private IMenuActions m_MenuActionsCallbackInterface;
     private readonly InputAction m_Menu_QuitMenu;
-    private readonly InputAction m_Menu_Navigation;
     public struct MenuActions
     {
         private @MenuControls m_Wrapper;
         public MenuActions(@MenuControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @QuitMenu => m_Wrapper.m_Menu_QuitMenu;
-        public InputAction @Navigation => m_Wrapper.m_Menu_Navigation;
         public InputActionMap Get() { return m_Wrapper.m_Menu; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -186,9 +153,6 @@ public class @MenuControls : IInputActionCollection, IDisposable
                 @QuitMenu.started -= m_Wrapper.m_MenuActionsCallbackInterface.OnQuitMenu;
                 @QuitMenu.performed -= m_Wrapper.m_MenuActionsCallbackInterface.OnQuitMenu;
                 @QuitMenu.canceled -= m_Wrapper.m_MenuActionsCallbackInterface.OnQuitMenu;
-                @Navigation.started -= m_Wrapper.m_MenuActionsCallbackInterface.OnNavigation;
-                @Navigation.performed -= m_Wrapper.m_MenuActionsCallbackInterface.OnNavigation;
-                @Navigation.canceled -= m_Wrapper.m_MenuActionsCallbackInterface.OnNavigation;
             }
             m_Wrapper.m_MenuActionsCallbackInterface = instance;
             if (instance != null)
@@ -196,9 +160,6 @@ public class @MenuControls : IInputActionCollection, IDisposable
                 @QuitMenu.started += instance.OnQuitMenu;
                 @QuitMenu.performed += instance.OnQuitMenu;
                 @QuitMenu.canceled += instance.OnQuitMenu;
-                @Navigation.started += instance.OnNavigation;
-                @Navigation.performed += instance.OnNavigation;
-                @Navigation.canceled += instance.OnNavigation;
             }
         }
     }
@@ -224,6 +185,5 @@ public class @MenuControls : IInputActionCollection, IDisposable
     public interface IMenuActions
     {
         void OnQuitMenu(InputAction.CallbackContext context);
-        void OnNavigation(InputAction.CallbackContext context);
     }
 }
