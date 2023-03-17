@@ -54,6 +54,8 @@ public class PlayerController : MonoBehaviour
         _playerControls = new PlayerControls();
         _playerControls.Movement.Enable();
         _playerControls.Movement.Action.performed += ctx => playerStateMachine.Action();
+        _playerControls.Menu.Enable();
+        _playerControls.Menu.Options.performed += ctx => MenuManager.Instance.DisplayOptionsMenu();
 
         _grounds = new List<Transform>();
 

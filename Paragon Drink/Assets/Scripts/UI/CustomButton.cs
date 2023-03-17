@@ -9,12 +9,12 @@ public class CustomButton : CustomUIElement, IPointerEnterHandler, IPointerExitH
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Select();
+        EventSystem.current.SetSelectedGameObject(gameObject);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Deselect();
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public override void Select()

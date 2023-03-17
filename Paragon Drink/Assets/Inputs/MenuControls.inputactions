@@ -29,10 +29,21 @@
                 {
                     "name": "",
                     "id": "86963c76-83cd-40fe-b148-d956a017eac0",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<XInputController>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": "Xbox",
+                    "action": "Quit Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ec8f6acb-aa36-48a4-bd16-40ab6e571018",
+                    "path": "<DualShockGamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
                     "action": "Quit Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -58,11 +69,22 @@
             ]
         },
         {
-            "name": "Gamepad",
-            "bindingGroup": "Gamepad",
+            "name": "Xbox",
+            "bindingGroup": "Xbox",
             "devices": [
                 {
-                    "devicePath": "<Gamepad>",
+                    "devicePath": "<XInputController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "PS4",
+            "bindingGroup": "PS4",
+            "devices": [
+                {
+                    "devicePath": "<DualShockGamepad>",
                     "isOptional": false,
                     "isOR": false
                 }

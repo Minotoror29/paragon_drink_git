@@ -25,8 +25,6 @@ public class StateMachine : MonoBehaviour
 
     public void Initialize(State startState)
     {
-        DontDestroyOnLoad(gameObject);
-
         playerController = FindObjectOfType<PlayerController>();
         playerController?.Initialize();
 
