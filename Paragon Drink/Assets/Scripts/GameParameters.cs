@@ -53,6 +53,7 @@ public class GameParameters : MonoBehaviour
     public void ChangeLanguage(Language language)
     {
         _language = language;
+        InitializeParameters();
     }
 
     private float DecibelToLinear(float dB)

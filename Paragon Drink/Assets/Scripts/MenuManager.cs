@@ -24,8 +24,8 @@ public class MenuManager : Manager
     [SerializeField] private GameObject frenchButton;
     [SerializeField] private Slider sfxSlider;
     [SerializeField] private Slider musicSlider;
-    [SerializeField] private Image fullscreen;
-    [SerializeField] private Image windowed;
+    [SerializeField] private GameObject fullscreen;
+    [SerializeField] private GameObject windowed;
 
     private WindowMode currentWindowMode = WindowMode.Fullscreen;
 
@@ -118,13 +118,13 @@ public class MenuManager : Manager
         {
             case WindowMode.Fullscreen:
                 currentWindowMode = WindowMode.Windowed;
-                fullscreen.gameObject.SetActive(false);
-                windowed.gameObject.SetActive(true);
+                fullscreen.SetActive(false);
+                windowed.SetActive(true);
                 break;
             case WindowMode.Windowed:
                 currentWindowMode = WindowMode.Fullscreen;
-                windowed.gameObject.SetActive(false);
-                fullscreen.gameObject.SetActive(true);
+                windowed.SetActive(false);
+                fullscreen.SetActive(true);
                 break;
         }
     }
