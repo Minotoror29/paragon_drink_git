@@ -37,6 +37,6 @@ public class PlayState : State
         _playerController.Idle();
 
         _playerController.animator.enabled = false;
-        _playerController._playerControls.Disable();
+        //_playerController._playerControls.Disable();
     }
 }

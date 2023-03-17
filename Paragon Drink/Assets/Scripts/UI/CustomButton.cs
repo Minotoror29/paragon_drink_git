@@ -3,18 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CustomButton : CustomUIElement, IPointerEnterHandler, IPointerExitHandler
+public class CustomButton : CustomUIElement, IPointerEnterHandler
 {
     [SerializeField] private float scaleFactor = 1.25f;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         EventSystem.current.SetSelectedGameObject(gameObject);
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public override void Select()

@@ -11,6 +11,8 @@ public class MenuManager : Manager
     private static MenuManager instance;
     public static MenuManager Instance => instance;
 
+    public GameParameters _gameParameters;
+
     [HideInInspector] public MenuControls menuControls;
     private PlayerInput _menuInput;
 
@@ -41,6 +43,8 @@ public class MenuManager : Manager
     public override void Initialize(GameManager gameManager, StateMachine stateMachine)
     {
         base.Initialize(gameManager, stateMachine);
+
+        _gameParameters = _gameManager.gameParameters;
 
         menuControls = new MenuControls();
         menuControls.Menu.QuitMenu.performed += ctx => HideOptionsMenu();
@@ -95,14 +99,17 @@ public class MenuManager : Manager
     public void ChangeLanguage(string language)
     {
         Language l = (Language)System.Enum.Parse(typeof(Language), language);
+        _gameParameters.ChangeLanguage(l);
     }
 
     public void ChangeSFXVolume()
     {
+        _gameParameters.ChangeSFXVolume(sfxSlider.value);
     }
 
     public void ChangeMusicVolume()
     {
+        _gameParameters.ChangeMusicVolume(musicSlider.value);
     }
 
     public void ChangeWindowMode()
@@ -124,7 +131,7 @@ public class MenuManager : Manager
 
     public void ExitToMenu()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     public void ExitToDesktop()

@@ -35,12 +35,20 @@ public abstract class AerialState : PlayerState
             _canDetectGround = true;
         }
 
-        if (_anticipatedJumpTimer > 0 && _jumpInput)
+        if (_jumpInput)
         {
-            _anticipatedJumpTimer -= Time.deltaTime;
-            _canAnticipateJump = true;
+            if (_anticipatedJumpTimer > 0)
+            {
+                _anticipatedJumpTimer -= Time.deltaTime;
+                _canAnticipateJump = true;
+            }
+            else
+            {
+                _canAnticipateJump = false;
+            }
         } else
         {
+            _anticipatedJumpTimer = 0.1f;
             _canAnticipateJump = false;
         }
 

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     public static GameManager Instance => instance;
 
+    public GameParameters gameParameters;
     [SerializeField] private StateMachine stateMachine;
     [SerializeField] private Manager[] _managers;
 
@@ -23,6 +24,8 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+
+        gameParameters.Initialize();
     }
 
     private void OnEnable()
@@ -39,6 +42,7 @@ public class GameManager : MonoBehaviour
     {
         GetManagers();
         InitializeManagers();
+        gameParameters.InitializeParameters();
 
         if (nextScene == SceneManager.GetSceneByBuildIndex(0))
         {
