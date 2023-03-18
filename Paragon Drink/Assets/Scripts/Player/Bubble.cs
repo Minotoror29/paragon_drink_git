@@ -1,3 +1,5 @@
+using FMOD.Studio;
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,10 +13,17 @@ public class Bubble : MonoBehaviour
     [SerializeField] private float speed;
     private bool _moving = true;
 
+    private EventInstance _ambientInstance;
+    private EventInstance _splashInstance;
+
     public void Initialize()
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+
+        _ambientInstance = RuntimeManager.CreateInstance("event:/Projectile/projectile_ambient");
+        _ambientInstance.start();
+        _splashInstance = RuntimeManager.CreateInstance("event:/Projectile/projectile_impact");
     }
 
     private void Update()
@@ -46,6 +55,8 @@ public class Bubble : MonoBehaviour
         _moving = false;
         //_rb.velocity = Vector2.zero;
         _animator.CrossFade("Splash", 0f);
+        _ambientInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        _splashInstance.start();
         Destroy(gameObject, 0.545f);
     }
 }
