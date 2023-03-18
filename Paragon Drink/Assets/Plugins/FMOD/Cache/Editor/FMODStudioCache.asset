@@ -20,6 +20,55 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1174
   Exists: 1
+--- !u!114 &-8277955013495243973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638147470379590729
+  FileSizes:
+  - Name: Desktop
+    Value: 1340
+  Exists: 1
+--- !u!114 &-7937875031046530787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/juan_dehydrated_jump
+  m_EditorClassIdentifier: 
+  Path: event:/Player/juan_dehydrated_jump
+  Guid:
+    Data1: 1468655726
+    Data2: 1076924965
+    Data3: 1071654021
+    Data4: 65307059
+  Banks:
+  - {fileID: 128553846448496099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 9172243373154250850}
+  - {fileID: 4510692823292783363}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7700541031254999634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,6 +127,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6753094801493092403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_land/Size
+  m_EditorClassIdentifier: 
+  Name: Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3875665658
+    data2: 283754117
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2409098373971464813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +293,114 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1340
   Exists: 1
+--- !u!114 &-1969851876288482303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Projectile/projectile_impact
+  m_EditorClassIdentifier: 
+  Path: event:/Projectile/projectile_impact
+  Guid:
+    Data1: 43898374
+    Data2: 1271070581
+    Data3: -2042927457
+    Data4: 942300836
+  Banks:
+  - {fileID: 8195618431582717071}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 640
+--- !u!114 &-1530897972901848839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/juan_absorption
+  m_EditorClassIdentifier: 
+  Path: event:/Player/juan_absorption
+  Guid:
+    Data1: 1328067165
+    Data2: 1159099942
+    Data3: -575531853
+    Data4: 1495105138
+  Banks:
+  - {fileID: 128553846448496099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1125
+--- !u!114 &-1501139699563781524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/juan_dash_impact
+  m_EditorClassIdentifier: 
+  Path: event:/Player/juan_dash_impact
+  Guid:
+    Data1: -308068192
+    Data2: 1141753953
+    Data3: -702908780
+    Data4: 2079269715
+  Banks:
+  - {fileID: 128553846448496099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
+--- !u!114 &-934936050525606594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_land/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3827373414
+    data2: 425796583
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Floor
+  - Water
+  - Fence
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,22 +414,131 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -9187265055292803531}
-  - {fileID: -2030567808126061807}
-  - {fileID: -2409098373971464813}
+  - {fileID: 4051076777661422800}
+  - {fileID: -8277955013495243973}
+  - {fileID: 128553846448496099}
+  - {fileID: 8195618431582717071}
   EditorEvents:
-  - {fileID: 3795377270739180446}
-  - {fileID: -7110985187191972010}
-  - {fileID: 4563372329395422596}
-  - {fileID: -7700541031254999634}
-  - {fileID: 4678028118768086204}
+  - {fileID: -1530897972901848839}
+  - {fileID: 3429287666309525175}
+  - {fileID: -7937875031046530787}
+  - {fileID: -1501139699563781524}
+  - {fileID: 751074453670620784}
+  - {fileID: 7186055398025511132}
+  - {fileID: -1969851876288482303}
+  - {fileID: 3487288748382335534}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -2030567808126061807}
+  - {fileID: -8277955013495243973}
   StringsBanks:
-  - {fileID: -9187265055292803531}
-  cacheTime: 638147040386445552
+  - {fileID: 4051076777661422800}
+  cacheTime: 638147470386187352
   cacheVersion: 131601
+--- !u!114 &128553846448496099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
+  Name: Player
+  StudioPath: bank:/Player
+  lastModified: 638147470385635471
+  FileSizes:
+  - Name: Desktop
+    Value: 213600
+  Exists: 1
+--- !u!114 &751074453670620784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/juan_dehydrated_footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Player/juan_dehydrated_footsteps
+  Guid:
+    Data1: -2030679057
+    Data2: 1199752672
+    Data3: -1388412256
+    Data4: -1210121806
+  Banks:
+  - {fileID: 128553846448496099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5064491572428626012}
+  - {fileID: 7040664532871372646}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3429287666309525175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/juan_dehydrated_land
+  m_EditorClassIdentifier: 
+  Path: event:/Player/juan_dehydrated_land
+  Guid:
+    Data1: 432940135
+    Data2: 1321810826
+    Data3: -1476874857
+    Data4: 36543664
+  Banks:
+  - {fileID: 128553846448496099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -6753094801493092403}
+  - {fileID: -934936050525606594}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3487288748382335534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Projectile/projectile_ambient
+  m_EditorClassIdentifier: 
+  Path: event:/Projectile/projectile_ambient
+  Guid:
+    Data1: 1143937913
+    Data2: 1175969306
+    Data3: -861829478
+    Data4: -582453846
+  Banks:
+  - {fileID: 8195618431582717071}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30627
 --- !u!114 &3795377270739180446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +566,77 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1125
+--- !u!114 &4051076777661422800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638147470379799402
+  FileSizes:
+  - Name: Desktop
+    Value: 1400
+  Exists: 1
+--- !u!114 &4418801148565324863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_jump_2/Size
+  m_EditorClassIdentifier: 
+  Name: Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3875665658
+    data2: 283754117
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &4510692823292783363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_jump/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3827373414
+    data2: 425796583
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Floor
+  - Water
+  - Fence
+  Exists: 1
 --- !u!114 &4563372329395422596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +721,30 @@ MonoBehaviour:
   - Water
   - Fence
   Exists: 1
+--- !u!114 &5064491572428626012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_footsteps/Size
+  m_EditorClassIdentifier: 
+  Name: Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3875665658
+    data2: 283754117
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5956723146408889556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +769,61 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &7040664532871372646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3827373414
+    data2: 425796583
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Floor
+  - Water
+  - Fence
+  Exists: 1
+--- !u!114 &7186055398025511132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/juan_dehydrated_jump_2
+  m_EditorClassIdentifier: 
+  Path: event:/Player/juan_dehydrated_jump_2
+  Guid:
+    Data1: -350679047
+    Data2: 1281797874
+    Data3: -955545202
+    Data4: -776588106
+  Banks:
+  - {fileID: 128553846448496099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4418801148565324863}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 274
 --- !u!114 &7866570477167662200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,6 +835,50 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/juan_dehydrated_footsteps/Size
+  m_EditorClassIdentifier: 
+  Name: Size
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3875665658
+    data2: 283754117
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8195618431582717071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Projectile.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
+  Name: Projectile
+  StudioPath: bank:/Projectile
+  lastModified: 638147470386187352
+  FileSizes:
+  - Name: Desktop
+    Value: 270048
+  Exists: 1
+--- !u!114 &9172243373154250850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/juan_dehydrated_jump/Size
   m_EditorClassIdentifier: 
   Name: Size
   StudioPath: 
