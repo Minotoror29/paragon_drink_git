@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638147438397618217
+  lastModified: 638147040386425528
   FileSizes:
   - Name: Desktop
-    Value: 1400
+    Value: 1174
   Exists: 1
 --- !u!114 &-7700541031254999634
 MonoBehaviour:
@@ -78,53 +78,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-7018481108094017204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Projectile.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
-  Name: Projectile
-  StudioPath: bank:/Projectile
-  lastModified: 638147438400875883
-  FileSizes:
-  - Name: Desktop
-    Value: 270048
-  Exists: 1
---- !u!114 &-6618504808931073536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Projectile/projectile_ambient
-  m_EditorClassIdentifier: 
-  Path: event:/Projectile/projectile_ambient
-  Guid:
-    Data1: 1143937913
-    Data2: 1175969306
-    Data3: -861829478
-    Data4: -582453846
-  Banks:
-  - {fileID: -7018481108094017204}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 30627
 --- !u!114 &-2409098373971464813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,10 +93,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638147438397997174
+  lastModified: 638147040386445552
   FileSizes:
   - Name: Desktop
-    Value: 213600
+    Value: 126688
   Exists: 1
 --- !u!114 &-2340017805638781267
 MonoBehaviour:
@@ -262,7 +215,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638147438397575581
+  lastModified: 638147040386425528
   FileSizes:
   - Name: Desktop
     Value: 1340
@@ -283,22 +236,18 @@ MonoBehaviour:
   - {fileID: -9187265055292803531}
   - {fileID: -2030567808126061807}
   - {fileID: -2409098373971464813}
-  - {fileID: -7018481108094017204}
   EditorEvents:
   - {fileID: 3795377270739180446}
   - {fileID: -7110985187191972010}
   - {fileID: 4563372329395422596}
   - {fileID: -7700541031254999634}
   - {fileID: 4678028118768086204}
-  - {fileID: 6550035183228389003}
-  - {fileID: 7387731861878449879}
-  - {fileID: -6618504808931073536}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2030567808126061807}
   StringsBanks:
   - {fileID: -9187265055292803531}
-  cacheTime: 638147438400875883
+  cacheTime: 638147040386445552
   cacheVersion: 131601
 --- !u!114 &3795377270739180446
 MonoBehaviour:
@@ -435,60 +384,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &6550035183228389003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dash_impact
-  m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dash_impact
-  Guid:
-    Data1: -308068192
-    Data2: 1141753953
-    Data3: -702908780
-    Data4: 2079269715
-  Banks:
-  - {fileID: -2409098373971464813}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
---- !u!114 &7387731861878449879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Projectile/projectile_impact
-  m_EditorClassIdentifier: 
-  Path: event:/Projectile/projectile_impact
-  Guid:
-    Data1: 43898374
-    Data2: 1271070581
-    Data3: -2042927457
-    Data4: 942300836
-  Banks:
-  - {fileID: -7018481108094017204}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 640
 --- !u!114 &7866570477167662200
 MonoBehaviour:
   m_ObjectHideFlags: 0
