@@ -8,6 +8,7 @@ public class DashState : PlayerState
 
     public DashState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
     {
+        _soundPath = "event:/Player/juan_dash_impact";
     }
 
     public override void Enter(State previousState, State superState)

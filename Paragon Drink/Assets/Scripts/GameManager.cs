@@ -50,6 +50,9 @@ public class GameManager : MonoBehaviour
         } else if (nextScene == SceneManager.GetSceneByBuildIndex(1))
         {
             stateMachine.Initialize(new PlayState());
+        } else
+        {
+            stateMachine.Initialize(new PlayState());
         }
     }
 
