@@ -74,3 +74,4 @@ crashlytics-build.properties
 Assets/Plugins/FMOD/Resources/FMODStudioCache.asset
 Assets/StreamingAssets/*.bank
 fmod_editor.log
+Paragon Drink/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset
