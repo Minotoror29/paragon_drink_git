@@ -1,0 +1,5749 @@
+fileFormatVersion: 2
+guid: 071177cf455cf544ebbfe6149d75f1a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4696612347350471109
+    second: Plateforme_Etagere_0
+  - first:
+      213: 2887522572513119847
+    second: Plateforme_Etagere_1
+  - first:
+      213: -7470317429253661706
+    second: Plateforme_Etagere_2
+  - first:
+      213: 720475873390320240
+    second: Plateforme_Etagere_3
+  - first:
+      213: -6804768531801703151
+    second: Plateforme_Etagere_4
+  - first:
+      213: -7580440826893330334
+    second: Plateforme_Etagere_5
+  - first:
+      213: 4980148158521476337
+    second: Plateforme_Etagere_6
+  - first:
+      213: 7828273777057970351
+    second: Plateforme_Etagere_7
+  - first:
+      213: -9192741295127502587
+    second: Plateforme_Etagere_8
+  - first:
+      213: -1683494889663186406
+    second: Plateforme_Etagere_9
+  - first:
+      213: 6171687958984149416
+    second: Plateforme_Etagere_10
+  - first:
+      213: 5194609151926798860
+    second: Plateforme_Etagere_11
+  - first:
+      213: 3807754398980677924
+    second: Plateforme_Etagere_12
+  - first:
+      213: 6040350249595637632
+    second: Plateforme_Etagere_13
+  - first:
+      213: -6733670737179413536
+    second: Plateforme_Etagere_14
+  - first:
+      213: -8791555442208676892
+    second: Plateforme_Etagere_15
+  - first:
+      213: 5591633108425089511
+    second: Plateforme_Etagere_16
+  - first:
+      213: 5402936254448145397
+    second: Plateforme_Etagere_17
+  - first:
+      213: -6159795273813437507
+    second: Plateforme_Etagere_18
+  - first:
+      213: -7331024826689532982
+    second: Plateforme_Etagere_19
+  - first:
+      213: 2623079762894847832
+    second: Plateforme_Etagere_20
+  - first:
+      213: -1381927453127166762
+    second: Plateforme_Etagere_21
+  - first:
+      213: -7970447665565154408
+    second: Plateforme_Etagere_22
+  - first:
+      213: -1501448859242660860
+    second: Plateforme_Etagere_23
+  - first:
+      213: 3726189553711575437
+    second: Plateforme_Etagere_24
+  - first:
+      213: 1955142669548412951
+    second: Plateforme_Etagere_25
+  - first:
+      213: -4483507232279506755
+    second: Plateforme_Etagere_26
+  - first:
+      213: -1205600253308432364
+    second: Plateforme_Etagere_27
+  - first:
+      213: 1694096010077224062
+    second: Plateforme_Etagere_28
+  - first:
+      213: -2035216091372735492
+    second: Plateforme_Etagere_29
+  - first:
+      213: 1615617960334459452
+    second: Plateforme_Etagere_30
+  - first:
+      213: 9199941768421878718
+    second: Plateforme_Etagere_31
+  - first:
+      213: 3188652487346190312
+    second: Plateforme_Etagere_32
+  - first:
+      213: -2169222411724977247
+    second: Plateforme_Etagere_33
+  - first:
+      213: 1384080690228963097
+    second: Plateforme_Etagere_34
+  - first:
+      213: 2018137873643010017
+    second: Plateforme_Etagere_35
+  - first:
+      213: 6282371156767017639
+    second: Plateforme_Etagere_36
+  - first:
+      213: -2324566489697626209
+    second: Plateforme_Etagere_37
+  - first:
+      213: -7678577070448680083
+    second: Plateforme_Etagere_38
+  - first:
+      213: -6978450559512203981
+    second: Plateforme_Etagere_39
+  - first:
+      213: -4844360491892563811
+    second: Plateforme_Etagere_40
+  - first:
+      213: -6674813658282724916
+    second: Plateforme_Etagere_41
+  - first:
+      213: -8790659617422182611
+    second: Plateforme_Etagere_42
+  - first:
+      213: 1615153965721490162
+    second: Plateforme_Etagere_43
+  - first:
+      213: 8080889209493208843
+    second: Plateforme_Etagere_44
+  - first:
+      213: -2568310941471790841
+    second: Plateforme_Etagere_45
+  - first:
+      213: 9214221035890172409
+    second: Plateforme_Etagere_46
+  - first:
+      213: 5678394590456179342
+    second: Plateforme_Etagere_47
+  - first:
+      213: -9139917528270192338
+    second: Plateforme_Etagere_48
+  - first:
+      213: 4204498380749271463
+    second: Plateforme_Etagere_49
+  - first:
+      213: -3867435929015892217
+    second: Plateforme_Etagere_50
+  - first:
+      213: -3771404675104822582
+    second: Plateforme_Etagere_51
+  - first:
+      213: -6063149507456983986
+    second: Plateforme_Etagere_52
+  - first:
+      213: -4285985643628869090
+    second: Plateforme_Etagere_53
+  - first:
+      213: -3635666656100665176
+    second: Plateforme_Etagere_54
+  - first:
+      213: 7921890837976477880
+    second: Plateforme_Etagere_55
+  - first:
+      213: -4516518039824776668
+    second: Plateforme_Etagere_56
+  - first:
+      213: 6139212567731470777
+    second: Plateforme_Etagere_57
+  - first:
+      213: 7976841715325803622
+    second: Plateforme_Etagere_58
+  - first:
+      213: -2287954487032464816
+    second: Plateforme_Etagere_59
+  - first:
+      213: -201422327141225460
+    second: Plateforme_Etagere_60
+  - first:
+      213: -7216812661564998886
+    second: Plateforme_Etagere_61
+  - first:
+      213: 5665552250332837274
+    second: Plateforme_Etagere_62
+  - first:
+      213: 982305146940801792
+    second: Plateforme_Etagere_63
+  - first:
+      213: 8268086077381015286
+    second: Plateforme_Etagere_64
+  - first:
+      213: 6319403305645391977
+    second: Plateforme_Etagere_65
+  - first:
+      213: 1090236756125287644
+    second: Plateforme_Etagere_66
+  - first:
+      213: 4886354812757698428
+    second: Plateforme_Etagere_67
+  - first:
+      213: 6055906054511989073
+    second: Plateforme_Etagere_68
+  - first:
+      213: -5402720021926311054
+    second: Plateforme_Etagere_69
+  - first:
+      213: 4679399745091889210
+    second: Plateforme_Etagere_70
+  - first:
+      213: -2398897812981383464
+    second: Plateforme_Etagere_71
+  - first:
+      213: -5914103774293317330
+    second: Plateforme_Etagere_72
+  - first:
+      213: -7936515337962659215
+    second: Plateforme_Etagere_73
+  - first:
+      213: 1827281195338588650
+    second: Plateforme_Etagere_74
+  - first:
+      213: -817090842834413248
+    second: Plateforme_Etagere_75
+  - first:
+      213: 4112482024162657463
+    second: Plateforme_Etagere_76
+  - first:
+      213: 5479226074500731526
+    second: Plateforme_Etagere_77
+  - first:
+      213: 1794030840761344192
+    second: Plateforme_Etagere_78
+  - first:
+      213: 6521287493495599972
+    second: Plateforme_Etagere_79
+  - first:
+      213: -7573397561317421106
+    second: Plateforme_Etagere_80
+  - first:
+      213: 2039449454101608884
+    second: Plateforme_Etagere_81
+  - first:
+      213: -8275796256115271719
+    second: Plateforme_Etagere_82
+  - first:
+      213: -4699248868109900202
+    second: Plateforme_Etagere_83
+  - first:
+      213: 2400230291982192755
+    second: Plateforme_Etagere_84
+  - first:
+      213: -7126047542512975512
+    second: Plateforme_Etagere_85
+  - first:
+      213: -3451226576698726738
+    second: Plateforme_Etagere_86
+  - first:
+      213: 4292354702741287054
+    second: Plateforme_Etagere_87
+  - first:
+      213: 7476656951699927108
+    second: Plateforme_Etagere_88
+  - first:
+      213: 6679628004973349201
+    second: Plateforme_Etagere_89
+  - first:
+      213: -8288803433037450175
+    second: Plateforme_Etagere_90
+  - first:
+      213: -4009421047481052109
+    second: Plateforme_Etagere_91
+  - first:
+      213: -3761137730172731077
+    second: Plateforme_Etagere_92
+  - first:
+      213: 4223196758690219288
+    second: Plateforme_Etagere_93
+  - first:
+      213: 986022181405734614
+    second: Plateforme_Etagere_94
+  - first:
+      213: -7988744158496453838
+    second: Plateforme_Etagere_95
+  - first:
+      213: -5886129137071308050
+    second: Plateforme_Etagere_96
+  - first:
+      213: 6863348805324259040
+    second: Plateforme_Etagere_97
+  - first:
+      213: 5852847875387183594
+    second: Plateforme_Etagere_98
+  - first:
+      213: -412072138200103748
+    second: Plateforme_Etagere_99
+  - first:
+      213: 7113051745433920787
+    second: Plateforme_Etagere_100
+  - first:
+      213: 4449080160274533576
+    second: Plateforme_Etagere_101
+  - first:
+      213: 6296831663975288106
+    second: Plateforme_Etagere_102
+  - first:
+      213: 8525738883345015862
+    second: Plateforme_Etagere_103
+  - first:
+      213: -3684394529956356192
+    second: Plateforme_Etagere_104
+  - first:
+      213: 7519136786320152609
+    second: Plateforme_Etagere_105
+  - first:
+      213: -2926297992166060026
+    second: Plateforme_Etagere_106
+  - first:
+      213: -4562070630629841386
+    second: Plateforme_Etagere_107
+  - first:
+      213: 1385389397612737535
+    second: Plateforme_Etagere_108
+  - first:
+      213: 5217984820275972961
+    second: Plateforme_Etagere_109
+  - first:
+      213: -7859545028236598593
+    second: Plateforme_Etagere_110
+  - first:
+      213: -888175675606240948
+    second: Plateforme_Etagere_111
+  - first:
+      213: 4997170313032834062
+    second: Plateforme_Etagere_112
+  - first:
+      213: 8421055522199821779
+    second: Plateforme_Etagere_113
+  - first:
+      213: 6831942008884433670
+    second: Plateforme_Etagere_114
+  - first:
+      213: -6930183448129785341
+    second: Plateforme_Etagere_115
+  - first:
+      213: 1791793711797970717
+    second: Plateforme_Etagere_116
+  - first:
+      213: 4525697222860512636
+    second: Plateforme_Etagere_117
+  - first:
+      213: -7927467603265621180
+    second: Plateforme_Etagere_118
+  - first:
+      213: 4909618637874755239
+    second: Plateforme_Etagere_119
+  - first:
+      213: -3061095942562031118
+    second: Plateforme_Etagere_120
+  - first:
+      213: 8155256627457866574
+    second: Plateforme_Etagere_121
+  - first:
+      213: 8835382210571797260
+    second: Plateforme_Etagere_122
+  - first:
+      213: 2812672569574474335
+    second: Plateforme_Etagere_123
+  - first:
+      213: -7662641379323723712
+    second: Plateforme_Etagere_124
+  - first:
+      213: -4098920902157977688
+    second: Plateforme_Etagere_125
+  - first:
+      213: 6189212383561342125
+    second: Plateforme_Etagere_126
+  - first:
+      213: -5863879496435613642
+    second: Plateforme_Etagere_127
+  - first:
+      213: 8275727865994241488
+    second: Plateforme_Etagere_128
+  - first:
+      213: 7243138948608759856
+    second: Plateforme_Etagere_129
+  - first:
+      213: -435789316626852567
+    second: Plateforme_Etagere_130
+  - first:
+      213: 7639309205685087309
+    second: Plateforme_Etagere_131
+  - first:
+      213: 1144472634299478010
+    second: Plateforme_Etagere_132
+  - first:
+      213: 209734960924576737
+    second: Plateforme_Etagere_133
+  - first:
+      213: 6638961720566098016
+    second: Plateforme_Etagere_134
+  - first:
+      213: 8971177136385846785
+    second: Plateforme_Etagere_135
+  - first:
+      213: 1348876491048320684
+    second: Plateforme_Etagere_136
+  - first:
+      213: -3090189123273233905
+    second: Plateforme_Etagere_137
+  - first:
+      213: 1814970080828341082
+    second: Plateforme_Etagere_138
+  - first:
+      213: 1392678065747225558
+    second: Plateforme_Etagere_139
+  - first:
+      213: 7717448687079587984
+    second: Plateforme_Etagere_140
+  - first:
+      213: -4082940211395983739
+    second: Plateforme_Etagere_141
+  - first:
+      213: -3632359954407563827
+    second: Plateforme_Etagere_142
+  - first:
+      213: -2508803380445467091
+    second: Plateforme_Etagere_143
+  - first:
+      213: 8975914735812959711
+    second: Plateforme_Etagere_144
+  - first:
+      213: -3460739883675599974
+    second: Plateforme_Etagere_145
+  - first:
+      213: -3728726941434046023
+    second: Plateforme_Etagere_146
+  - first:
+      213: -6972415459983219326
+    second: Plateforme_Etagere_147
+  - first:
+      213: -1663229282524475818
+    second: Plateforme_Etagere_148
+  - first:
+      213: 9094503103989472350
+    second: Plateforme_Etagere_149
+  - first:
+      213: 8445583785767606732
+    second: Plateforme_Etagere_150
+  - first:
+      213: -3516436345864840399
+    second: Plateforme_Etagere_151
+  - first:
+      213: 371368729500015578
+    second: Plateforme_Etagere_152
+  - first:
+      213: -5767336228932994078
+    second: Plateforme_Etagere_153
+  - first:
+      213: 3097899956681776928
+    second: Plateforme_Etagere_154
+  - first:
+      213: 5875274554450103325
+    second: Plateforme_Etagere_155
+  - first:
+      213: 8968882311819842733
+    second: Plateforme_Etagere_156
+  - first:
+      213: -2025126483626491554
+    second: Plateforme_Etagere_157
+  - first:
+      213: 5356710780088374571
+    second: Plateforme_Etagere_158
+  - first:
+      213: -2320341198055602066
+    second: Plateforme_Etagere_159
+  - first:
+      213: -7848463517729968291
+    second: Plateforme_Etagere_160
+  - first:
+      213: 422530261587411731
+    second: Plateforme_Etagere_161
+  - first:
+      213: 863867949052198693
+    second: Plateforme_Etagere_162
+  - first:
+      213: 3204846433217922210
+    second: Plateforme_Etagere_163
+  - first:
+      213: -4487557408611337254
+    second: Plateforme_Etagere_164
+  - first:
+      213: 1961262331522308130
+    second: Plateforme_Etagere_165
+  - first:
+      213: -3303029201425204235
+    second: Plateforme_Etagere_166
+  - first:
+      213: -8978663471242024769
+    second: Plateforme_Etagere_167
+  - first:
+      213: -6510735544708148337
+    second: Plateforme_Etagere_168
+  - first:
+      213: -1108232222022073881
+    second: Plateforme_Etagere_169
+  - first:
+      213: 3212447854390430716
+    second: Plateforme_Etagere_170
+  - first:
+      213: -8699823578174960571
+    second: Plateforme_Etagere_171
+  - first:
+      213: -5782162417658522258
+    second: Plateforme_Etagere_172
+  - first:
+      213: -2382347710553621070
+    second: Plateforme_Etagere_173
+  - first:
+      213: 4984317922000076745
+    second: Plateforme_Etagere_174
+  - first:
+      213: -1961236335430883752
+    second: Plateforme_Etagere_175
+  - first:
+      213: -4296488079199362959
+    second: Plateforme_Etagere_176
+  - first:
+      213: -4558702302566425279
+    second: Plateforme_Etagere_177
+  - first:
+      213: -5705454281965884545
+    second: Plateforme_Etagere_178
+  - first:
+      213: -7906493047829645977
+    second: Plateforme_Etagere_179
+  - first:
+      213: -5373224425629240455
+    second: Plateforme_Etagere_180
+  - first:
+      213: 3604674188727038656
+    second: Plateforme_Etagere_181
+  - first:
+      213: -2529368017151022907
+    second: Plateforme_Etagere_182
+  - first:
+      213: -1684314976345890859
+    second: Plateforme_Etagere_183
+  - first:
+      213: -211362462326829743
+    second: Plateforme_Etagere_184
+  - first:
+      213: -6480428320170943453
+    second: Plateforme_Etagere_185
+  - first:
+      213: -3974540649192320436
+    second: Plateforme_Etagere_186
+  - first:
+      213: -2490698688497764330
+    second: Plateforme_Etagere_187
+  - first:
+      213: -2420652866186224339
+    second: Plateforme_Etagere_188
+  - first:
+      213: 5435540690707489554
+    second: Plateforme_Etagere_189
+  - first:
+      213: -5144623255034641264
+    second: Plateforme_Etagere_190
+  - first:
+      213: 6898315247074594039
+    second: Plateforme_Etagere_191
+  - first:
+      213: -5539774656677971506
+    second: Plateforme_Etagere_192
+  - first:
+      213: -7428854891497671722
+    second: Plateforme_Etagere_193
+  - first:
+      213: 2186165996159545459
+    second: Plateforme_Etagere_194
+  - first:
+      213: -1898766826092771381
+    second: Plateforme_Etagere_195
+  - first:
+      213: -7966175653839568382
+    second: Plateforme_Etagere_196
+  - first:
+      213: 1077318526676155084
+    second: Plateforme_Etagere_197
+  - first:
+      213: 8141411851603732833
+    second: Plateforme_Etagere_198
+  - first:
+      213: -7619515213864196986
+    second: Plateforme_Etagere_199
+  - first:
+      213: 3887299575968779469
+    second: Plateforme_Etagere_200
+  - first:
+      213: -4858785743207891075
+    second: Plateforme_Etagere_201
+  - first:
+      213: 5558474643102062766
+    second: Plateforme_Etagere_202
+  - first:
+      213: -990513459912417414
+    second: Plateforme_Etagere_203
+  - first:
+      213: 1491223993171528152
+    second: Plateforme_Etagere_204
+  - first:
+      213: -662953078798702762
+    second: Plateforme_Etagere_205
+  - first:
+      213: 720541106619126740
+    second: Plateforme_Etagere_206
+  - first:
+      213: 8076084967300187442
+    second: Plateforme_Etagere_207
+  - first:
+      213: -5031381862995201708
+    second: Plateforme_Etagere_208
+  - first:
+      213: 4196853960902779306
+    second: Plateforme_Etagere_209
+  - first:
+      213: -157012433862206206
+    second: Plateforme_Etagere_210
+  - first:
+      213: -8411664364271839941
+    second: Plateforme_Etagere_211
+  - first:
+      213: 2564284977598125796
+    second: Plateforme_Etagere_212
+  - first:
+      213: 4177352076866693614
+    second: Plateforme_Etagere_213
+  - first:
+      213: -104964781350645966
+    second: Plateforme_Etagere_214
+  - first:
+      213: -2655486579054532346
+    second: Plateforme_Etagere_215
+  - first:
+      213: 4374945196285539299
+    second: Plateforme_Etagere_216
+  - first:
+      213: 2541477438009745147
+    second: Plateforme_Etagere_217
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plateforme_Etagere_0
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2124
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e267c24f742deb0800000000000000
+      internalID: -4696612347350471109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_1
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2124
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e019f1b7a821820800000000000000
+      internalID: 2887522572513119847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_2
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2124
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb1de5a0e9145890800000000000000
+      internalID: -7470317429253661706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_3
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 2124
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a5ba65df4aff900800000000000000
+      internalID: 720475873390320240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2124
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11df333d21b9091a0800000000000000
+      internalID: -6804768531801703151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_5
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2124
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26897281b3ddcc690800000000000000
+      internalID: -7580440826893330334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2124
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f40d7d3d5a0d1540800000000000000
+      internalID: 4980148158521476337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8bb06368d93ac60800000000000000
+      internalID: 7828273777057970351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5016cdf4f72dc6080800000000000000
+      internalID: -9192741295127502587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ab070415603a8e0800000000000000
+      internalID: -1683494889663186406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_10
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a94ecbef7d36a550800000000000000
+      internalID: 6171687958984149416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_11
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a079f5085f61840800000000000000
+      internalID: 5194609151926798860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_12
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421ac27937cd7d430800000000000000
+      internalID: 3807754398980677924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f07128c82a3d350800000000000000
+      internalID: 6040350249595637632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_14
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e37afb14223d82a0800000000000000
+      internalID: -6733670737179413536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_15
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3effba7ee1ef580800000000000000
+      internalID: -8791555442208676892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_16
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1adf5bfa8799d40800000000000000
+      internalID: 5591633108425089511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_17
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1974
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3167eb5e51bfa40800000000000000
+      internalID: 5402936254448145397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1824
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3583f95d2048aa0800000000000000
+      internalID: -6159795273813437507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1824
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbc995f2c7f24a90800000000000000
+      internalID: -7331024826689532982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_20
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1824
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ffcdc852d076420800000000000000
+      internalID: 2623079762894847832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_21
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1824
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4befa9d4862dce0800000000000000
+      internalID: -1381927453127166762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1824
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893c521d318436190800000000000000
+      internalID: -7970447665565154408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_23
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1824
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cfc60b738c92be0800000000000000
+      internalID: -1501448859242660860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_24
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1824
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81ffba28a516b330800000000000000
+      internalID: 3726189553711575437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_25
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1824
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71064af26ef022b10800000000000000
+      internalID: 1955142669548412951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_26
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1824
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0d5184de167c1c0800000000000000
+      internalID: -4483507232279506755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_27
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1824
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4101e6805f8d44fe0800000000000000
+      internalID: -1205600253308432364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_28
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c3f007853a28710800000000000000
+      internalID: 1694096010077224062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_29
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3b1987fb571c3e0800000000000000
+      internalID: -2035216091372735492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_30
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c320a7a99f3db6610800000000000000
+      internalID: 1615617960334459452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_31
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebba0158b42ccaf70800000000000000
+      internalID: 9199941768421878718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_32
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e77f640b8e504c20800000000000000
+      internalID: 3188652487346190312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_33
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab0156a5bf55e1e0800000000000000
+      internalID: -2169222411724977247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_34
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9172399fd0e353310800000000000000
+      internalID: 1384080690228963097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_35
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7f04a14bdd10c10800000000000000
+      internalID: 2018137873643010017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_36
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa024a18477f2750800000000000000
+      internalID: 6282371156767017639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_37
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97dbccf71b7dbfd0800000000000000
+      internalID: -2324566489697626209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_38
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63627756d6307590800000000000000
+      internalID: -7678577070448680083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_39
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1674
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d26a58030972f90800000000000000
+      internalID: -6978450559512203981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_40
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90aec49ccf55ccb0800000000000000
+      internalID: -4844360491892563811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_41
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1f12ca75c4e53a0800000000000000
+      internalID: -6674813658282724916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_42
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27fd2227ad410680800000000000000
+      internalID: -8790659617422182611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2946079fd2a6610800000000000000
+      internalID: 1615153965721490162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_44
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f3121fbe5152070800000000000000
+      internalID: 8080889209493208843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_45
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70923d46ec68b5cd0800000000000000
+      internalID: -2568310941471790841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_46
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+        - {x: -75, y: -75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f16a2e863d7fdf70800000000000000
+      internalID: 9214221035890172409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_47
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ae3aa6bc5bdce40800000000000000
+      internalID: 5678394590456179342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_48
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21c613fe6d782180800000000000000
+      internalID: -9139917528270192338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_49
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1f34b3001695a30800000000000000
+      internalID: 4204498380749271463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_50
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707cc6b538b145ac0800000000000000
+      internalID: -3867435929015892217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_51
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca21240e6749abc0800000000000000
+      internalID: -3771404675104822582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_52
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c11fb95ad5bdba0800000000000000
+      internalID: -6063149507456983986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_53
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1524
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ac317e3ce1584c0800000000000000
+      internalID: -4285985643628869090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8336950748b8dc0800000000000000
+      internalID: -3635666656100665176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_55
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b07203ceb530fd60800000000000000
+      internalID: 7921890837976477880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_56
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422c996b5ca1251c0800000000000000
+      internalID: -4516518039824776668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_57
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b18f3cad4dd23550800000000000000
+      internalID: 6139212567731470777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_58
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c1387e64f63be60800000000000000
+      internalID: 7976841715325803622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_59
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a3b22248d8f30e0800000000000000
+      internalID: -2287954487032464816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_60
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c2aece577643df0800000000000000
+      internalID: -201422327141225460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_61
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b70e0ee1bb8db90800000000000000
+      internalID: -7216812661564998886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_62
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95f08911c510ae40800000000000000
+      internalID: 5665552250332837274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_63
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003c170a359d1ad00800000000000000
+      internalID: 982305146940801792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_64
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6f5ae2b742eb270800000000000000
+      internalID: 8268086077381015286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_65
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9604c6923d703b750800000000000000
+      internalID: 6319403305645391977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_66
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd40ce9ad8c412f00800000000000000
+      internalID: 1090236756125287644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_67
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7761fc20d1dfc340800000000000000
+      internalID: 4886354812757698428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_68
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15113549876ea0450800000000000000
+      internalID: 6055906054511989073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_69
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b0130d3cea505b0800000000000000
+      internalID: -5402720021926311054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_70
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a386140964190f040800000000000000
+      internalID: 4679399745091889210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_71
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de78c4262765bed0800000000000000
+      internalID: -2398897812981383464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_72
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1374
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29237893f1eceda0800000000000000
+      internalID: -5914103774293317330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172eb4e7955dbd190800000000000000
+      internalID: -7936515337962659215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_74
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -73.31774}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae168e8d09ecb5910800000000000000
+      internalID: 1827281195338588650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_75
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04951a3253c19a4f0800000000000000
+      internalID: -817090842834413248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_76
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b40563bc98721930800000000000000
+      internalID: 4112482024162657463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_77
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6829ca6a51f1a0c40800000000000000
+      internalID: 5479226074500731526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_78
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0eca36b8da5e810800000000000000
+      internalID: 1794030840761344192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_79
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463b0009c64408a50800000000000000
+      internalID: 6521287493495599972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_80
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf8dd62b03e5e690800000000000000
+      internalID: -7573397561317421106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_81
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9371919749d4c10800000000000000
+      internalID: 2039449454101608884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_82
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7ddb0f627762d80800000000000000
+      internalID: -8275796256115271719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_83
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65627295d0ae8ceb0800000000000000
+      internalID: -4699248868109900202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_84
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3701bbccbb45f4120800000000000000
+      internalID: 2400230291982192755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_85
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86108f7f3813b1d90800000000000000
+      internalID: -7126047542512975512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_86
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea62c70c6b7ca10d0800000000000000
+      internalID: -3451226576698726738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_87
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e803fda3cd1819b30800000000000000
+      internalID: 4292354702741287054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_88
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440778172eb62c760800000000000000
+      internalID: 7476656951699927108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_89
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1590034c74ec2bc50800000000000000
+      internalID: 6679628004973349201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_90
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1224
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144b3c0913148fc80800000000000000
+      internalID: -8288803433037450175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_91
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334dae5dcccab58c0800000000000000
+      internalID: -4009421047481052109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_92
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b314cb96921cdcbc0800000000000000
+      internalID: -3761137730172731077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_93
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815cf4a931fcb9a30800000000000000
+      internalID: 4223196758690219288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_94
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6385723fd0fad00800000000000000
+      internalID: 986022181405734614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_95
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b87579387422190800000000000000
+      internalID: -7988744158496453838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_96
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2c9c26cb4405ea0800000000000000
+      internalID: -5886129137071308050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_97
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee34f6ff538f3f50800000000000000
+      internalID: 6863348805324259040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_98
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae15ad8022e793150800000000000000
+      internalID: 5852847875387183594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_99
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb44fb4d296084af0800000000000000
+      internalID: -412072138200103748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_100
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315af8b30e2a6b260800000000000000
+      internalID: 7113051745433920787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_101
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccc66265de4ebd30800000000000000
+      internalID: 4449080160274533576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_102
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dcdad4907d26750800000000000000
+      internalID: 6296831663975288106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_103
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634e385d752815670800000000000000
+      internalID: 8525738883345015862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_104
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af1f8d12b66edcc0800000000000000
+      internalID: -3684394529956356192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_105
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1285f2ea117595860800000000000000
+      internalID: 7519136786320152609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_106
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600d006fa73b367d0800000000000000
+      internalID: -2926297992166060026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_107
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616e01daee440b0c0800000000000000
+      internalID: -4562070630629841386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_108
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3bc482154e93310800000000000000
+      internalID: 1385389397612737535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_109
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 1074
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b0ee74c810a6840800000000000000
+      internalID: 5217984820275972961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_110
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb225cf30794de290800000000000000
+      internalID: -7859545028236598593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_111
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41f855cde09ca3f0800000000000000
+      internalID: -888175675606240948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_112
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c137e6ce3895540800000000000000
+      internalID: 4997170313032834062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_113
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dddf8a71699dd470800000000000000
+      internalID: 8421055522199821779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_114
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60310a55f0fefce50800000000000000
+      internalID: 6831942008884433670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_115
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302bee12fda03df90800000000000000
+      internalID: -6930183448129785341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_116
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d172f7633eabdd810800000000000000
+      internalID: 1791793711797970717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_117
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d929165a18ece30800000000000000
+      internalID: 4525697222860512636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_118
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4437fe2673afbf190800000000000000
+      internalID: -7927467603265621180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_119
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6792d8328722440800000000000000
+      internalID: 4909618637874755239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_120
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f95338657dc485d0800000000000000
+      internalID: -3061095942562031118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_121
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bb6cbb1ba4d2170800000000000000
+      internalID: 8155256627457866574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_122
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0300f30f459d9a70800000000000000
+      internalID: 8835382210571797260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_123
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52c8f2ccce980720800000000000000
+      internalID: 2812672569574474335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_124
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04043309344d8a590800000000000000
+      internalID: -7662641379323723712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_125
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a733701825bd17c0800000000000000
+      internalID: -4098920902157977688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_126
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac5f99fedf74e550800000000000000
+      internalID: 6189212383561342125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_127
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 924
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63042498aa05f9ea0800000000000000
+      internalID: -5863879496435613642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_128
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5636eb5aa49d270800000000000000
+      internalID: 8275727865994241488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_129
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0381f9a7f7cc48460800000000000000
+      internalID: 7243138948608759856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_130
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925db89ece3c3f9f0800000000000000
+      internalID: -435789316626852567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_131
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c2b3e6f37440a60800000000000000
+      internalID: 7639309205685087309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_132
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff63961ccbf1ef00800000000000000
+      internalID: 1144472634299478010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_133
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebc3e2f5d029e200800000000000000
+      internalID: 209734960924576737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_134
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06822c79284522c50800000000000000
+      internalID: 6638961720566098016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_135
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e626ff216008c70800000000000000
+      internalID: 8971177136385846785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_136
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae7fce950c28b210800000000000000
+      internalID: 1348876491048320684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_137
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ae58a6d517d15d0800000000000000
+      internalID: -3090189123273233905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_138
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b3cb12ca1103910800000000000000
+      internalID: 1814970080828341082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_139
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db67537259c35310800000000000000
+      internalID: 1392678065747225558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_140
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0900fad21b2e91b60800000000000000
+      internalID: 7717448687079587984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_141
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5868594928b7657c0800000000000000
+      internalID: -4082940211395983739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_142
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdde25ddd3479dc0800000000000000
+      internalID: -3632359954407563827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_143
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2eaf312e90fe2dd0800000000000000
+      internalID: -2508803380445467091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_144
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 774
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd535255ead09c70800000000000000
+      internalID: 8975914735812959711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b3d7d596bf8ffc0800000000000000
+      internalID: -3460739883675599974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_146
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b915673a96e04cc0800000000000000
+      internalID: -3728726941434046023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_147
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -74.8967}
+        - {x: 75, y: -74.8967}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2852241a4110d3f90800000000000000
+      internalID: -6972415459983219326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_148
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ec91b97c50be8e0800000000000000
+      internalID: -1663229282524475818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_149
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cdaf9636a263e70800000000000000
+      internalID: 9094503103989472350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_150
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc91a7fd4bdb43570800000000000000
+      internalID: 8445583785767606732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_151
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b147936cb133fc0800000000000000
+      internalID: -3516436345864840399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_152
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb598254ed572500800000000000000
+      internalID: 371368729500015578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_153
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb3536a14e46ffa0800000000000000
+      internalID: -5767336228932994078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_154
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f17b3e893fdfa20800000000000000
+      internalID: 3097899956681776928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_155
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cc3e7241b298150800000000000000
+      internalID: 5875274554450103325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_156
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: da45e4481fed77c70800000000000000
+      internalID: 8968882311819842733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_157
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e510536513e45e3e0800000000000000
+      internalID: -2025126483626491554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_158
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b255cabc21cd65a40800000000000000
+      internalID: 5356710780088374571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_159
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+        - {x: -75, y: -75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68013c59fd7ccfd0800000000000000
+      internalID: -2320341198055602066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_160
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fa7197308a41390800000000000000
+      internalID: -7848463517729968291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_161
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 624
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31345c4c8012dd500800000000000000
+      internalID: 422530261587411731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_162
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ff91c92531dfb00800000000000000
+      internalID: 863867949052198693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_163
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4c1abd9d6e97c20800000000000000
+      internalID: 3204846433217922210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_164
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb7c8e105ef8b1c0800000000000000
+      internalID: -4487557408611337254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_165
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228ddb503bdc73b10800000000000000
+      internalID: 1961262331522308130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_166
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbfe4601784922d0800000000000000
+      internalID: -3303029201425204235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_167
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8e7d6d421656380800000000000000
+      internalID: -8978663471242024769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_168
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f835927748835a5a0800000000000000
+      internalID: -6510735544708148337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_169
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e18bbd6aa4ce90f0800000000000000
+      internalID: -1108232222022073881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_170
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb4864ad48e49c20800000000000000
+      internalID: 3212447854390430716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_171
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c405e9c84044780800000000000000
+      internalID: -8699823578174960571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_172
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6599d59ae1a1cfa0800000000000000
+      internalID: -5782162417658522258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_173
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd7cf4216330fed0800000000000000
+      internalID: -2382347710553621070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_174
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf7d64fdbadb2540800000000000000
+      internalID: 4984317922000076745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_175
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856ad0aa1f948c4e0800000000000000
+      internalID: -1961236335430883752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_176
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 474
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1702f911bdecf54c0800000000000000
+      internalID: -4296488079199362959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_177
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dd5caa86c3cb0c0800000000000000
+      internalID: -4558702302566425279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_178
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b21313f8722d0b0800000000000000
+      internalID: -5705454281965884545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_179
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765b401a67e764290800000000000000
+      internalID: -7906493047829645977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_180
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973baeb7ad87e65b0800000000000000
+      internalID: -5373224425629240455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_181
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c238168310660230800000000000000
+      internalID: 3604674188727038656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_182
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8aa778031e5ecd0800000000000000
+      internalID: -2529368017151022907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_183
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df5801f37c10a8e0800000000000000
+      internalID: -1684314976345890859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_184
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d482ad5f6111df0800000000000000
+      internalID: -211362462326829743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_185
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c54df07c4e016a0800000000000000
+      internalID: -6480428320170943453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_186
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c429a8b665897d8c0800000000000000
+      internalID: -3974540649192320436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_187
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6183f853db24f6dd0800000000000000
+      internalID: -2490698688497764330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_188
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d507a1b0d186ed0800000000000000
+      internalID: -2420652866186224339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_189
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2132dcf957bee6b40800000000000000
+      internalID: 5435540690707489554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_190
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094427c2860aa98b0800000000000000
+      internalID: -5144623255034641264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_191
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcca8a1b2dbbbf50800000000000000
+      internalID: 6898315247074594039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_192
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 324
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec97ffcfc44ce13b0800000000000000
+      internalID: -5539774656677971506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_193
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3bb5006d767e890800000000000000
+      internalID: -7428854891497671722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_194
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370b0250462d65e10800000000000000
+      internalID: 2186165996159545459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_195
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7c17bb1a936a5e0800000000000000
+      internalID: -1898766826092771381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_196
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202078e0375727190800000000000000
+      internalID: -7966175653839568382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_197
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccaba7cfd7763fe00800000000000000
+      internalID: 1077318526676155084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_198
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169eef8a1fa1cf070800000000000000
+      internalID: 8141411851603732833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_199
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684a0fc684b024690800000000000000
+      internalID: -7619515213864196986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_200
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc45295e5672f530800000000000000
+      internalID: 3887299575968779469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_201
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f7c580c10229cb0800000000000000
+      internalID: -4858785743207891075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_202
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea85d13ec3ba32d40800000000000000
+      internalID: 5558474643102062766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_203
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f5da4914df042f0800000000000000
+      internalID: -990513459912417414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_204
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 174
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d947892254e1b410800000000000000
+      internalID: 1491223993171528152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_205
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657a373ffa7bcc6f0800000000000000
+      internalID: -662953078798702762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_206
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d39912a150eff900800000000000000
+      internalID: 720541106619126740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_207
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235ccc32d74041070800000000000000
+      internalID: 8076084967300187442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_208
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451f3de5ad0fc2ab0800000000000000
+      internalID: -5031381862995201708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_209
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa12dc901783e3a30800000000000000
+      internalID: 4196853960902779306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_210
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dd256f50e22ddf0800000000000000
+      internalID: -157012433862206206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_211
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35d3cdd3d3c34b80800000000000000
+      internalID: -8411664364271839941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_212
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e65b98d99b269320800000000000000
+      internalID: 2564284977598125796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_213
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee92163d49fe8f930800000000000000
+      internalID: 4177352076866693614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_214
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f0ba566171b8ef0800000000000000
+      internalID: -104964781350645966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_215
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+        - {x: -75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60923a59601d52bd0800000000000000
+      internalID: -2655486579054532346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_216
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -75, y: 75}
+        - {x: -75, y: -75}
+        - {x: 75, y: -75}
+        - {x: 75, y: 75}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3b6600a7de6bc30800000000000000
+      internalID: 4374945196285539299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plateforme_Etagere_217
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 24
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe9d39b344254320800000000000000
+      internalID: 2541477438009745147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
