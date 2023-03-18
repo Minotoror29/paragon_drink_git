@@ -44,11 +44,26 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: "Arri\xE8re-Plan"
+    uniqueID: 2512223281
+    locked: 0
+  - name: Troisieme-Plan
+    uniqueID: 2803698729
+    locked: 0
+  - name: Second-Plan
+    uniqueID: 1477400595
+    locked: 0
   - name: Tilemap
     uniqueID: 4213692653
     locked: 0
+  - name: Objets
+    uniqueID: 4132562605
+    locked: 0
   - name: Player
     uniqueID: 2964345997
+    locked: 0
+  - name: Premier-Plan
+    uniqueID: 2947261729
     locked: 0
   - name: UI
     uniqueID: 1794581997
