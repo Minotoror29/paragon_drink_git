@@ -35,11 +35,65 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638147526178837145
+  lastModified: 638147540093547512
   FileSizes:
   - Name: Desktop
     Value: 213600
   Exists: 1
+--- !u!114 &-8433249634767834574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Reverb 3
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Reverb 3
+  Guid:
+    Data1: 716330088
+    Data2: 1325960724
+    Data3: -1950153028
+    Data4: 1886730300
+  Banks:
+  - {fileID: 7474231002757940455}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-8300804313365673009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Reverb 2
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Reverb 2
+  Guid:
+    Data1: -810653707
+    Data2: 1291972079
+    Data3: 1133268387
+    Data4: 66672029
+  Banks:
+  - {fileID: 7474231002757940455}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-8277955013495243973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +269,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Ambiences.bank
   Name: Ambiences
   StudioPath: bank:/Ambiences
-  lastModified: 638147526179441941
+  lastModified: 638147540094202311
   FileSizes:
   - Name: Desktop
     Value: 772704
@@ -317,10 +371,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638147526178440766
+  lastModified: 638147540093143927
   FileSizes:
   - Name: Desktop
-    Value: 1600
+    Value: 1726
   Exists: 1
 --- !u!114 &-3071085407155215728
 MonoBehaviour:
@@ -677,12 +731,15 @@ MonoBehaviour:
   - {fileID: -3547440898728475708}
   - {fileID: 7884111674948753767}
   - {fileID: 8931158691510325076}
+  - {fileID: -8433249634767834574}
+  - {fileID: 5838409727747868798}
+  - {fileID: -8300804313365673009}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7474231002757940455}
   StringsBanks:
   - {fileID: -3260400523658786136}
-  cacheTime: 638147526179441941
+  cacheTime: 638147540094202311
   cacheVersion: 131601
 --- !u!114 &128553846448496099
 MonoBehaviour:
@@ -799,7 +856,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Props.bank
   Name: Props
   StudioPath: bank:/Props
-  lastModified: 638147526179231873
+  lastModified: 638147540093984351
   FileSizes:
   - Name: Desktop
     Value: 285184
@@ -987,7 +1044,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
   Name: Projectile
   StudioPath: bank:/Projectile
-  lastModified: 638147526179034551
+  lastModified: 638147540093773864
   FileSizes:
   - Name: Desktop
     Value: 270048
@@ -1225,6 +1282,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1500
+--- !u!114 &5838409727747868798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Reverb 1
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Reverb 1
+  Guid:
+    Data1: 1911340392
+    Data2: 1124050353
+    Data3: 1436163999
+    Data4: -2122779615
+  Banks:
+  - {fileID: 7474231002757940455}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &5956723146408889556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,10 +1427,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638147526178400742
+  lastModified: 638147540093123907
   FileSizes:
   - Name: Desktop
-    Value: 1340
+    Value: 5080
   Exists: 1
 --- !u!114 &7866570477167662200
 MonoBehaviour:
