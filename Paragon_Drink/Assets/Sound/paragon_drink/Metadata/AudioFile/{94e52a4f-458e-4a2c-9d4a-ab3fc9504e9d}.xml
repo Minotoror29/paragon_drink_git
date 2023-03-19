@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{94e52a4f-458e-4a2c-9d4a-ab3fc9504e9d}">
+		<property name="assetPath">
+			<value>91747__dobroide__20100306demonstration02.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>190</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0244ee5d-7a77-43a0-9fc9-57200fe3e41a}</destination>
+		</relationship>
+	</object>
+</objects>
