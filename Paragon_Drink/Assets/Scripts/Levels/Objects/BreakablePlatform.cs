@@ -1,3 +1,5 @@
+using FMOD.Studio;
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +14,18 @@ public class BreakablePlatform : MonoBehaviour
     public float respawnTime;
     [HideInInspector] public float t = 0;
 
+    private EventInstance _openSound;
+    private EventInstance _closeSound;
+    private EventInstance _breakSound;
+
+    private void Start()
+    {
+        _openSound = RuntimeManager.CreateInstance("event:/Objects/fence_open");
+        _closeSound = RuntimeManager.CreateInstance("event:/Objects/fence_close");
+        _breakSound = RuntimeManager.CreateInstance("event:/Objects/fence_break");
+        _closeSound.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+    }
+
     private void Update()
     {
         if (broken)
@@ -25,6 +39,7 @@ public class BreakablePlatform : MonoBehaviour
                 broken = false;
                 coll.enabled = true;
                 sprite.enabled = true;
+                _closeSound.start();
             }
         }
     }
@@ -37,6 +52,10 @@ public class BreakablePlatform : MonoBehaviour
         {
             t = respawnTime;
             broken = true;
+            _openSound.start();
+        } else
+        {
+            _breakSound.start();
         }
     }
 }
