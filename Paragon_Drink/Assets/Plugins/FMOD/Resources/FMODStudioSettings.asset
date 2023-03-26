@@ -385,6 +385,7 @@ MonoBehaviour:
   - Master
   Banks:
   - Ambiences
+  - Objects
   - Player
   - Projectile
   - Props
