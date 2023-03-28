@@ -15,6 +15,7 @@ public class AbsorptionState : GroundedState
     {
         base.Enter(previousState, superState);
 
+        _playerController.currentWater.GetComponent<Animator>().CrossFade("Water_Empty", 0);
         _animator.CrossFade(_playerController.absorption, 0f);
         _playerController.Idle();
     }

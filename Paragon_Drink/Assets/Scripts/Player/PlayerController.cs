@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     public bool canJump;
 
     public bool inWater;
+    public GameObject currentWater;
 
     [SerializeField] private float dashSpeed = 1f;
     public float dashTime = 1f;
@@ -173,6 +174,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Water"))
         {
             inWater = true;
+            currentWater = collision.gameObject;
         }
     }
 
@@ -181,6 +183,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Water"))
         {
             inWater = false;
+            currentWater = null;
         }
     }
 
