@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638156392990392817
+  lastModified: 638156394348161464
   FileSizes:
   - Name: Desktop
     Value: 213600
@@ -323,7 +323,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Ambiences.bank
   Name: Ambiences
   StudioPath: bank:/Ambiences
-  lastModified: 638156392989479973
+  lastModified: 638148433534711369
   FileSizes:
   - Name: Desktop
     Value: 3284736
@@ -425,7 +425,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638156392989730779
+  lastModified: 638156356051128977
   FileSizes:
   - Name: Desktop
     Value: 1952
@@ -825,7 +825,7 @@ MonoBehaviour:
   - {fileID: 7474231002757940455}
   StringsBanks:
   - {fileID: -3260400523658786136}
-  cacheTime: 638156392990795525
+  cacheTime: 638156394348161464
   cacheVersion: 131601
 --- !u!114 &128553846448496099
 MonoBehaviour:
@@ -942,7 +942,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Props.bank
   Name: Props
   StudioPath: bank:/Props
-  lastModified: 638156392990795525
+  lastModified: 638147802055927404
   FileSizes:
   - Name: Desktop
     Value: 285184
@@ -1130,7 +1130,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
   Name: Projectile
   StudioPath: bank:/Projectile
-  lastModified: 638156392990593580
+  lastModified: 638147802055907675
   FileSizes:
   - Name: Desktop
     Value: 270048
@@ -1540,7 +1540,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638156392989705572
+  lastModified: 638147802055867554
   FileSizes:
   - Name: Desktop
     Value: 5080
@@ -1560,7 +1560,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Objects.bank
   Name: Objects
   StudioPath: bank:/Objects
-  lastModified: 638156392989926311
+  lastModified: 638156394348151510
   FileSizes:
   - Name: Desktop
     Value: 55072
