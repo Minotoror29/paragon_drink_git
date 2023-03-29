@@ -47,7 +47,8 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public string land;
     public string absorption = "Absorption";
 
-    private EventInstance _soundInstance;
+    private EventInstance _footstepSound;
+    private EventInstance _landWaterSound;
     [HideInInspector] public int size = 0;
 
     public void Initialize()
@@ -63,7 +64,8 @@ public class PlayerController : MonoBehaviour
         playerStateMachine.Initialize(new DehydratedState(playerStateMachine, this, animator, new IdleState(playerStateMachine, this, animator)));
 
         //Initialize footstep sound
-        _soundInstance = RuntimeManager.CreateInstance("event:/Player/juan_dehydrated_footsteps");
+        _footstepSound = RuntimeManager.CreateInstance("event:/Player/juan_dehydrated_footsteps");
+        _landWaterSound = RuntimeManager.CreateInstance("event:/Player/juan_enter_water");
     }
 
     private void OnDrawGizmos()
@@ -169,6 +171,20 @@ public class PlayerController : MonoBehaviour
         playerStateMachine.ExitCollision(collision);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Water") && _direction.y < 0)
+        {
+            PlayEnterWaterSound();
+        }
+    }
+
+    private void PlayEnterWaterSound()
+    {
+        _landWaterSound.setParameterByName("Size", size);
+        _landWaterSound.start();
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Water"))
@@ -189,9 +205,9 @@ public class PlayerController : MonoBehaviour
 
     public void PlayFootStepSound()
     {
-        _soundInstance.setParameterByNameWithLabel("Surface", GetFloorSurfaceType());
-        _soundInstance.setParameterByName("Size", size);
-        _soundInstance.start();
+        _footstepSound.setParameterByNameWithLabel("Surface", GetFloorSurfaceType());
+        _footstepSound.setParameterByName("Size", size);
+        _footstepSound.start();
     }
 
     public string GetFloorSurfaceType()
