@@ -82,7 +82,7 @@ public abstract class PlayerState : State
     {
         RaycastHit2D ray = Physics2D.BoxCast(
             (Vector2)_playerController.transform.position + (Vector2.up * (0.9f * (_playerController.transform.localScale.x - 0.075f) / 2)),
-            _playerController.transform.localScale * 0.9f,
+            _playerController.transform.localScale * new Vector2(0.5f, 0.9f),
             0f,
             Vector2.down,
             0f,
