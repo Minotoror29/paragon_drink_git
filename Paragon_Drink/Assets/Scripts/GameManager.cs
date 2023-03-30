@@ -72,6 +72,11 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         stateMachine.UpdateLogic();
+
+        foreach (Manager manager in _managers)
+        {
+            manager.UpdateLogic();
+        }
     }
 
     private void FixedUpdate()

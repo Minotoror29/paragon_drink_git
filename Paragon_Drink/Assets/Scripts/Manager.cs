@@ -12,4 +12,9 @@ public class Manager : MonoBehaviour
         _gameManager = gameManager;
         _stateMachine = stateMachine;
     }
+
+    public virtual void UpdateLogic()
+    {
+
+    }
 }

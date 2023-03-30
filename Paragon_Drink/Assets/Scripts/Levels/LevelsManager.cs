@@ -8,6 +8,8 @@ public class LevelsManager : Manager
     private static LevelsManager instance;
     public static LevelsManager Instance => instance;
 
+    private CameraManager _cameraManager;
+
     [SerializeField] private List<Level> levels;
     [HideInInspector] public Level activeLevel;
     [SerializeField] private Level startLevel;
@@ -28,6 +30,8 @@ public class LevelsManager : Manager
     {
         base.Initialize(gameManager, stateMachine);
 
+        _cameraManager = CameraManager.Instance;
+
         foreach (Level level in levels)
         {
             level.Initialize(_gameManager, this);
@@ -35,16 +39,24 @@ public class LevelsManager : Manager
 
         activeLevel = startLevel;
 
-        LevelTransition(startLevel, null);
+        StartCoroutine(LevelTransition(startLevel, null));
     }
 
     public IEnumerator LevelTransition(Level nextlevel, Level previousLevel)
     {
-        nextlevel.vCam.gameObject.SetActive(true);
         if (previousLevel != null)
         {
-            previousLevel.vCam.gameObject.SetActive(false);
+            _cameraManager.CameraTransition(nextlevel.vCam, previousLevel.vCam);
+        } else
+        {
+            _cameraManager.CameraTransition(nextlevel.vCam);
         }
+
+        //nextlevel.vCam.gameObject.SetActive(true);
+        //if (previousLevel != null)
+        //{
+        //    previousLevel.vCam.gameObject.SetActive(false);
+        //}
 
         activeLevel = nextlevel;
 

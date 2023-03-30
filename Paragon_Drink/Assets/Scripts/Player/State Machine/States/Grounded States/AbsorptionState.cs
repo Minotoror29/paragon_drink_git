@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,11 @@ using UnityEngine;
 public class AbsorptionState : GroundedState
 {
     private float _timer = 0.455f;
+
+    private CinemachineVirtualCamera _vCam;
+    private bool _zoom = false;
+    private float _zoomSpeed = 2f;
+    private float _originalSize;
 
     public AbsorptionState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
     {
@@ -18,6 +24,8 @@ public class AbsorptionState : GroundedState
         _playerController.currentWater.GetComponent<Animator>().CrossFade("Water_Empty", 0);
         _animator.CrossFade(_playerController.absorption, 0f);
         _playerController.Idle();
+
+        CameraManager.Instance.Zoom(2f);
     }
 
     public override void UpdateLogic()
@@ -32,8 +40,10 @@ public class AbsorptionState : GroundedState
         }
     }
 
-    public override void UpdatePhysics()
+    public override void Exit()
     {
-        
+        base.Exit();
+
+        CameraManager.Instance.BackToOriginalSize();
     }
 }
