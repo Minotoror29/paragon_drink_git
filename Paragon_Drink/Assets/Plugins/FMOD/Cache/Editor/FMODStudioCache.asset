@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638157112152567591
+  lastModified: 638157841377066222
   FileSizes:
   - Name: Desktop
     Value: 263008
@@ -351,7 +351,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Ambiences.bank
   Name: Ambiences
   StudioPath: bank:/Ambiences
-  lastModified: 638157112151319625
+  lastModified: 638157841375668004
   FileSizes:
   - Name: Desktop
     Value: 3284736
@@ -453,10 +453,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638157112151554770
+  lastModified: 638157841376462041
   FileSizes:
   - Name: Desktop
-    Value: 2048
+    Value: 2182
   Exists: 1
 --- !u!114 &-3071085407155215728
 MonoBehaviour:
@@ -854,6 +854,7 @@ MonoBehaviour:
   - {fileID: 1899775978926798641}
   - {fileID: -4855281629072041299}
   - {fileID: 7549617154101395441}
+  - {fileID: 6258901821471034826}
   EditorEvents:
   - {fileID: -1035051863615226282}
   - {fileID: -7294979120307288432}
@@ -874,12 +875,14 @@ MonoBehaviour:
   - {fileID: 5791213411868384397}
   - {fileID: -6177918477213949820}
   - {fileID: 7668621302688554600}
+  - {fileID: 4828767066804858975}
+  - {fileID: 1696564939258306025}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7474231002757940455}
   StringsBanks:
   - {fileID: -3260400523658786136}
-  cacheTime: 638157112152999560
+  cacheTime: 638157841377881273
   cacheVersion: 131601
 --- !u!114 &128553846448496099
 MonoBehaviour:
@@ -981,6 +984,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1696564939258306025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/ui_metal_close
+  m_EditorClassIdentifier: 
+  Path: event:/UI/ui_metal_close
+  Guid:
+    Data1: 1896589731
+    Data2: 1142008645
+    Data3: -1341925760
+    Data4: 721656953
+  Banks:
+  - {fileID: 6258901821471034826}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 757
 --- !u!114 &1899775978926798641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -996,7 +1026,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Props.bank
   Name: Props
   StudioPath: bank:/Props
-  lastModified: 638157112152999560
+  lastModified: 638157841377484982
   FileSizes:
   - Name: Desktop
     Value: 285184
@@ -1184,7 +1214,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
   Name: Projectile
   StudioPath: bank:/Projectile
-  lastModified: 638157112152783315
+  lastModified: 638157841377281958
   FileSizes:
   - Name: Desktop
     Value: 270048
@@ -1317,6 +1347,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 274
+--- !u!114 &4828767066804858975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/ui_casual_open
+  m_EditorClassIdentifier: 
+  Path: event:/UI/ui_casual_open
+  Guid:
+    Data1: 36440139
+    Data2: 1183991436
+    Data3: -1634087546
+    Data4: -528968838
+  Banks:
+  - {fileID: 6258901821471034826}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 793
 --- !u!114 &4846495661083084461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1524,6 +1581,26 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &6258901821471034826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UI.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sound/paragon_drink/Build/Desktop/UI.bank
+  Name: UI
+  StudioPath: bank:/UI
+  lastModified: 638157841377881273
+  FileSizes:
+  - Name: Desktop
+    Value: 17088
+  Exists: 1
 --- !u!114 &7040664532871372646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,7 +1671,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638157112151529727
+  lastModified: 638157841376432017
   FileSizes:
   - Name: Desktop
     Value: 5080
@@ -1614,7 +1691,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Objects.bank
   Name: Objects
   StudioPath: bank:/Objects
-  lastModified: 638157112152154377
+  lastModified: 638157841376667439
   FileSizes:
   - Name: Desktop
     Value: 71008

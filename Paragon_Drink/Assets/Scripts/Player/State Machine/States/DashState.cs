@@ -1,3 +1,5 @@
+using Cinemachine;
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +7,10 @@ using UnityEngine;
 public class DashState : PlayerState
 {
     private float _dashTime;
+
+    private CinemachineVirtualCamera _vCam;
+    private CinemachineBasicMultiChannelPerlin _perlin;
+    private float _shakeTimer = 0.25f;
 
     public DashState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
     {
@@ -20,6 +26,10 @@ public class DashState : PlayerState
         _dashTime = _playerController.dashTime;
 
         _playerController.CreateBubble();
+
+        _vCam = (CinemachineVirtualCamera)CinemachineCore.Instance.GetActiveBrain(0).ActiveVirtualCamera;
+        _perlin = _vCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        _perlin.m_AmplitudeGain = 5f;
     }
 
     public override void UpdateLogic()
@@ -39,6 +49,15 @@ public class DashState : PlayerState
         {
             _currentSuperState.ChangeSubState(new DashJumpState(_playerStateMachine, _playerController, _animator));
         }
+
+        //Camera Shake
+        if (_shakeTimer > 0)
+        {
+            _shakeTimer -= Time.deltaTime;
+        } else
+        {
+            _perlin.m_AmplitudeGain = 0f;
+        }
     }
 
     public override void EnterCollision(Collision2D collision)
@@ -51,5 +70,12 @@ public class DashState : PlayerState
         {
             platform.Break();
         }
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+
+        _perlin.m_AmplitudeGain = 0f;
     }
 }

@@ -389,6 +389,7 @@ MonoBehaviour:
   - Player
   - Projectile
   - Props
+  - UI
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
