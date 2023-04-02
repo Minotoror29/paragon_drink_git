@@ -25,7 +25,7 @@ public class AbsorptionState : GroundedState
         _animator.CrossFade(_playerController.absorption, 0f);
         _playerController.Idle();
 
-        CameraManager.Instance.Zoom(2f);
+        CameraManager.Instance.Zoom(4f);
     }
 
     public override void UpdateLogic()

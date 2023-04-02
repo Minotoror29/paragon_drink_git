@@ -10,7 +10,7 @@ public class CameraManager : Manager
     public static CameraManager Instance => instance;
 
     private Camera _mainCamera;
-    private CinemachineVirtualCamera _currentVCam;
+    [SerializeField] private CinemachineVirtualCamera _currentVCam;
 
     //Shake
     private CinemachineBasicMultiChannelPerlin _perlin;
@@ -20,6 +20,8 @@ public class CameraManager : Manager
     private float _originalSize;
     private bool _zoom = false;
     private float _zoomSpeed = 1f;
+    [SerializeField] private AnimationCurve _zoomCurve;
+    private float _zoomTimer = 0f;
 
     private void Awake()
     {
@@ -38,6 +40,16 @@ public class CameraManager : Manager
         base.Initialize(gameManager, stateMachine);
 
         _mainCamera = Camera.main;
+
+        SetCameraVariables();
+    }
+
+    private void SetCameraVariables()
+    {
+        if (_currentVCam == null) return;
+
+        _perlin = _currentVCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        _originalSize = _currentVCam.m_Lens.OrthographicSize;
     }
 
     public void CameraTransition(CinemachineVirtualCamera nextCam, CinemachineVirtualCamera currentCam = null)
@@ -50,8 +62,8 @@ public class CameraManager : Manager
         }
 
         _currentVCam = nextCam;
-        _perlin = _currentVCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-        _originalSize = _currentVCam.m_Lens.OrthographicSize;
+
+        SetCameraVariables();
     }
 
     public void ShakeCam(float gain, float time)
@@ -89,10 +101,16 @@ public class CameraManager : Manager
         //Zoom
         if (_zoom)
         {
-            _currentVCam.m_Lens.OrthographicSize -= Time.deltaTime * _zoomSpeed;
+            //_currentVCam.m_Lens.OrthographicSize -= Time.deltaTime * _zoomSpeed;
+            if (_zoomTimer < _zoomCurve.keys[_zoomCurve.length - 1].time)
+            {
+                _zoomTimer += Time.deltaTime;
+                _currentVCam.m_Lens.OrthographicSize = _originalSize - _zoomCurve.Evaluate(_zoomTimer);
+            }
         } else
         {
-            _currentVCam.m_Lens.OrthographicSize = Mathf.Lerp(_currentVCam.m_Lens.OrthographicSize, _originalSize, 0.05f);
+            _currentVCam.m_Lens.OrthographicSize = Mathf.MoveTowards(_currentVCam.m_Lens.OrthographicSize, _originalSize, 0.0025f);
+            _zoomTimer = 0f;
         }
     }
 }

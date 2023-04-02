@@ -8,6 +8,8 @@ public class DashState : PlayerState
 {
     private float _dashTime;
 
+    private float _slowTimer = 0.015f;
+
     public DashState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
     {
         _soundPath = "event:/Player/juan_dash_impact";
@@ -22,8 +24,6 @@ public class DashState : PlayerState
         _dashTime = _playerController.dashTime;
 
         _playerController.CreateBubble();
-
-        CameraManager.Instance.ShakeCam(5f, 0.25f);
     }
 
     public override void UpdateLogic()
@@ -42,6 +42,17 @@ public class DashState : PlayerState
         if (_jumpInput && !_playerController.requireNewJumpPress)
         {
             _currentSuperState.ChangeSubState(new DashJumpState(_playerStateMachine, _playerController, _animator));
+        }
+
+        if (_slowTimer > 0f)
+        {
+            _slowTimer -= Time.deltaTime;
+            Time.timeScale = 0.1f;
+            if (_slowTimer <= 0f)
+            {
+                Time.timeScale = 1f;
+                CameraManager.Instance.ShakeCam(5f, 0.1f);
+            }
         }
     }
 
