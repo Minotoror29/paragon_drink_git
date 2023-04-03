@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
 
     public int itemsCollected = 0;
 
+    private PlayerControls _playerControls;
+    private float _displayCursorTimer = 3f;
+
     private void Awake()
     {
         if (instance != null)
@@ -36,6 +39,9 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
+
+        _playerControls = new PlayerControls();
+        _playerControls.Enable();
     }
 
     private void OnSceneChanged(Scene currentScene, Scene nextScene)
@@ -76,6 +82,28 @@ public class GameManager : MonoBehaviour
         foreach (Manager manager in _managers)
         {
             manager.UpdateLogic();
+        }
+
+        DisplayCursor();
+    }
+
+    private void DisplayCursor()
+    {
+        if (_playerControls.Mouse.MouseDelta.ReadValue<Vector2>() != Vector2.zero)
+        {
+            _displayCursorTimer = 3f;
+            Cursor.visible = true;
+        }
+        else
+        {
+            if (_displayCursorTimer > 0)
+            {
+                _displayCursorTimer -= Time.deltaTime;
+            }
+            else
+            {
+                Cursor.visible = false;
+            }
         }
     }
 

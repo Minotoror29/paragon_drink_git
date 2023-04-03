@@ -213,6 +213,33 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Mouse",
+            "id": "9da99efe-5af5-4d06-9325-5b0d9fc67a28",
+            "actions": [
+                {
+                    "name": "Mouse Delta",
+                    "type": "Value",
+                    "id": "073b945d-6445-4075-8559-e4f0f51eccee",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f073ea28-4c2a-41bf-b7fd-06a8e62dab1e",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Mouse Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
