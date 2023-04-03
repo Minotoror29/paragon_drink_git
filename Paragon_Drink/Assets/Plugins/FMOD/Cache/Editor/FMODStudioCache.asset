@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638160465143966241
+  lastModified: 638161477573312371
   FileSizes:
   - Name: Desktop
     Value: 263008
@@ -284,6 +284,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7003927107018094437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cutscene/screen_3
+  m_EditorClassIdentifier: 
+  Path: event:/Cutscene/screen_3
+  Guid:
+    Data1: 1407005470
+    Data2: 1339354033
+    Data3: -1991296853
+    Data4: -2088378001
+  Banks:
+  - {fileID: 3002788829523692553}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1947
 --- !u!114 &-6753094801493092403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,7 +378,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Ambiences.bank
   Name: Ambiences
   StudioPath: bank:/Ambiences
-  lastModified: 638160465142995719
+  lastModified: 638161477572493723
   FileSizes:
   - Name: Desktop
     Value: 3284736
@@ -481,10 +508,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638160465143231176
+  lastModified: 638161477572719416
   FileSizes:
   - Name: Desktop
-    Value: 2332
+    Value: 2528
   Exists: 1
 --- !u!114 &-3071085407155215728
 MonoBehaviour:
@@ -910,6 +937,7 @@ MonoBehaviour:
   - {fileID: -4855281629072041299}
   - {fileID: 7549617154101395441}
   - {fileID: 6258901821471034826}
+  - {fileID: 3002788829523692553}
   EditorEvents:
   - {fileID: -1035051863615226282}
   - {fileID: -7294979120307288432}
@@ -934,12 +962,16 @@ MonoBehaviour:
   - {fileID: 1696564939258306025}
   - {fileID: -4414341079735537548}
   - {fileID: -1453154674792999427}
+  - {fileID: 5397828514733761275}
+  - {fileID: 3549964971406253752}
+  - {fileID: -7003927107018094437}
+  - {fileID: 4874350542641878571}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7474231002757940455}
   StringsBanks:
   - {fileID: -3260400523658786136}
-  cacheTime: 638160465146451328
+  cacheTime: 638161477574212941
   cacheVersion: 131601
 --- !u!114 &128553846448496099
 MonoBehaviour:
@@ -1107,10 +1139,30 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Props.bank
   Name: Props
   StudioPath: bank:/Props
-  lastModified: 638160465144389762
+  lastModified: 638161477573718136
   FileSizes:
   - Name: Desktop
     Value: 285184
+  Exists: 1
+--- !u!114 &3002788829523692553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Cutscene.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sound/paragon_drink/Build/Desktop/Cutscene.bank
+  Name: Cutscene
+  StudioPath: bank:/Cutscene
+  lastModified: 638161477574212941
+  FileSizes:
+  - Name: Desktop
+    Value: 101248
   Exists: 1
 --- !u!114 &3230026919743911003
 MonoBehaviour:
@@ -1224,6 +1276,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 30627
+--- !u!114 &3549964971406253752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cutscene/screen_2
+  m_EditorClassIdentifier: 
+  Path: event:/Cutscene/screen_2
+  Guid:
+    Data1: -1818802873
+    Data2: 1282072372
+    Data3: -1235115587
+    Data4: -719126849
+  Banks:
+  - {fileID: 3002788829523692553}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1815
 --- !u!114 &3651185215635652823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1295,7 +1374,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
   Name: Projectile
   StudioPath: bank:/Projectile
-  lastModified: 638160465144171800
+  lastModified: 638161477573512895
   FileSizes:
   - Name: Desktop
     Value: 270048
@@ -1482,6 +1561,33 @@ MonoBehaviour:
   - Water
   - Fence
   Exists: 1
+--- !u!114 &4874350542641878571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cutscene/screen_4
+  m_EditorClassIdentifier: 
+  Path: event:/Cutscene/screen_4
+  Guid:
+    Data1: -2022840014
+    Data2: 1157513526
+    Data3: -359793530
+    Data4: 1226360311
+  Banks:
+  - {fileID: 3002788829523692553}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2399
 --- !u!114 &4883844420112058310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1533,6 +1639,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5397828514733761275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cutscene/screen_1
+  m_EditorClassIdentifier: 
+  Path: event:/Cutscene/screen_1
+  Guid:
+    Data1: -678618112
+    Data2: 1136459275
+    Data3: 2143755926
+    Data4: 1991238269
+  Banks:
+  - {fileID: 3002788829523692553}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
 --- !u!114 &5668417849142960919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1677,7 +1810,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638160465146451328
+  lastModified: 638161477573954082
   FileSizes:
   - Name: Desktop
     Value: 39296
@@ -1752,7 +1885,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638160465143201150
+  lastModified: 638161477572689178
   FileSizes:
   - Name: Desktop
     Value: 5080
@@ -1772,7 +1905,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Objects.bank
   Name: Objects
   StudioPath: bank:/Objects
-  lastModified: 638160465143451973
+  lastModified: 638161477572911037
   FileSizes:
   - Name: Desktop
     Value: 71008

@@ -157,6 +157,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &279481320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6096972765513340361, guid: 1fc1121e30b43fe4ca2b41cb63375324, type: 3}
+  m_PrefabInstance: {fileID: 6096972764551181182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &279481321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279481320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -678618112
+      Data2: 1136459275
+      Data3: 2143755926
+      Data4: 1991238269
+    Path: event:/Cutscene/screen_1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &288236883
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +627,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6096972765513340356, guid: 1fc1121e30b43fe4ca2b41cb63375324, type: 3}
   m_PrefabInstance: {fileID: 6096972764551181182}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1248560253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6096972765513340361, guid: 1fc1121e30b43fe4ca2b41cb63375324, type: 3}
+  m_PrefabInstance: {fileID: 1563259272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1248560254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248560253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1818802873
+      Data2: 1282072372
+      Data3: -1235115587
+      Data4: -719126849
+    Path: event:/Cutscene/screen_2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1283272298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7834162493802733124, guid: 1fc1121e30b43fe4ca2b41cb63375324, type: 3}
@@ -602,6 +672,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6096972765513340356, guid: 1fc1121e30b43fe4ca2b41cb63375324, type: 3}
   m_PrefabInstance: {fileID: 1181592627}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1357902067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6096972765513340361, guid: 1fc1121e30b43fe4ca2b41cb63375324, type: 3}
+  m_PrefabInstance: {fileID: 1181592627}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1357902072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357902067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1407005470
+      Data2: 1339354033
+      Data3: -1991296853
+      Data4: -2088378001
+    Path: event:/Cutscene/screen_3
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1434527790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -716,6 +821,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skipButton: {fileID: 1283272298}
+--- !u!114 &1518289826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518289823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2022840014
+      Data2: 1157513526
+      Data3: -359793530
+      Data4: 1226360311
+    Path: event:/Cutscene/screen_4
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1563259272
 PrefabInstance:
   m_ObjectHideFlags: 0
