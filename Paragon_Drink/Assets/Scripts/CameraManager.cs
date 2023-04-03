@@ -19,7 +19,6 @@ public class CameraManager : Manager
     //Zoom
     private float _originalSize;
     private bool _zoom = false;
-    private float _zoomSpeed = 1f;
     [SerializeField] private AnimationCurve _zoomCurve;
     private float _zoomTimer = 0f;
 
@@ -72,10 +71,9 @@ public class CameraManager : Manager
         _shakeTimer = time;
     }
 
-    public void Zoom(float zoomSpeed)
+    public void Zoom()
     {
         _zoom = true;
-        _zoomSpeed = zoomSpeed;
     }
 
     public void BackToOriginalSize()
@@ -101,7 +99,6 @@ public class CameraManager : Manager
         //Zoom
         if (_zoom)
         {
-            //_currentVCam.m_Lens.OrthographicSize -= Time.deltaTime * _zoomSpeed;
             if (_zoomTimer < _zoomCurve.keys[_zoomCurve.length - 1].time)
             {
                 _zoomTimer += Time.deltaTime;

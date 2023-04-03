@@ -61,8 +61,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sfxVolume: 0
-  sfxVolumeDefaultValue: 10
+  sfxVolumeDefaultValue: 0
   _musicVolume: 0
-  musicVolumeDefaultValue: 10
+  musicVolumeDefaultValue: 0
   _language: 0
   defaultLanguage: 0

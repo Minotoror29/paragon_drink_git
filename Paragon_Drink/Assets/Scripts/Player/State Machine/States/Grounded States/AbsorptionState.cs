@@ -7,11 +7,6 @@ public class AbsorptionState : GroundedState
 {
     private float _timer = 0.455f;
 
-    private CinemachineVirtualCamera _vCam;
-    private bool _zoom = false;
-    private float _zoomSpeed = 2f;
-    private float _originalSize;
-
     public AbsorptionState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
     {
         _soundPath = "event:/Player/juan_absorption";
@@ -25,7 +20,7 @@ public class AbsorptionState : GroundedState
         _animator.CrossFade(_playerController.absorption, 0f);
         _playerController.Idle();
 
-        CameraManager.Instance.Zoom(4f);
+        CameraManager.Instance.Zoom();
     }
 
     public override void UpdateLogic()

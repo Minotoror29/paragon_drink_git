@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance => instance;
 
     public GameParameters gameParameters;
-    [SerializeField] private StateMachine stateMachine;
+    private StateMachine _stateMachine;
     [SerializeField] private Manager[] _managers;
 
     public int itemsCollected = 0;
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
         else
         {
@@ -52,18 +52,21 @@ public class GameManager : MonoBehaviour
 
         if (nextScene == SceneManager.GetSceneByBuildIndex(0))
         {
-            stateMachine.Initialize(new MenuState());
-        } else if (nextScene == SceneManager.GetSceneByBuildIndex(1))
+            _stateMachine.Initialize(new MenuState());
+        }
+        else if (nextScene == SceneManager.GetSceneByBuildIndex(1))
         {
-            stateMachine.Initialize(new PlayState());
-        } else
+            _stateMachine.Initialize(new CutsceneState());
+        }
+        else if (nextScene == SceneManager.GetSceneByBuildIndex(2))
         {
-            stateMachine.Initialize(new PlayState());
+            _stateMachine.Initialize(new PlayState());
         }
     }
 
     private void GetManagers()
     {
+        _stateMachine = FindObjectOfType<StateMachine>();
         _managers = FindObjectsOfType<Manager>(true);
     }
 
@@ -71,13 +74,13 @@ public class GameManager : MonoBehaviour
     {
         foreach (Manager manager in _managers)
         {
-            manager.Initialize(this, stateMachine);
+            manager.Initialize(this, _stateMachine);
         }
     }
 
     private void Update()
     {
-        stateMachine.UpdateLogic();
+        _stateMachine.UpdateLogic();
 
         foreach (Manager manager in _managers)
         {
@@ -109,7 +112,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        stateMachine.UpdatePhysics();
+        _stateMachine.UpdatePhysics();
     }
 
     public void CollectItem()
