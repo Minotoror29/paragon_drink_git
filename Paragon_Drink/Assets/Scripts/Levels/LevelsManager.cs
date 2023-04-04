@@ -52,18 +52,15 @@ public class LevelsManager : Manager
             _cameraManager.CameraTransition(nextlevel.vCam);
         }
 
-        //nextlevel.vCam.gameObject.SetActive(true);
-        //if (previousLevel != null)
-        //{
-        //    previousLevel.vCam.gameObject.SetActive(false);
-        //}
+        if (activeLevel != startLevel)
+        {
+            activeLevel = nextlevel;
 
-        activeLevel = nextlevel;
+            StateMachine.Instance.ChangeState(new TransitionState());
 
-        StateMachine.Instance.ChangeState(new TransitionState());
+            yield return new WaitForSeconds(0.5f);
 
-        yield return new WaitForSeconds(0.5f);
-
-        StateMachine.Instance.ChangeState(new PlayState());
+            StateMachine.Instance.ChangeState(new PlayState());
+        }
     }
 }

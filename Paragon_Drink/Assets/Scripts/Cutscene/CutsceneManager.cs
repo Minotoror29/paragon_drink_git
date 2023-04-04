@@ -1,3 +1,5 @@
+using FMOD.Studio;
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +16,8 @@ public class CutsceneManager : Manager
     private MenuControls _menuControls;
     private bool _canSwitch = false;
 
+    private EventInstance _skipSound;
+
     public override void Initialize(GameManager gameManager, StateMachine stateMachine)
     {
         base.Initialize(gameManager, stateMachine);
@@ -29,6 +33,9 @@ public class CutsceneManager : Manager
         _menuControls.Cutscene.Enable();
         _menuControls.Cutscene.Skip.performed += ctx => SkipScreen();
 
+        //Initialize sounds
+        _skipSound = RuntimeManager.CreateInstance("event:/Cutscene/ui_casual_pops_confirm");
+
         StartCutscene();
     }
 
@@ -42,6 +49,8 @@ public class CutsceneManager : Manager
     private void SkipScreen()
     {
         if (!_canSwitch) return;
+
+        _skipSound.start();
 
         _canSwitch = false;
         _currentScreen.ExitScreen();

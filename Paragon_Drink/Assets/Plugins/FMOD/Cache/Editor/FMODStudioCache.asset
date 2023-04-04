@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638161477573312371
+  lastModified: 638162060451265398
   FileSizes:
   - Name: Desktop
     Value: 263008
@@ -378,7 +378,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Ambiences.bank
   Name: Ambiences
   StudioPath: bank:/Ambiences
-  lastModified: 638161477572493723
+  lastModified: 638162060450075937
   FileSizes:
   - Name: Desktop
     Value: 3284736
@@ -508,10 +508,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638161477572719416
+  lastModified: 638162060450658884
   FileSizes:
   - Name: Desktop
-    Value: 2528
+    Value: 2592
   Exists: 1
 --- !u!114 &-3071085407155215728
 MonoBehaviour:
@@ -781,6 +781,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 640
+--- !u!114 &-1951793918613247480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cutscene/ui_casual_pops_confirm
+  m_EditorClassIdentifier: 
+  Path: event:/Cutscene/ui_casual_pops_confirm
+  Guid:
+    Data1: -634893999
+    Data2: 1202872305
+    Data3: 806182301
+    Data4: -1691011298
+  Banks:
+  - {fileID: 3002788829523692553}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 270
 --- !u!114 &-1530897972901848839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,12 +993,13 @@ MonoBehaviour:
   - {fileID: 3549964971406253752}
   - {fileID: -7003927107018094437}
   - {fileID: 4874350542641878571}
+  - {fileID: -1951793918613247480}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7474231002757940455}
   StringsBanks:
   - {fileID: -3260400523658786136}
-  cacheTime: 638161477574212941
+  cacheTime: 638162060451957235
   cacheVersion: 131601
 --- !u!114 &128553846448496099
 MonoBehaviour:
@@ -1139,7 +1167,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Props.bank
   Name: Props
   StudioPath: bank:/Props
-  lastModified: 638161477573718136
+  lastModified: 638162060451704760
   FileSizes:
   - Name: Desktop
     Value: 285184
@@ -1159,10 +1187,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Cutscene.bank
   Name: Cutscene
   StudioPath: bank:/Cutscene
-  lastModified: 638161477574212941
+  lastModified: 638162060450533378
   FileSizes:
   - Name: Desktop
-    Value: 101248
+    Value: 104864
   Exists: 1
 --- !u!114 &3230026919743911003
 MonoBehaviour:
@@ -1302,7 +1330,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1815
+  Length: 1715
 --- !u!114 &3651185215635652823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1374,7 +1402,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
   Name: Projectile
   StudioPath: bank:/Projectile
-  lastModified: 638161477573512895
+  lastModified: 638162060451500615
   FileSizes:
   - Name: Desktop
     Value: 270048
@@ -1810,7 +1838,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638161477573954082
+  lastModified: 638162060451957235
   FileSizes:
   - Name: Desktop
     Value: 39296
@@ -1885,7 +1913,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638161477572689178
+  lastModified: 638162060450618845
   FileSizes:
   - Name: Desktop
     Value: 5080
@@ -1905,7 +1933,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Objects.bank
   Name: Objects
   StudioPath: bank:/Objects
-  lastModified: 638161477572911037
+  lastModified: 638162060450866492
   FileSizes:
   - Name: Desktop
     Value: 71008

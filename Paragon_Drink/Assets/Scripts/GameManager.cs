@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
         }
         else if (nextScene == SceneManager.GetSceneByBuildIndex(2))
         {
-            _stateMachine.Initialize(new PlayState());
+            _stateMachine.Initialize(new TransitionState());
         }
     }
 
