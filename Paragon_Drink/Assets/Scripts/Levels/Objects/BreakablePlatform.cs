@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class BreakablePlatform : MonoBehaviour
 {
-    public SpriteRenderer sprite;
     [SerializeField] private Collider2D coll;
 
     [HideInInspector] public bool broken = false;
@@ -18,12 +17,16 @@ public class BreakablePlatform : MonoBehaviour
     private EventInstance _closeSound;
     private EventInstance _breakSound;
 
+    private Animator _animator;
+
     private void Start()
     {
         _openSound = RuntimeManager.CreateInstance("event:/Objects/fence_open");
         _closeSound = RuntimeManager.CreateInstance("event:/Objects/fence_close");
         _breakSound = RuntimeManager.CreateInstance("event:/Objects/fence_break");
         _closeSound.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -36,10 +39,7 @@ public class BreakablePlatform : MonoBehaviour
             }
             else
             {
-                broken = false;
-                coll.enabled = true;
-                sprite.enabled = true;
-                _closeSound.start();
+                Close();
             }
         }
     }
@@ -47,15 +47,20 @@ public class BreakablePlatform : MonoBehaviour
     public void Break()
     {
         coll.enabled = false;
-        sprite.enabled = false;
+        _animator.CrossFade("Barriere_Open", 0);
+        _openSound.start();
         if (canRespawn)
         {
             t = respawnTime;
             broken = true;
-            _openSound.start();
-        } else
-        {
-            _breakSound.start();
         }
+    }
+
+    private void Close()
+    {
+        _animator.CrossFade("Barriere_Close", 0);
+        broken = false;
+        coll.enabled = true;
+        _closeSound.start();
     }
 }
