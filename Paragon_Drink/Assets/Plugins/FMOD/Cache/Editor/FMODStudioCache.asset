@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638162109326757847
+  lastModified: 638167396931847123
   FileSizes:
   - Name: Desktop
     Value: 263008
@@ -378,7 +378,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Ambiences.bank
   Name: Ambiences
   StudioPath: bank:/Ambiences
-  lastModified: 638162109325634465
+  lastModified: 638167396930564775
   FileSizes:
   - Name: Desktop
     Value: 3284736
@@ -535,10 +535,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638162109326120033
+  lastModified: 638167396931103137
   FileSizes:
   - Name: Desktop
-    Value: 2628
+    Value: 2726
   Exists: 1
 --- !u!114 &-3071085407155215728
 MonoBehaviour:
@@ -835,6 +835,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 270
+--- !u!114 &-1817472773732492705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Objects/collectable_collect
+  m_EditorClassIdentifier: 
+  Path: event:/Objects/collectable_collect
+  Guid:
+    Data1: -1022253482
+    Data2: 1327921712
+    Data3: 57477523
+    Data4: 200973596
+  Banks:
+  - {fileID: 7549617154101395441}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1619
 --- !u!114 &-1530897972901848839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1022,12 +1049,14 @@ MonoBehaviour:
   - {fileID: 4874350542641878571}
   - {fileID: -1951793918613247480}
   - {fileID: -4800617893028427757}
+  - {fileID: -1817472773732492705}
+  - {fileID: 8377832399916436167}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7474231002757940455}
   StringsBanks:
   - {fileID: -3260400523658786136}
-  cacheTime: 638162109327407918
+  cacheTime: 638167396932487771
   cacheVersion: 131601
 --- !u!114 &128553846448496099
 MonoBehaviour:
@@ -1195,7 +1224,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Props.bank
   Name: Props
   StudioPath: bank:/Props
-  lastModified: 638162109327173808
+  lastModified: 638167396932267620
   FileSizes:
   - Name: Desktop
     Value: 285184
@@ -1215,7 +1244,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Cutscene.bank
   Name: Cutscene
   StudioPath: bank:/Cutscene
-  lastModified: 638162109326019943
+  lastModified: 638167396930990148
   FileSizes:
   - Name: Desktop
     Value: 121920
@@ -1430,7 +1459,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
   Name: Projectile
   StudioPath: bank:/Projectile
-  lastModified: 638162109326962509
+  lastModified: 638167396932075865
   FileSizes:
   - Name: Desktop
     Value: 270048
@@ -1866,7 +1895,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638162109327407918
+  lastModified: 638167396932487771
   FileSizes:
   - Name: Desktop
     Value: 39296
@@ -1941,7 +1970,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638162109326085143
+  lastModified: 638167396931078073
   FileSizes:
   - Name: Desktop
     Value: 5080
@@ -1961,10 +1990,10 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Objects.bank
   Name: Objects
   StudioPath: bank:/Objects
-  lastModified: 638162109326330457
+  lastModified: 638167396931343059
   FileSizes:
   - Name: Desktop
-    Value: 71008
+    Value: 263104
   Exists: 1
 --- !u!114 &7668621302688554600
 MonoBehaviour:
@@ -2064,6 +2093,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 270048
   Exists: 1
+--- !u!114 &8377832399916436167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Objects/collectable_idle
+  m_EditorClassIdentifier: 
+  Path: event:/Objects/collectable_idle
+  Guid:
+    Data1: 1169914588
+    Data2: 1213756469
+    Data3: 1306017924
+    Data4: 99330340
+  Banks:
+  - {fileID: 7549617154101395441}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17392
 --- !u!114 &8931158691510325076
 MonoBehaviour:
   m_ObjectHideFlags: 0
