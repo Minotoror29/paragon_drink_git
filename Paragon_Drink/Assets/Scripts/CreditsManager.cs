@@ -12,15 +12,19 @@ public class CreditsManager : Manager
     public List<CreditPannel> _pannels = new List<CreditPannel>();
     private int _currentPannelIndex = 0;
 
+    private GameParameters _gameParameters;
+
     public override void Initialize(GameManager gameManager, StateMachine stateMachine)
     {
         base.Initialize(gameManager, stateMachine);
+
+        _gameParameters = _gameManager.gameParameters;
 
         for (int i = 0; i < transform.GetChild(2).childCount; i++)
         {
             CreditPannel pannel = transform.GetChild(2).GetChild(i).GetComponent<CreditPannel>();
             _pannels.Add(pannel);
-            pannel.Initialize(_gameManager, this);
+            pannel.Initialize(_gameManager, this, _gameParameters);
         }
     }
 

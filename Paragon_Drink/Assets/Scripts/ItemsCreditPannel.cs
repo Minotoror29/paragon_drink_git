@@ -12,15 +12,39 @@ public class ItemsCreditPannel : CreditPannel
 
         if (_gameManager.itemsCollected <= 2)
         {
-            alternateEnd = "Bah alors, il s'est passé quoi ?";
+            if (_gameParameters.language == Language.French)
+            {
+                alternateEnd = "Bah alors, il s'est passé quoi ?";
+            } else if (_gameParameters.language == Language.English)
+            {
+                alternateEnd = "The fuck happened ?";
+            }
         } else if (_gameManager.itemsCollected <= 5)
         {
-            alternateEnd = "Pas mal, pas mal.";
+            if (_gameParameters.language == Language.French)
+            {
+                alternateEnd = "Pas mal, pas mal.";
+            } else if (_gameParameters.language == Language.English)
+            {
+                alternateEnd = "Okaaay, we’re getting somewhere !";
+            }
         } else if (_gameManager.itemsCollected == 6)
         {
-            alternateEnd = "RAYAYAY BS SALE!!!";
+            if (_gameParameters.language == Language.French)
+            {
+                alternateEnd = "RAYAYAY BIEN JOUÉ MA GUEULE !!!";
+            } else if (_gameParameters.language == Language.English)
+            {
+                alternateEnd = "Get a life, weirdo.";
+            }
         }
 
-        _text.text = "PS : Ah au fait, vous avez collecté " + _gameManager.itemsCollected + " sur 6 machins là, je sais pas c’est quoi. " + alternateEnd;
+        if (_gameParameters.language == Language.French)
+        {
+            _text.text = "PS : Ah au fait, vous avez collecté " + _gameManager.itemsCollected + " canettes sur 6. " + alternateEnd;
+        } else if (_gameParameters.language == Language.English)
+        {
+            _text.text = "Oh by the way, you collected " + _gameManager.itemsCollected + " cans out of 6. " + alternateEnd;
+        }
     }
 }

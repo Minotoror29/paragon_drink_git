@@ -14,7 +14,7 @@ public class GameParameters : MonoBehaviour
     public float _musicVolume;
     [SerializeField] private float musicVolumeDefaultValue;
 
-    public Language _language;
+    public Language language;
     [SerializeField] private Language defaultLanguage;
 
     private ParameterValue[] _parameterValues;
@@ -26,7 +26,7 @@ public class GameParameters : MonoBehaviour
 
         _sfxVolume = sfxVolumeDefaultValue;
         _musicVolume = musicVolumeDefaultValue;
-        _language = defaultLanguage;
+        language = defaultLanguage;
     }
 
     public void InitializeParameters()
@@ -52,7 +52,7 @@ public class GameParameters : MonoBehaviour
 
     public void ChangeLanguage(Language language)
     {
-        _language = language;
+        this.language = language;
         InitializeParameters();
     }
 

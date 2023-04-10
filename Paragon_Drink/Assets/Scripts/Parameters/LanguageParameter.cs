@@ -9,11 +9,11 @@ public class LanguageParameter : ParameterValue
 
     protected override void ChangeValue()
     {
-        if (_gameParameters._language == Language.French)
+        if (_gameParameters.language == Language.French)
         {
             french.SetActive(true);
             english.SetActive(false);
-        } else if (_gameParameters._language == Language.English)
+        } else if (_gameParameters.language == Language.English)
         {
             english.SetActive(true);
             french.SetActive(false);

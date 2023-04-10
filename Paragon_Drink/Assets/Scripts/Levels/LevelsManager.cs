@@ -47,13 +47,7 @@ public class LevelsManager : Manager
         if (previousLevel != null)
         {
             _cameraManager.CameraTransition(nextlevel.vCam, previousLevel.vCam);
-        } else
-        {
-            _cameraManager.CameraTransition(nextlevel.vCam);
-        }
 
-        if (activeLevel != startLevel)
-        {
             activeLevel = nextlevel;
 
             StateMachine.Instance.ChangeState(new TransitionState());
@@ -61,6 +55,9 @@ public class LevelsManager : Manager
             yield return new WaitForSeconds(0.5f);
 
             StateMachine.Instance.ChangeState(new PlayState());
-        }
+        } else
+        {
+            _cameraManager.CameraTransition(nextlevel.vCam);
+        }        
     }
 }

@@ -7,24 +7,24 @@ public class CreditPannel : MonoBehaviour
 {
     protected GameManager _gameManager;
     private CreditsManager _credits;
+    protected GameParameters _gameParameters;
 
     protected TextMeshProUGUI _text;
     private float _fadeSpeed = 0.5f;
     private float _pannelTime = 5f;
 
-    public void Initialize(GameManager gameManager, CreditsManager credits)
+    public void Initialize(GameManager gameManager, CreditsManager credits, GameParameters gameParameters)
     {
         _gameManager = gameManager;
-
         _credits = credits;
-
-        _text = GetComponentInChildren<TextMeshProUGUI>();
-        _text.color = new Color(_text.color.r, _text.color.g, _text.color.b, 0);
+        _gameParameters = gameParameters;
     }
 
     public virtual void ActivatePannel()
     {
         gameObject.SetActive(true);
+        _text = GetComponentInChildren<TextMeshProUGUI>();
+        _text.color = new Color(_text.color.r, _text.color.g, _text.color.b, 0);
         StartCoroutine(Activatepannel());
     }
 
