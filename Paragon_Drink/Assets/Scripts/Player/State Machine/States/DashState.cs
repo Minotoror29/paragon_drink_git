@@ -8,7 +8,7 @@ public class DashState : PlayerState
 {
     private float _dashTime;
 
-    private float _slowTimer = 0.015f;
+    private float _slowTimer = 0.01f;
 
     public DashState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
     {
@@ -66,5 +66,12 @@ public class DashState : PlayerState
         {
             platform.Break();
         }
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+
+        Time.timeScale = 1f;
     }
 }
