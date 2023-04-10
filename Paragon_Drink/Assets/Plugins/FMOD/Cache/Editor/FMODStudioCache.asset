@@ -10,16 +10,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638147040386425528
-  FileSizes:
-  - Name: Desktop
-    Value: 1174
-  Exists: 1
+  Path: 
+  Name: 
+  StudioPath: 
+  lastModified: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-8899585485126066398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Objects/collectable_idle
+  m_EditorClassIdentifier: 
+  Path: event:/Objects/collectable_idle
+  Guid:
+    Data1: 1169914588
+    Data2: 1213756469
+    Data3: 1306017924
+    Data4: 99330340
+  Banks:
+  - {fileID: 7549617154101395441}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17392
 --- !u!114 &-8800524858719031017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +87,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638167396931847123
+  lastModified: 638160419981243884
   FileSizes:
   - Name: Desktop
     Value: 263008
@@ -131,16 +156,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638147470379590729
-  FileSizes:
-  - Name: Desktop
-    Value: 1340
-  Exists: 1
+  Path: 
+  Name: 
+  StudioPath: 
+  lastModified: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-7937875031046530787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,24 +174,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dehydrated_jump
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dehydrated_jump
+  Path: 
   Guid:
-    Data1: 1468655726
-    Data2: 1076924965
-    Data3: 1071654021
-    Data4: 65307059
-  Banks:
-  - {fileID: 128553846448496099}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 9172243373154250850}
-  - {fileID: 4510692823292783363}
-  MinDistance: 1
-  MaxDistance: 20
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 0
 --- !u!114 &-7700541031254999634
 MonoBehaviour:
@@ -180,24 +200,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dehydrated_footsteps
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dehydrated_footsteps
+  Path: 
   Guid:
-    Data1: -2030679057
-    Data2: 1199752672
-    Data3: -1388412256
-    Data4: -1210121806
-  Banks:
-  - {fileID: -2409098373971464813}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 7866570477167662200}
-  - {fileID: -2340017805638781267}
-  MinDistance: 1
-  MaxDistance: 20
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 0
 --- !u!114 &-7586405655106645383
 MonoBehaviour:
@@ -265,24 +282,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dehydrated_land
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dehydrated_land
+  Path: 
   Guid:
-    Data1: 432940135
-    Data2: 1321810826
-    Data3: -1476874857
-    Data4: 36543664
-  Banks:
-  - {fileID: -2409098373971464813}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -2194356937106564946}
-  - {fileID: -2220538649858461556}
-  MinDistance: 1
-  MaxDistance: 20
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 0
 --- !u!114 &-7003927107018094437
 MonoBehaviour:
@@ -321,20 +335,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_land/Size
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Size
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 0
   Default: 0
   ID:
-    data1: 3875665658
-    data2: 283754117
-  Type: 1
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6177918477213949820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,7 +392,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Ambiences.bank
   Name: Ambiences
   StudioPath: bank:/Ambiences
-  lastModified: 638167396930564775
+  lastModified: 638148433534711369
   FileSizes:
   - Name: Desktop
     Value: 3284736
@@ -535,7 +549,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638167396931103137
+  lastModified: 638167419941746295
   FileSizes:
   - Name: Desktop
     Value: 2726
@@ -601,16 +615,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Player.bank
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
-  Name: Player
-  StudioPath: bank:/Player
-  lastModified: 638147040386445552
-  FileSizes:
-  - Name: Desktop
-    Value: 126688
-  Exists: 1
+  Path: 
+  Name: 
+  StudioPath: 
+  lastModified: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-2405962359114840665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,23 +657,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_footsteps/Surface
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Surface
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 0
   Default: 0
   ID:
-    data1: 3827373414
-    data2: 425796583
-  Type: 2
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
-  Labels:
-  - Floor
-  - Water
-  - Fence
-  Exists: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &-2336139247875633857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,20 +681,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_jump_2/Size
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Size
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 0
   Default: 0
   ID:
-    data1: 3875665658
-    data2: 283754117
-  Type: 1
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
+  Exists: 0
+--- !u!114 &-2268782481723365454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Objects/collectable_collect
+  m_EditorClassIdentifier: 
+  Path: event:/Objects/collectable_collect
+  Guid:
+    Data1: -1022253482
+    Data2: 1327921712
+    Data3: 57477523
+    Data4: 200973596
+  Banks:
+  - {fileID: 7549617154101395441}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1619
 --- !u!114 &-2220538649858461556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,23 +732,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_land/Surface
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Surface
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 0
   Default: 0
   ID:
-    data1: 3827373414
-    data2: 425796583
-  Type: 2
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
-  Labels:
-  - Floor
-  - Water
-  - Fence
-  Exists: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &-2209776344336568082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,20 +780,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_land/Size
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Size
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 0
   Default: 0
   ID:
-    data1: 3875665658
-    data2: 283754117
-  Type: 1
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2030567808126061807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,16 +804,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638147040386425528
-  FileSizes:
-  - Name: Desktop
-    Value: 1340
-  Exists: 1
+  Path: 
+  Name: 
+  StudioPath: 
+  lastModified: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-1969851876288482303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,23 +822,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Projectile/projectile_impact
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Projectile/projectile_impact
+  Path: 
   Guid:
-    Data1: 43898374
-    Data2: 1271070581
-    Data3: -2042927457
-    Data4: 942300836
-  Banks:
-  - {fileID: 8195618431582717071}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 640
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1951793918613247480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,33 +865,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 270
---- !u!114 &-1817472773732492705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Objects/collectable_collect
-  m_EditorClassIdentifier: 
-  Path: event:/Objects/collectable_collect
-  Guid:
-    Data1: -1022253482
-    Data2: 1327921712
-    Data3: 57477523
-    Data4: 200973596
-  Banks:
-  - {fileID: 7549617154101395441}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1619
 --- !u!114 &-1530897972901848839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,23 +875,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_absorption
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_absorption
+  Path: 
   Guid:
-    Data1: 1328067165
-    Data2: 1159099942
-    Data3: -575531853
-    Data4: 1495105138
-  Banks:
-  - {fileID: 128553846448496099}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1125
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1501139699563781524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,23 +901,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dash_impact
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dash_impact
+  Path: 
   Guid:
-    Data1: -308068192
-    Data2: 1141753953
-    Data3: -702908780
-    Data4: 2079269715
-  Banks:
-  - {fileID: 128553846448496099}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1500
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1453154674792999427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,23 +981,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_land/Surface
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Surface
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 0
   Default: 0
   ID:
-    data1: 3827373414
-    data2: 425796583
-  Type: 2
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
-  Labels:
-  - Floor
-  - Water
-  - Fence
-  Exists: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,14 +1047,14 @@ MonoBehaviour:
   - {fileID: 4874350542641878571}
   - {fileID: -1951793918613247480}
   - {fileID: -4800617893028427757}
-  - {fileID: -1817472773732492705}
-  - {fileID: 8377832399916436167}
+  - {fileID: -2268782481723365454}
+  - {fileID: -8899585485126066398}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7474231002757940455}
   StringsBanks:
   - {fileID: -3260400523658786136}
-  cacheTime: 638167396932487771
+  cacheTime: 638167419941776214
   cacheVersion: 131601
 --- !u!114 &128553846448496099
 MonoBehaviour:
@@ -1068,16 +1066,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Player.bank
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
-  Name: Player
-  StudioPath: bank:/Player
-  lastModified: 638147470385635471
-  FileSizes:
-  - Name: Desktop
-    Value: 213600
-  Exists: 1
+  Path: 
+  Name: 
+  StudioPath: 
+  lastModified: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &197911360830787473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,24 +1108,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dehydrated_footsteps
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dehydrated_footsteps
+  Path: 
   Guid:
-    Data1: -2030679057
-    Data2: 1199752672
-    Data3: -1388412256
-    Data4: -1210121806
-  Banks:
-  - {fileID: 128553846448496099}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 5064491572428626012}
-  - {fileID: 7040664532871372646}
-  MinDistance: 1
-  MaxDistance: 20
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 0
 --- !u!114 &976536207303789093
 MonoBehaviour:
@@ -1224,7 +1217,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Props.bank
   Name: Props
   StudioPath: bank:/Props
-  lastModified: 638167396932267620
+  lastModified: 638147802055927404
   FileSizes:
   - Name: Desktop
     Value: 285184
@@ -1244,7 +1237,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Cutscene.bank
   Name: Cutscene
   StudioPath: bank:/Cutscene
-  lastModified: 638167396930990148
+  lastModified: 638167323490531172
   FileSizes:
   - Name: Desktop
     Value: 121920
@@ -1315,24 +1308,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dehydrated_land
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dehydrated_land
+  Path: 
   Guid:
-    Data1: 432940135
-    Data2: 1321810826
-    Data3: -1476874857
-    Data4: 36543664
-  Banks:
-  - {fileID: 128553846448496099}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -6753094801493092403}
-  - {fileID: -934936050525606594}
-  MinDistance: 1
-  MaxDistance: 20
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 0
 --- !u!114 &3487288748382335534
 MonoBehaviour:
@@ -1344,23 +1334,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Projectile/projectile_ambient
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Projectile/projectile_ambient
+  Path: 
   Guid:
-    Data1: 1143937913
-    Data2: 1175969306
-    Data3: -861829478
-    Data4: -582453846
-  Banks:
-  - {fileID: 8195618431582717071}
-  IsStream: 1
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
+  IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 30627
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &3549964971406253752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1427,23 +1416,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_absorption
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_absorption
+  Path: 
   Guid:
-    Data1: 1328067165
-    Data2: 1159099942
-    Data3: -575531853
-    Data4: 1495105138
-  Banks:
-  - {fileID: -2409098373971464813}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1125
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &3892051526740184616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1459,7 +1447,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
   Name: Projectile
   StudioPath: bank:/Projectile
-  lastModified: 638167396932075865
+  lastModified: 638147802055907675
   FileSizes:
   - Name: Desktop
     Value: 270048
@@ -1474,16 +1462,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638147470379799402
-  FileSizes:
-  - Name: Desktop
-    Value: 1400
-  Exists: 1
+  Path: 
+  Name: 
+  StudioPath: 
+  lastModified: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4418801148565324863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1494,20 +1480,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_jump_2/Size
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Size
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 0
   Default: 0
   ID:
-    data1: 3875665658
-    data2: 283754117
-  Type: 1
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &4510692823292783363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,23 +1504,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_jump/Surface
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Surface
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 0
   Default: 0
   ID:
-    data1: 3827373414
-    data2: 425796583
-  Type: 2
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
-  Labels:
-  - Floor
-  - Water
-  - Fence
-  Exists: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &4563372329395422596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1545,24 +1528,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dehydrated_jump
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dehydrated_jump
+  Path: 
   Guid:
-    Data1: 1468655726
-    Data2: 1076924965
-    Data3: 1071654021
-    Data4: 65307059
-  Banks:
-  - {fileID: -2409098373971464813}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 5956723146408889556}
-  - {fileID: 4846495661083084461}
-  MinDistance: 1
-  MaxDistance: 20
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 0
 --- !u!114 &4678028118768086204
 MonoBehaviour:
@@ -1574,24 +1554,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dehydrated_jump_2
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dehydrated_jump_2
+  Path: 
   Guid:
-    Data1: -350679047
-    Data2: 1281797874
-    Data3: -955545202
-    Data4: -776588106
-  Banks:
-  - {fileID: -2409098373971464813}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -2336139247875633857}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 274
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &4828767066804858975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1629,23 +1607,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_jump/Surface
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Surface
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 0
   Default: 0
   ID:
-    data1: 3827373414
-    data2: 425796583
-  Type: 2
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
-  Labels:
-  - Floor
-  - Water
-  - Fence
-  Exists: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &4874350542641878571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1710,20 +1685,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_footsteps/Size
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Size
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 0
   Default: 0
   ID:
-    data1: 3875665658
-    data2: 283754117
-  Type: 1
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &5397828514733761275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1842,20 +1817,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_jump/Size
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Size
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 0
   Default: 0
   ID:
-    data1: 3875665658
-    data2: 283754117
-  Type: 1
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &6028228648978187887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1895,7 +1870,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638167396932487771
+  lastModified: 638167323490550965
   FileSizes:
   - Name: Desktop
     Value: 39296
@@ -1910,23 +1885,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_footsteps/Surface
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Surface
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 0
   Default: 0
   ID:
-    data1: 3827373414
-    data2: 425796583
-  Type: 2
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
-  Labels:
-  - Floor
-  - Water
-  - Fence
-  Exists: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &7186055398025511132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1937,24 +1909,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/juan_dehydrated_jump_2
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player/juan_dehydrated_jump_2
+  Path: 
   Guid:
-    Data1: -350679047
-    Data2: 1281797874
-    Data3: -955545202
-    Data4: -776588106
-  Banks:
-  - {fileID: 128553846448496099}
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 4418801148565324863}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 274
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &7474231002757940455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1970,7 +1940,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638167396931078073
+  lastModified: 638147802055867554
   FileSizes:
   - Name: Desktop
     Value: 5080
@@ -1990,7 +1960,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Objects.bank
   Name: Objects
   StudioPath: bank:/Objects
-  lastModified: 638167396931343059
+  lastModified: 638167419941776214
   FileSizes:
   - Name: Desktop
     Value: 263104
@@ -2032,20 +2002,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_footsteps/Size
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Size
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 0
   Default: 0
   ID:
-    data1: 3875665658
-    data2: 283754117
-  Type: 1
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &7884111674948753767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2083,43 +2053,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Projectile.bank
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
-  Name: Projectile
-  StudioPath: bank:/Projectile
-  lastModified: 638147470386187352
-  FileSizes:
-  - Name: Desktop
-    Value: 270048
-  Exists: 1
---- !u!114 &8377832399916436167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Objects/collectable_idle
-  m_EditorClassIdentifier: 
-  Path: event:/Objects/collectable_idle
-  Guid:
-    Data1: 1169914588
-    Data2: 1213756469
-    Data3: 1306017924
-    Data4: 99330340
-  Banks:
-  - {fileID: 7549617154101395441}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 17392
+  Path: 
+  Name: 
+  StudioPath: 
+  lastModified: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &8931158691510325076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,17 +2098,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/juan_dehydrated_jump/Size
+  m_Name: 
   m_EditorClassIdentifier: 
-  Name: Size
+  Name: 
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 0
   Default: 0
   ID:
-    data1: 3875665658
-    data2: 283754117
-  Type: 1
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
+  Exists: 0
