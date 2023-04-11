@@ -51,6 +51,12 @@ public class PlayerController : MonoBehaviour
     private EventInstance _landWaterSound;
     [HideInInspector] public int size = 0;
 
+    [Header("FX")]
+    [SerializeField] private GameObject jumpFX;
+    [SerializeField] private GameObject jumpDiagonalFX;
+    [SerializeField] private GameObject airJumpFX;
+    [SerializeField] private GameObject airJumpDiagonalFX;
+
     public void Initialize()
     {
         _playerControls = new PlayerControls();
@@ -106,6 +112,7 @@ public class PlayerController : MonoBehaviour
     public void Jump(float jumpHeight)
     {
         _direction.y = Mathf.Sqrt(-2f * _gravityForce * (jumpHeight));
+        CreateJumpFX();
     }
 
     public void Fall()
@@ -229,5 +236,42 @@ public class PlayerController : MonoBehaviour
         }
 
         return surfaceType;
+    }
+
+    private void CreateJumpFX()
+    {
+        GameObject newFX;
+        GameObject fxPrefab;
+
+        if (currentGround != null)
+        {
+            if (_direction.x == 0)
+            {
+                fxPrefab = jumpFX;
+            }
+            else
+            {
+                fxPrefab = jumpDiagonalFX;
+            }
+        } else
+        {
+            if (_direction.x == 0)
+            {
+                fxPrefab = airJumpFX;
+            }
+            else
+            {
+                fxPrefab = airJumpDiagonalFX;
+            }
+        }
+
+        float y = 0f;
+        if (_direction.x < 0)
+        {
+            y = 180f;
+        }
+        newFX = Instantiate(fxPrefab, transform.position, Quaternion.Euler(0, y, 0));
+
+        Destroy(newFX, 0.5f);
     }
 }

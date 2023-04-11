@@ -69,7 +69,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1330621299
-  m_SortingLayer: 2
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7bb134d4b0df6a84ba3f088a4c0f79d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -357,7 +357,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9}
+  m_Size: {x: 0.5, y: 0.9}
   m_EdgeRadius: 0.01
 --- !u!95 &4351455072271468174
 Animator:
@@ -407,6 +407,7 @@ MonoBehaviour:
   requireNewJumpPress: 0
   canJump: 0
   inWater: 0
+  currentWater: {fileID: 0}
   dashSpeed: 25
   dashTime: 0.1
   shootPoint: {fileID: 3520949100428479411}
@@ -419,6 +420,11 @@ MonoBehaviour:
   fall: 
   land: 
   absorption: Absorption
+  size: 0
+  jumpFX: {fileID: 8561949719832489826, guid: faa8abb32693a714fac21f2670f141e5, type: 3}
+  jumpDiagonalFX: {fileID: 7661179818888720693, guid: ad4add5b048019544b4a05de911012f3, type: 3}
+  airJumpFX: {fileID: 8199495167883889399, guid: 5d1ed968a664d4f41ae6ce643006a904, type: 3}
+  airJumpDiagonalFX: {fileID: 6348389794379896737, guid: 47708df38b75ecf439f1266963b410f0, type: 3}
 --- !u!114 &7464638840601067902
 MonoBehaviour:
   m_ObjectHideFlags: 0
