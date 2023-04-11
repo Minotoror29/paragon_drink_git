@@ -25,6 +25,8 @@ public class LandState : GroundedState
         {
             _currentSuperState.ChangeSubState(new JumpState(_playerStateMachine, _playerController, _animator));
         }
+
+        _playerController.CreateLandFX();
     }
 
     public override void UpdateLogic()

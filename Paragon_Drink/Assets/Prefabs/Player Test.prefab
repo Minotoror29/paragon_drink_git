@@ -425,6 +425,8 @@ MonoBehaviour:
   jumpDiagonalFX: {fileID: 7661179818888720693, guid: ad4add5b048019544b4a05de911012f3, type: 3}
   airJumpFX: {fileID: 8199495167883889399, guid: 5d1ed968a664d4f41ae6ce643006a904, type: 3}
   airJumpDiagonalFX: {fileID: 6348389794379896737, guid: 47708df38b75ecf439f1266963b410f0, type: 3}
+  landFX1: {fileID: 2264237895894914750, guid: 5eac5d67ac3fc384b993316093d79fa9, type: 3}
+  landFX2: {fileID: 4760677885479698245, guid: 4c42d548b19f88a48824b24e46b888e9, type: 3}
 --- !u!114 &7464638840601067902
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -57,6 +57,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject airJumpFX;
     [SerializeField] private GameObject airJumpDiagonalFX;
 
+    [SerializeField] private GameObject landFX1;
+    [SerializeField] private GameObject landFX2;
+
     public void Initialize()
     {
         _playerControls = new PlayerControls();
@@ -270,8 +273,27 @@ public class PlayerController : MonoBehaviour
         {
             y = 180f;
         }
-        newFX = Instantiate(fxPrefab, transform.position, Quaternion.Euler(0, y, 0));
 
+        newFX = Instantiate(fxPrefab, transform.position, Quaternion.Euler(0, y, 0));
+        Destroy(newFX, 0.5f);
+    }
+
+    public void CreateLandFX()
+    {
+        GameObject newFX;
+        GameObject fxPrefab;
+
+        int i = Random.Range(1, 3);
+
+        if (i == 1)
+        {
+            fxPrefab = landFX1;
+        } else
+        {
+            fxPrefab = landFX2;
+        }
+
+        newFX = Instantiate(fxPrefab, transform.position, transform.rotation);
         Destroy(newFX, 0.5f);
     }
 }
