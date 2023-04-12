@@ -293,7 +293,7 @@ public class PlayerController : MonoBehaviour
             fxPrefab = landFX2;
         }
 
-        newFX = Instantiate(fxPrefab, transform.position, transform.rotation);
+        newFX = Instantiate(fxPrefab, (Vector2)transform.position + Vector2.up * 0.1f, transform.rotation);
         Destroy(newFX, 0.5f);
     }
 }
