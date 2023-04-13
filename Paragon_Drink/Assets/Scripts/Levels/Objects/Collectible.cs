@@ -48,4 +48,9 @@ public class Collectible : MonoBehaviour
 
         gameObject.SetActive(false);
     }
+
+    private void OnDisable()
+    {
+        _idleSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
 }

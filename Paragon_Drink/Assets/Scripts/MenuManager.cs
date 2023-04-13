@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using FMOD.Studio;
+using FMODUnity;
 
 public class MenuManager : Manager
 {
@@ -32,6 +34,7 @@ public class MenuManager : Manager
     [SerializeField] private List<GameObject> cracks;
     private int _crack = 0;
     [SerializeField] private JuanButton juanButton;
+    private EventInstance _crackSound;
 
     private void Awake()
     {
@@ -59,6 +62,8 @@ public class MenuManager : Manager
         {
             image.Initialize(menuControls, _menuInput);
         }
+
+        _crackSound = RuntimeManager.CreateInstance("event:/Menu/glass_break");
     }
 
     public void SwitchToMenuState()
@@ -89,6 +94,8 @@ public class MenuManager : Manager
         juanButton.Crack();
 
         CameraManager.Instance.ShakeCam(5f, 0.1f);
+
+        _crackSound.start();
     }
 
     public void DisplayOptionsMenu()
@@ -150,12 +157,12 @@ public class MenuManager : Manager
 
     public void ExitToMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     public void ExitToDesktop()
     {
-
+        Application.Quit();
     }
 }
 

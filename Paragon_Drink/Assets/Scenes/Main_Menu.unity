@@ -649,6 +649,7 @@ GameObject:
   - component: {fileID: 541564751}
   - component: {fileID: 541564750}
   - component: {fileID: 541564749}
+  - component: {fileID: 541564752}
   m_Layer: 5
   m_Name: Aquarium
   m_TagString: Untagged
@@ -732,6 +733,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541564747}
   m_CullTransparentMesh: 1
+--- !u!114 &541564752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541564747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -389083719
+      Data2: 1208549353
+      Data3: 1416935590
+      Data4: 656154603
+    Path: event:/Menu/aquarium
+  Event: 
+  PlayEvent: 1
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &558250452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,6 +1746,7 @@ GameObject:
   - component: {fileID: 1660200373}
   - component: {fileID: 1660200376}
   - component: {fileID: 1660200377}
+  - component: {fileID: 1660200378}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1859,6 +1891,36 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1660200378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660200372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1338127735
+      Data2: 1304801435
+      Data3: 155703181
+      Data4: 1114118425
+    Path: snapshot:/Reverb 0
+  Event: 
+  PlayEvent: 1
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1675658337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,6 +2059,7 @@ GameObject:
   - component: {fileID: 1906856886}
   - component: {fileID: 1906856885}
   - component: {fileID: 1906856888}
+  - component: {fileID: 1906856889}
   m_Layer: 5
   m_Name: Options Button
   m_TagString: Untagged
@@ -2079,6 +2142,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1906856889}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1906856886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2130,6 +2205,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleFactor: 1.25
+--- !u!114 &1906856889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906856883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 36440139
+      Data2: 1183991436
+      Data3: -1634087546
+      Data4: -528968838
+    Path: event:/UI/ui_casual_open
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!114 &2090687711 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1219699299370756520, guid: 9dcf38e7ae465304492e8bf6b6a1de18, type: 3}

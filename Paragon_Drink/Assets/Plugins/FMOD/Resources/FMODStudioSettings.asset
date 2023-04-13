@@ -386,6 +386,7 @@ MonoBehaviour:
   Banks:
   - Ambiences
   - Cutscene
+  - Menu
   - Objects
   - Player
   - Projectile
