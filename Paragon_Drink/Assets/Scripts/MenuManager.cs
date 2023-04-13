@@ -29,6 +29,10 @@ public class MenuManager : Manager
 
     private WindowMode currentWindowMode = WindowMode.Fullscreen;
 
+    [SerializeField] private List<GameObject> cracks;
+    private int _crack = 0;
+    [SerializeField] private JuanButton juanButton;
+
     private void Awake()
     {
         if (instance != null)
@@ -69,7 +73,22 @@ public class MenuManager : Manager
 
     public void Play()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (_crack == 4)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            return;
+        }
+
+        if (_crack > 0)
+        {
+            cracks[_crack - 1].SetActive(false);
+        }
+        cracks[_crack].SetActive(true);
+        _crack++;
+
+        juanButton.Crack();
+
+        CameraManager.Instance.ShakeCam(5f, 0.1f);
     }
 
     public void DisplayOptionsMenu()
