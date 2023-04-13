@@ -16,7 +16,7 @@ public class MenuManager : Manager
     public GameParameters _gameParameters;
 
     [HideInInspector] public MenuControls menuControls;
-    private PlayerInput _menuInput;
+    public PlayerInput _menuInput;
 
     private ControlSchemeImage[] _controlSchemeImages;
 
@@ -56,7 +56,8 @@ public class MenuManager : Manager
         menuControls = new MenuControls();
         menuControls.Menu.QuitMenu.performed += ctx => HideOptionsMenu();
 
-        _menuInput = GetComponent<PlayerInput>();
+        //_menuInput = GetComponent<PlayerInput>();
+        _menuInput = _gameManager.GetComponent<PlayerInput>();
         _controlSchemeImages = FindObjectsOfType<ControlSchemeImage>(true);
         foreach (ControlSchemeImage image in _controlSchemeImages)
         {

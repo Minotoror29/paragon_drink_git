@@ -151,7 +151,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1219699299370756503}
   - component: {fileID: 1219699299370756520}
-  - component: {fileID: 3184564473209414267}
   m_Layer: 0
   m_Name: Menu Manager
   m_TagString: Untagged
@@ -187,6 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameParameters: {fileID: 0}
+  _menuInput: {fileID: 0}
   playButton: {fileID: 0}
   optionsMenu: {fileID: 1219699299243021130}
   frenchButton: {fileID: 1219699297567226199}
@@ -194,36 +194,8 @@ MonoBehaviour:
   musicSlider: {fileID: 1219699299057833773}
   fullscreen: {fileID: 1219699299292936999}
   windowed: {fileID: 1219699298516986247}
---- !u!114 &3184564473209414267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219699299370756521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: bc26b8d4d1eaf8249adb6035c62fadb3, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Menu
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  cracks: []
+  juanButton: {fileID: 0}
 --- !u!1 &3772407385270228702
 GameObject:
   m_ObjectHideFlags: 0

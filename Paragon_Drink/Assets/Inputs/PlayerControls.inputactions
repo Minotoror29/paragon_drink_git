@@ -32,7 +32,7 @@
             ],
             "bindings": [
                 {
-                    "name": "2D Vector",
+                    "name": "A/D",
                     "id": "493fab17-c73c-4677-ad40-455b9955972b",
                     "path": "2DVector",
                     "interactions": "",
@@ -65,7 +65,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "2D Vector",
+                    "name": "Stick",
                     "id": "afbdadd8-0016-4040-a88b-df26085cc177",
                     "path": "2DVector",
                     "interactions": "",
@@ -98,7 +98,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "2D Vector",
+                    "name": "D-Pad",
                     "id": "47eb6a90-93c3-495c-be85-93e8a4a61338",
                     "path": "2DVector",
                     "interactions": "",
@@ -126,6 +126,39 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Arrows",
+                    "id": "f712b6b1-aad6-4a32-88ba-02f81b9793ee",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "12fa0b47-e5e1-48f7-9e71-d59477f877fe",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b5845fb6-db36-4792-9551-db00abfd08e4",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
