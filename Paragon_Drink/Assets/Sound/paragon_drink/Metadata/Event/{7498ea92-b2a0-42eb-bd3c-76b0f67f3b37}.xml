@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{7498ea92-b2a0-42eb-bd3c-76b0f67f3b37}">
 		<property name="name">
-			<value>glass_break</value>
+			<value>glass_break_1</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -95,9 +95,9 @@
 		<property name="length">
 			<value>1.0469791666666666</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{734fdf31-6057-4b26-baeb-2cec3c275bd6}</destination>
-		</relationship>
+		<property name="pitch">
+			<value>-10</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{32e06908-1b42-41e5-8fcb-7896fbaefe9f}</destination>
 		</relationship>
@@ -123,14 +123,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{fdd0b9cb-3cd1-4a35-b1ec-9e366b35d8f7}" />
 	<object class="MixerBusFader" id="{cd6740da-f72b-4eb3-96a8-329cb99759ff}" />
-	<object class="RandomizerModulator" id="{734fdf31-6057-4b26-baeb-2cec3c275bd6}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>20.8333321</value>
-		</property>
-	</object>
 	<object class="MixerBusEffectChain" id="{af3e57b5-85a4-40b5-a01c-20ef0f10e405}">
 		<relationship name="effects">
 			<destination>{7fac9c89-69df-46bf-a510-1ba7820ff329}</destination>

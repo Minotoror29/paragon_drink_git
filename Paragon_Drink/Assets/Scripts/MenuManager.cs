@@ -34,7 +34,7 @@ public class MenuManager : Manager
     [SerializeField] private List<GameObject> cracks;
     private int _crack = 0;
     [SerializeField] private JuanButton juanButton;
-    private EventInstance _crackSound;
+    private List<EventInstance> _crackSounds;
 
     private void Awake()
     {
@@ -64,7 +64,11 @@ public class MenuManager : Manager
             image.Initialize(menuControls, _menuInput);
         }
 
-        _crackSound = RuntimeManager.CreateInstance("event:/Menu/glass_break");
+        _crackSounds = new List<EventInstance>();
+        _crackSounds.Add(RuntimeManager.CreateInstance("event:/Menu/glass_break_1"));
+        _crackSounds.Add(RuntimeManager.CreateInstance("event:/Menu/glass_break_2"));
+        _crackSounds.Add(RuntimeManager.CreateInstance("event:/Menu/glass_break_3"));
+        _crackSounds.Add(RuntimeManager.CreateInstance("event:/Menu/glass_break_4"));
     }
 
     public void SwitchToMenuState()
@@ -96,7 +100,7 @@ public class MenuManager : Manager
 
         CameraManager.Instance.ShakeCam(5f, 0.1f);
 
-        _crackSound.start();
+        _crackSounds[_crack - 1].start();
     }
 
     public void DisplayOptionsMenu()
