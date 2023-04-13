@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using UnityEditorInternal;
+using FMOD.Studio;
+using FMODUnity;
 
 public class CreditsManager : Manager
 {
@@ -13,6 +15,8 @@ public class CreditsManager : Manager
     private int _currentPannelIndex = 0;
 
     private GameParameters _gameParameters;
+
+    private EventInstance _creditsSound;
 
     public override void Initialize(GameManager gameManager, StateMachine stateMachine)
     {
@@ -26,6 +30,8 @@ public class CreditsManager : Manager
             _pannels.Add(pannel);
             pannel.Initialize(_gameManager, this, _gameParameters);
         }
+
+        _creditsSound = RuntimeManager.CreateInstance("event:/UI/credits");
     }
 
     public void StartCredits()
@@ -44,6 +50,7 @@ public class CreditsManager : Manager
         {
             _pannels[_currentPannelIndex].ActivatePannel();
             _currentPannelIndex++;
+            _creditsSound.start();
         }
     }
 

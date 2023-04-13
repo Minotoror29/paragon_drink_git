@@ -10,7 +10,7 @@ public class CreditPannel : MonoBehaviour
     protected GameParameters _gameParameters;
 
     protected TextMeshProUGUI _text;
-    private float _fadeSpeed = 0.5f;
+    private float _fadeSpeed = 1f;
     private float _pannelTime = 5f;
 
     public void Initialize(GameManager gameManager, CreditsManager credits, GameParameters gameParameters)

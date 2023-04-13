@@ -8,10 +8,10 @@ public class FinalScreen : CutsceneScreen
 {
     public override void UpdateLogic()
     {
-        if (_screenTimer < _player.clip.length)
+        if (_screenTimer < 2f)
         {
             _screenTimer += Time.deltaTime;
-            if (_screenTimer >= _player.clip.length)
+            if (_screenTimer >= 2f)
             {
                 GetComponent<SpriteRenderer>().enabled = false;
                 DisplaySkipButton();
