@@ -34,6 +34,8 @@ public abstract class PlayerState : State
     {
         base.Enter(previousState, superState);
 
+        Debug.Log("Enter " + this);
+
         if (_currentSuperState != null)
         {
             PlayerState sState = (PlayerState)_currentSuperState;
