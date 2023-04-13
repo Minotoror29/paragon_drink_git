@@ -23,12 +23,14 @@ public class LowFallState : AerialState
         {
             _currentSuperState.ChangeSubState(new FallState(_playerStateMachine, _playerController, _animator, false));
         }
+
+        _playerController.LowFall();
     }
 
     public override void UpdatePhysics()
     {
         base.UpdatePhysics();
 
-        _playerController.LowFall();
+        //_playerController.LowFall();
     }
 }
