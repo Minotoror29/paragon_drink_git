@@ -573,6 +573,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420030}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -684,6 +685,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &626834690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,74 +1536,56 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 6.7358484
-      outSlope: 6.7358484
+      inSlope: 0.03437799
+      outSlope: 0.03437799
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.6335023
+      outWeight: 0.5442591
     - serializedVersion: 3
-      time: 0.049328946
-      value: 0.1019361
-      inSlope: 4.631147
-      outSlope: 4.631147
+      time: 0.1254828
+      value: 0.055412877
+      inSlope: 0.45664358
+      outSlope: 0.45664358
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.7509619
+      outWeight: 0.43545607
+    - serializedVersion: 3
+      time: 0.31021276
+      value: 0.38221824
+      inSlope: 1.9133853
+      outSlope: 1.9133853
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.42744964
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.40821365
+      value: 0.6994594
+      inSlope: 2.6789274
+      outSlope: 2.6789274
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0.74321073
     - serializedVersion: 3
-      time: 0.10291139
-      value: 0.4960721
-      inSlope: 6.0784497
-      outSlope: 6.0784497
+      time: 0.4714715
+      value: 1.1982137
+      inSlope: 21.770302
+      outSlope: 21.770302
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.14959528
-      value: 0.60529906
-      inSlope: 4.608611
-      outSlope: 4.608611
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.20403284
-      value: 0.9906899
-      inSlope: 4.921712
-      outSlope: 4.921712
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.16764142
-      outWeight: 0.446405
-    - serializedVersion: 3
-      time: 0.25314775
-      value: 1.1026362
-      inSlope: 6.1714635
-      outSlope: 6.1714635
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.29730383
-      value: 1.487954
-      inSlope: 2.2784781
-      outSlope: 2.2784781
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0.174758
+      outWeight: 0.7689559
     - serializedVersion: 3
       time: 0.5
       value: 1.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 136
+      inSlope: 11.2264185
+      outSlope: 11.2264185
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0.65723765
       outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
