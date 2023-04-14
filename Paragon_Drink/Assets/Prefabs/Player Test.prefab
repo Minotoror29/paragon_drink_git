@@ -461,6 +461,7 @@ MonoBehaviour:
   runParticles: {fileID: 2370234323348901788, guid: 3af5cef784c5022408149e60df85c1f8, type: 3}
   runParticlesSpawnPoint: {fileID: 2532506992980209405}
   runParticlesRate: 0.1
+  waterParticles: {fileID: 5671111428069381403, guid: fe0ebbe63e898d6469b118d5d94f3363, type: 3}
 --- !u!114 &7464638840601067902
 MonoBehaviour:
   m_ObjectHideFlags: 0

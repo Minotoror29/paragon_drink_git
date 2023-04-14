@@ -65,6 +65,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float runParticlesRate = 0.5f;
     private float _runParticlesTimer = 0f;
 
+    [SerializeField] private ParticleSystem waterParticles;
+
     public void Initialize()
     {
         _playerControls = new PlayerControls();
@@ -119,13 +121,15 @@ public class PlayerController : MonoBehaviour
 
     public void CreateRunParticles()
     {
+        if (inWater) return;
+
         if (_runParticlesTimer < runParticlesRate)
         {
             _runParticlesTimer += Time.deltaTime;
 
             if (_runParticlesTimer >= runParticlesRate)
             {
-                ParticleSystem newParticles = Instantiate(runParticles, runParticlesSpawnPoint.position, transform.rotation);
+                ParticleSystem newParticles = Instantiate(runParticles, runParticlesSpawnPoint.position, Quaternion.Euler(-90, 0, 0));
                 Destroy(newParticles.gameObject, 0.5f);
                 _runParticlesTimer = 0;
             }
@@ -206,7 +210,14 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Water") && _direction.y < 0)
         {
             PlayEnterWaterSound();
+            CreateWaterParticles();
         }
+    }
+
+    private void CreateWaterParticles()
+    {
+        ParticleSystem newParticles = Instantiate(waterParticles, transform.position, Quaternion.Euler(-90, 0, 0));
+        Destroy(newParticles.gameObject, 0.25f);
     }
 
     private void PlayEnterWaterSound()
@@ -230,6 +241,7 @@ public class PlayerController : MonoBehaviour
         {
             inWater = false;
             currentWater = null;
+            CreateWaterParticles();
         }
     }
 
@@ -263,6 +275,8 @@ public class PlayerController : MonoBehaviour
 
     private void CreateJumpFX()
     {
+        if (inWater) return;
+
         GameObject newFX;
         GameObject fxPrefab;
 
@@ -300,6 +314,8 @@ public class PlayerController : MonoBehaviour
 
     public void CreateLandFX()
     {
+        if (inWater) return;
+
         GameObject newFX;
         GameObject fxPrefab;
 
