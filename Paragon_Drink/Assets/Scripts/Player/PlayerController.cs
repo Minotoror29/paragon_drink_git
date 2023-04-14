@@ -60,6 +60,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject landFX1;
     [SerializeField] private GameObject landFX2;
 
+    [SerializeField] private ParticleSystem runParticles;
+    [SerializeField] private Transform runParticlesSpawnPoint;
+    [SerializeField] private float runParticlesRate = 0.5f;
+    private float _runParticlesTimer = 0f;
+
     public void Initialize()
     {
         _playerControls = new PlayerControls();
@@ -109,6 +114,14 @@ public class PlayerController : MonoBehaviour
             {
                 transform.rotation = Quaternion.Euler(0, 0, 0);
             }
+        }
+    }
+
+    public void CreateRunParticles()
+    {
+        if (_runParticlesTimer < 0)
+        {
+            _runParticlesTimer += Time.deltaTime;
         }
     }
 
