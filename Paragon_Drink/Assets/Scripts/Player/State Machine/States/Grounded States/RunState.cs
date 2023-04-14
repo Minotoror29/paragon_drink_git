@@ -22,7 +22,7 @@ public class RunState : GroundedState
     {
         base.UpdateLogic();
 
-        if (_direction.magnitude < 0.1f)
+        if (_direction.magnitude < 0.01f)
         {
             _currentSuperState.ChangeSubState(new IdleState(_playerStateMachine, _playerController, _animator));
         }

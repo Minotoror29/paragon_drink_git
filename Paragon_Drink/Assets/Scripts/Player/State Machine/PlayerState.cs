@@ -153,5 +153,7 @@ public abstract class PlayerState : State
         {
             _playerController.requireNewJumpPress = true;
         }
+
+        Debug.Log("Exit " + this);
     }
 }
