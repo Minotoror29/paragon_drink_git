@@ -26,6 +26,8 @@ public class RunState : GroundedState
         {
             _currentSuperState.ChangeSubState(new IdleState(_playerStateMachine, _playerController, _animator));
         }
+
+        _playerController.CreateRunParticles();
     }
 
     public override void Exit()

@@ -458,9 +458,9 @@ MonoBehaviour:
   airJumpDiagonalFX: {fileID: 6348389794379896737, guid: 47708df38b75ecf439f1266963b410f0, type: 3}
   landFX1: {fileID: 2264237895894914750, guid: 5eac5d67ac3fc384b993316093d79fa9, type: 3}
   landFX2: {fileID: 4760677885479698245, guid: 4c42d548b19f88a48824b24e46b888e9, type: 3}
-  runParticles: {fileID: 0}
+  runParticles: {fileID: 2370234323348901788, guid: 3af5cef784c5022408149e60df85c1f8, type: 3}
   runParticlesSpawnPoint: {fileID: 2532506992980209405}
-  runParticlesRate: 0.5
+  runParticlesRate: 0.1
 --- !u!114 &7464638840601067902
 MonoBehaviour:
   m_ObjectHideFlags: 0

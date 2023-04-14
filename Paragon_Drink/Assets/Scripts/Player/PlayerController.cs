@@ -119,9 +119,16 @@ public class PlayerController : MonoBehaviour
 
     public void CreateRunParticles()
     {
-        if (_runParticlesTimer < 0)
+        if (_runParticlesTimer < runParticlesRate)
         {
             _runParticlesTimer += Time.deltaTime;
+
+            if (_runParticlesTimer >= runParticlesRate)
+            {
+                ParticleSystem newParticles = Instantiate(runParticles, runParticlesSpawnPoint.position, transform.rotation);
+                Destroy(newParticles.gameObject, 0.5f);
+                _runParticlesTimer = 0;
+            }
         }
     }
 
