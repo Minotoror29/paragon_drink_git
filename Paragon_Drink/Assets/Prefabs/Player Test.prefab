@@ -429,7 +429,7 @@ MonoBehaviour:
   gravityMultiplier: 0.1
   dehydratedJumpHeight: 16.5
   hydratedJumpHeight: 12
-  lowJumpMultiplier: 0.1
+  lowJumpMultiplier: 0.4
   _grounds: []
   currentGround: {fileID: 0}
   groundLayer:
