@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 5355625307046644184}
   - component: {fileID: 5355625307046644191}
   - component: {fileID: 6202264236805693341}
+  - component: {fileID: 2377619978579457964}
   m_Layer: 9
   m_Name: Water Drop
   m_TagString: Untagged
@@ -175,3 +176,33 @@ MonoBehaviour:
   - {fileID: 21300000, guid: af2218a53c48b8f459f33c6e4ffea296, type: 3}
   - {fileID: 21300000, guid: 2220603d12a4ba94fa876c6a4c78c1c5, type: 3}
   - {fileID: 21300000, guid: 2c42611ef645a1c41976160b5d9971d8, type: 3}
+--- !u!114 &2377619978579457964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5355625307046644190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1611421353
+      Data2: 1153792349
+      Data3: 243040394
+      Data4: 849409876
+    Path: event:/Ambiences/water_drop
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.5
+  OverrideMaxDistance: 10
