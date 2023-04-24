@@ -59,6 +59,12 @@ public class GameParameters : MonoBehaviour
     private float DecibelToLinear(float dB)
     {
         float linear = Mathf.Pow(10.0f, dB / 20f);
+
+        if (dB <= -40f)
+        {
+            linear = 0f;
+        }
+
         return linear;
     }
 }
