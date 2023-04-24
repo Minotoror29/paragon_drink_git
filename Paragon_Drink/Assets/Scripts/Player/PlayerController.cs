@@ -87,8 +87,7 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
-        //Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, Vector3.one);
-        Gizmos.DrawWireCube((Vector2)transform.position + (Vector2.up * (0.9f * (transform.localScale.x - 0.075f) / 2)), transform.localScale * new Vector2(0.5f, 0.9f));
+        Gizmos.DrawWireCube((Vector2)transform.position + (Vector2.up * (0.9f * (transform.localScale.x - 0.075f) / 2)), transform.localScale * GetComponent<BoxCollider2D>().size);
     }
 
     public void Idle()
