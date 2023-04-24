@@ -57,6 +57,7 @@ public class CameraManager : Manager
 
         if (currentCam != null)
         {
+            _perlin.m_AmplitudeGain = 0f;
             currentCam.gameObject.SetActive(false);
         }
 

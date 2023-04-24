@@ -14,6 +14,8 @@ public class DashJumpState : AerialState
     {
         base.Enter(previousState, superState);
 
+        Time.timeScale = 1f;
+
         _animator.CrossFade(_playerController.jump, 0f);
 
         _playerController.Jump(_jumpHeight);
@@ -22,6 +24,11 @@ public class DashJumpState : AerialState
     public override void UpdateLogic()
     {
         base.UpdateLogic();
+
+        if (Time.timeScale != 1f)
+        {
+            Time.timeScale = 1f;
+        }
 
         if (_timer > 0f)
         {

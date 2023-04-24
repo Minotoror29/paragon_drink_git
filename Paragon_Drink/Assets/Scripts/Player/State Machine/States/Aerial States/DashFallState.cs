@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DashFallState : AerialState
 {
-    private float _timer = 0.1f;
+    private float _timer = 0.5f;
     private bool _canBreakPlatforms = true;
 
     public DashFallState(PlayerStateMachine playerStateMachine, PlayerController playerController, Animator animator) : base(playerStateMachine, playerController, animator)
