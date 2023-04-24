@@ -11,7 +11,10 @@ public class MusicManager : Manager
 
     [SerializeField] private float sequenceTransitionSpeed = 1f;
 
-    public float _currentIndex;
+    private float _currentIndex;
+
+    [SerializeField] private Transform end;
+    [SerializeField] private Transform player;
 
     public override void Initialize(GameManager gameManager, StateMachine stateMachine)
     {
@@ -24,14 +27,8 @@ public class MusicManager : Manager
         }
 
         _musicInstance = RuntimeManager.CreateInstance("event:/Music");
-        //ChangeSequence(0);
-        StartCoroutine(ChangeSequence(0));
+        StartCoroutine(ChangeSequence(1));
     }
-
-    //public void ChangeSequence(int index)
-    //{
-    //    _musicInstance.setParameterByName("Music Sequence", index);
-    //}
 
     public IEnumerator ChangeSequence(int index)
     {
@@ -43,8 +40,26 @@ public class MusicManager : Manager
         while (_currentIndex < index)
         {
             _currentIndex += Time.deltaTime * sequenceTransitionSpeed;
+            _currentIndex = Mathf.Clamp(_currentIndex, 0, index);
             _musicInstance.setParameterByName("Music Sequence", _currentIndex);
             yield return null;
         }
+    }
+
+    public override void UpdateLogic()
+    {
+        base.UpdateLogic();
+
+        FadeMusic();
+    }
+
+    public void FadeMusic()
+    {
+        if (player == null || end == null) return;
+
+        float volume = Mathf.Abs(end.position.x - player.position.x) / 40f;
+        volume = Mathf.Clamp(volume, 0f, 1f);
+
+        _musicInstance.setVolume(volume);
     }
 }
