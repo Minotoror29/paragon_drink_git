@@ -62,4 +62,9 @@ public class MusicManager : Manager
 
         _musicInstance.setVolume(volume);
     }
+
+    private void OnDisable()
+    {
+        _musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
 }
