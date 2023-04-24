@@ -387,6 +387,7 @@ MonoBehaviour:
   - Ambiences
   - Cutscene
   - Menu
+  - Music
   - Objects
   - Player
   - Projectile
