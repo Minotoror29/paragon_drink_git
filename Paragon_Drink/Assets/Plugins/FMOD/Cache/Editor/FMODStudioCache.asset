@@ -87,7 +87,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638179458506869065
+  lastModified: 638180337400829415
   FileSizes:
   - Name: Desktop
     Value: 263008
@@ -419,7 +419,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Ambiences.bank
   Name: Ambiences
   StudioPath: bank:/Ambiences
-  lastModified: 638179458504410733
+  lastModified: 638180337374367287
   FileSizes:
   - Name: Desktop
     Value: 3315360
@@ -600,7 +600,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638179458504901897
+  lastModified: 638180337381836591
   FileSizes:
   - Name: Desktop
     Value: 3240
@@ -985,7 +985,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638179458505598923
+  lastModified: 638180337385865602
   FileSizes:
   - Name: Desktop
     Value: 2968416
@@ -1217,7 +1217,7 @@ MonoBehaviour:
   - {fileID: 7474231002757940455}
   StringsBanks:
   - {fileID: -3260400523658786136}
-  cacheTime: 638179458507869855
+  cacheTime: 638180337406189019
   cacheVersion: 131601
 --- !u!114 &43263377305770628
 MonoBehaviour:
@@ -1303,7 +1303,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Menu.bank
   Name: Menu
   StudioPath: bank:/Menu
-  lastModified: 638179458505116090
+  lastModified: 638180337382807997
   FileSizes:
   - Name: Desktop
     Value: 307072
@@ -1427,7 +1427,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Props.bank
   Name: Props
   StudioPath: bank:/Props
-  lastModified: 638179458507553044
+  lastModified: 638180337404888345
   FileSizes:
   - Name: Desktop
     Value: 285184
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Cutscene.bank
   Name: Cutscene
   StudioPath: bank:/Cutscene
-  lastModified: 638179458504791479
+  lastModified: 638180337381494699
   FileSizes:
   - Name: Desktop
     Value: 270144
@@ -1684,7 +1684,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Projectile.bank
   Name: Projectile
   StudioPath: bank:/Projectile
-  lastModified: 638179458507160084
+  lastModified: 638180337401655517
   FileSizes:
   - Name: Desktop
     Value: 270048
@@ -2135,7 +2135,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638179458507869855
+  lastModified: 638180337406189019
   FileSizes:
   - Name: Desktop
     Value: 100320
@@ -2232,7 +2232,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638179458504871869
+  lastModified: 638180337381572520
   FileSizes:
   - Name: Desktop
     Value: 5792
@@ -2252,7 +2252,7 @@ MonoBehaviour:
   Path: Assets/Sound/paragon_drink/Build/Desktop/Objects.bank
   Name: Objects
   StudioPath: bank:/Objects
-  lastModified: 638179458506262336
+  lastModified: 638180337394508660
   FileSizes:
   - Name: Desktop
     Value: 263104

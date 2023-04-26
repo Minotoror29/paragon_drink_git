@@ -107,7 +107,7 @@ public class CameraManager : Manager
             }
         } else
         {
-            _currentVCam.m_Lens.OrthographicSize = Mathf.MoveTowards(_currentVCam.m_Lens.OrthographicSize, _originalSize, 0.0025f);
+            _currentVCam.m_Lens.OrthographicSize = Mathf.MoveTowards(_currentVCam.m_Lens.OrthographicSize, _originalSize, 1.5f * Time.deltaTime);
             _zoomTimer = 0f;
         }
     }

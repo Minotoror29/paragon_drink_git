@@ -4,6 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using FMOD.Studio;
 using FMODUnity;
+using UnityEngine.SceneManagement;
 
 public class CreditsManager : Manager
 {
@@ -50,6 +51,9 @@ public class CreditsManager : Manager
             _pannels[_currentPannelIndex].ActivatePannel();
             _currentPannelIndex++;
             _creditsSound.start();
+        } else
+        {
+            SceneManager.LoadScene("Main_Menu");
         }
     }
 
